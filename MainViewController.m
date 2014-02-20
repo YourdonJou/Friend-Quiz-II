@@ -33,6 +33,13 @@
     
     [FBLoginView class];
     [FBProfilePictureView class];
+    
+    if([FBSession activeSession].state == FBSessionStateCreatedTokenLoaded){
+        
+        
+        [self performSegueWithIdentifier:@"gameSegue" sender:self];
+        
+    }
 }
 
 - (void)viewDidLoad
