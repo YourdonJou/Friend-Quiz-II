@@ -1,20 +1,18 @@
 //
-//  SendRequestViewController.m
+//  HelpMenuViewController.m
 //  Friend Quiz
 //
-//  Created by Shi Yo Jou on 2014/2/12.
-//  Copyright (c) 2014年 Christian Retureta. All rights reserved.
+//  Created by Christian Retureta on 2014-02-19.
+//  Copyright (c) 2014 Christian Retureta. All rights reserved.
 //
-//Add text
 
+#import "HelpMenuViewController.h"
 
-#import "SendRequestViewController.h"
-
-@interface SendRequestViewController ()
+@interface HelpMenuViewController ()
 
 @end
 
-@implementation SendRequestViewController
+@implementation HelpMenuViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

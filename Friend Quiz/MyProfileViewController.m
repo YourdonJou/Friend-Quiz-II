@@ -1,20 +1,18 @@
 //
-//  SendRequestViewController.m
+//  MyProfileViewController.m
 //  Friend Quiz
 //
-//  Created by Shi Yo Jou on 2014/2/12.
-//  Copyright (c) 2014年 Christian Retureta. All rights reserved.
+//  Created by Christian Retureta on 2014-02-19.
+//  Copyright (c) 2014 Christian Retureta. All rights reserved.
 //
-//Add text
 
+#import "MyProfileViewController.h"
 
-#import "SendRequestViewController.h"
-
-@interface SendRequestViewController ()
+@interface MyProfileViewController ()
 
 @end
 
-@implementation SendRequestViewController
+@implementation MyProfileViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

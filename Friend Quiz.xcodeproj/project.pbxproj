@@ -39,6 +39,9 @@
 		EBA5EF1618ADB97200493FBF /* SideMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF1518ADB97200493FBF /* SideMenuViewController.m */; };
 		EBA5EF2018ADC49000493FBF /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF1F18ADC49000493FBF /* MainViewController.m */; };
 		EBA5EF2318B161CC00493FBF /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF2218B161CC00493FBF /* SWRevealViewController.m */; };
+		EBA5EF3018B5CD4F00493FBF /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF2F18B5CD4F00493FBF /* SettingsViewController.m */; };
+		EBA5EF3318B5CD6100493FBF /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF3218B5CD6100493FBF /* MyProfileViewController.m */; };
+		EBA5EF3618B5CD6E00493FBF /* HelpMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF3518B5CD6E00493FBF /* HelpMenuViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +108,12 @@
 		EBA5EF1F18ADC49000493FBF /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = ../MainViewController.m; sourceTree = "<group>"; };
 		EBA5EF2118B161CC00493FBF /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		EBA5EF2218B161CC00493FBF /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		EBA5EF2E18B5CD4F00493FBF /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		EBA5EF2F18B5CD4F00493FBF /* SettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsViewController.m; sourceTree = "<group>"; };
+		EBA5EF3118B5CD6100493FBF /* MyProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileViewController.h; sourceTree = "<group>"; };
+		EBA5EF3218B5CD6100493FBF /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
+		EBA5EF3418B5CD6E00493FBF /* HelpMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpMenuViewController.h; sourceTree = "<group>"; };
+		EBA5EF3518B5CD6E00493FBF /* HelpMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpMenuViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +190,12 @@
 				AAD1944B18AC39D600116E23 /* QuestionPack.h */,
 				AAD1944C18AC39D600116E23 /* QuestionPack.m */,
 				EB9B1889189A1F52001E9D60 /* Main.storyboard */,
+				EBA5EF2E18B5CD4F00493FBF /* SettingsViewController.h */,
+				EBA5EF2F18B5CD4F00493FBF /* SettingsViewController.m */,
+				EBA5EF3118B5CD6100493FBF /* MyProfileViewController.h */,
+				EBA5EF3218B5CD6100493FBF /* MyProfileViewController.m */,
+				EBA5EF3418B5CD6E00493FBF /* HelpMenuViewController.h */,
+				EBA5EF3518B5CD6E00493FBF /* HelpMenuViewController.m */,
 				EB9B188C189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.h */,
 				EB9B188D189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m */,
 				EBA5EF0E18A9E4D400493FBF /* MainMenuViewController.h */,
@@ -351,9 +366,11 @@
 				EBA5EF2318B161CC00493FBF /* SWRevealViewController.m in Sources */,
 				EB9B1884189A1F51001E9D60 /* main.m in Sources */,
 				7A14A31A189B7029008FAEC7 /* GameStart.m in Sources */,
+				EBA5EF3318B5CD6100493FBF /* MyProfileViewController.m in Sources */,
 				AAD1945318AC452D00116E23 /* EditQuestionViewController.m in Sources */,
 				7AFEE0AA189C58DA00D84FA3 /* Category.m in Sources */,
 				EBA5EF2018ADC49000493FBF /* MainViewController.m in Sources */,
+				EBA5EF3018B5CD4F00493FBF /* SettingsViewController.m in Sources */,
 				EBA5EF1618ADB97200493FBF /* SideMenuViewController.m in Sources */,
 				EBA5EF1018A9E4D400493FBF /* MainMenuViewController.m in Sources */,
 				AAD1945018AC440700116E23 /* PackSelectViewController.m in Sources */,
@@ -361,6 +378,7 @@
 				AAD194A018AC572500116E23 /* SendRequestViewController.m in Sources */,
 				7AF8C86C189B7AC30098E573 /* AnswerQuestions.m in Sources */,
 				7AFEE0B3189C5C5D00D84FA3 /* Sendrequest.m in Sources */,
+				EBA5EF3618B5CD6E00493FBF /* HelpMenuViewController.m in Sources */,
 				7AF8C866189B77C30098E573 /* ChooseQuestionPacks.m in Sources */,
 				AAD1944D18AC39D600116E23 /* QuestionPack.m in Sources */,
 				EB9B188E189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m in Sources */,
