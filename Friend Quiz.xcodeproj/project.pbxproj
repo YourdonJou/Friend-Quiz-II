@@ -16,7 +16,7 @@
 		7AFEE0AD189C591900D84FA3 /* question.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0AC189C591900D84FA3 /* question.m */; };
 		7AFEE0B0189C5AF500D84FA3 /* CategoryTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0AF189C5AF500D84FA3 /* CategoryTV.m */; };
 		7AFEE0B3189C5C5D00D84FA3 /* Sendrequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0B2189C5C5D00D84FA3 /* Sendrequest.m */; };
-		AA8CFA5518A9E5C5006D6E81 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA8CFA5418A9E5C5006D6E81 /* FacebookSDK.framework */; };
+		AAA1675318B5C1A100E4495D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA1675218B5C1A100E4495D /* FacebookSDK.framework */; };
 		AAD1944D18AC39D600116E23 /* QuestionPack.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1944C18AC39D600116E23 /* QuestionPack.m */; };
 		AAD1945018AC440700116E23 /* PackSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1944F18AC440700116E23 /* PackSelectViewController.m */; };
 		AAD1945318AC452D00116E23 /* EditQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1945218AC452D00116E23 /* EditQuestionViewController.m */; };
@@ -69,7 +69,7 @@
 		7AFEE0AF189C5AF500D84FA3 /* CategoryTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTV.m; sourceTree = "<group>"; };
 		7AFEE0B1189C5C5D00D84FA3 /* Sendrequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sendrequest.h; sourceTree = "<group>"; };
 		7AFEE0B2189C5C5D00D84FA3 /* Sendrequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sendrequest.m; sourceTree = "<group>"; };
-		AA8CFA5418A9E5C5006D6E81 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
+		AAA1675218B5C1A100E4495D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		AAD1944B18AC39D600116E23 /* QuestionPack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionPack.h; sourceTree = "<group>"; };
 		AAD1944C18AC39D600116E23 /* QuestionPack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionPack.m; sourceTree = "<group>"; };
 		AAD1944E18AC440700116E23 /* PackSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackSelectViewController.h; sourceTree = "<group>"; };
@@ -113,7 +113,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9B187A189A1F51001E9D60 /* CoreGraphics.framework in Frameworks */,
-				AA8CFA5518A9E5C5006D6E81 /* FacebookSDK.framework in Frameworks */,
+				AAA1675318B5C1A100E4495D /* FacebookSDK.framework in Frameworks */,
 				EB9B187C189A1F51001E9D60 /* UIKit.framework in Frameworks */,
 				EB9B1878189A1F51001E9D60 /* Foundation.framework in Frameworks */,
 			);
@@ -154,7 +154,7 @@
 		EB9B1876189A1F51001E9D60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AA8CFA5418A9E5C5006D6E81 /* FacebookSDK.framework */,
+				AAA1675218B5C1A100E4495D /* FacebookSDK.framework */,
 				EB9B1877189A1F51001E9D60 /* Foundation.framework */,
 				EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */,
 				EB9B187B189A1F51001E9D60 /* UIKit.framework */,
@@ -496,6 +496,7 @@
 					"$(inherited)",
 					/Users/christianretureta/Documents/FacebookSDK,
 					"/Users/yourdonjou/Desktop/INFO-4290-Friend-Quiz",
+					"/Users/yourdonjou/Desktop/Friend-Quiz-II",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Friend Quiz/Friend Quiz-Prefix.pch";
@@ -514,6 +515,7 @@
 					"$(inherited)",
 					/Users/christianretureta/Documents/FacebookSDK,
 					"/Users/yourdonjou/Desktop/INFO-4290-Friend-Quiz",
+					"/Users/yourdonjou/Desktop/Friend-Quiz-II",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Friend Quiz/Friend Quiz-Prefix.pch";
