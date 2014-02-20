@@ -42,6 +42,7 @@
 		EBA5EF3018B5CD4F00493FBF /* SettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF2F18B5CD4F00493FBF /* SettingsViewController.m */; };
 		EBA5EF3318B5CD6100493FBF /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF3218B5CD6100493FBF /* MyProfileViewController.m */; };
 		EBA5EF3618B5CD6E00493FBF /* HelpMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF3518B5CD6E00493FBF /* HelpMenuViewController.m */; };
+		EBA5EF3918B5CE7900493FBF /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA5EF3818B5CE7900493FBF /* menu.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		EBA5EF3218B5CD6100493FBF /* MyProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileViewController.m; sourceTree = "<group>"; };
 		EBA5EF3418B5CD6E00493FBF /* HelpMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpMenuViewController.h; sourceTree = "<group>"; };
 		EBA5EF3518B5CD6E00493FBF /* HelpMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpMenuViewController.m; sourceTree = "<group>"; };
+		EBA5EF3818B5CE7900493FBF /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,10 +258,19 @@
 		EBA5EF1718ADC22900493FBF /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				EBA5EF3718B5CE6000493FBF /* Images */,
 				EBA5EF2118B161CC00493FBF /* SWRevealViewController.h */,
 				EBA5EF2218B161CC00493FBF /* SWRevealViewController.m */,
 			);
 			name = Libraries;
+			sourceTree = "<group>";
+		};
+		EBA5EF3718B5CE6000493FBF /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EBA5EF3818B5CE7900493FBF /* menu.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AFEE0A4189C4D0600D84FA3 /* background_image_2.png in Resources */,
+				EBA5EF3918B5CE7900493FBF /* menu.png in Resources */,
 				EB9B1890189A1F52001E9D60 /* Images.xcassets in Resources */,
 				EB9B1882189A1F51001E9D60 /* InfoPlist.strings in Resources */,
 				EB9B188B189A1F52001E9D60 /* Main.storyboard in Resources */,
