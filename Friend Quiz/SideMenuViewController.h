@@ -10,7 +10,8 @@
 
 @interface SideMenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
+@property (strong, nonatomic) IBOutlet UITableViewCell *cell;
 
+@property (strong, nonatomic) IBOutlet UIButton *testBtn;
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath;
 @end

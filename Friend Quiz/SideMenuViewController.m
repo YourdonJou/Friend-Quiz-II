@@ -7,6 +7,8 @@
 //
 
 #import "SideMenuViewController.h"
+#import "SettingsViewController.h"
+#import "MyProfileViewController.h"
 
 @interface SideMenuViewController ()
 
@@ -31,7 +33,7 @@
 {
     [super viewDidLoad];
     menuItems = [[NSArray alloc]init];
-    menuItems = @[@"Main MenuReal", @"Settings", @"My Profile", @"My Awards", @"Help"];
+    menuItems = @[@"Your Status", @"Settings", @"My Profile", @"My Awards", @"Help"];
 	// Do any additional setup after loading the view.
     
    // [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellIdentifier"];
@@ -78,12 +80,82 @@
     return cell;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    
+  
+    if( [segue.identifier isEqualToString:@"sw_front"])
+    {
+        
+        SettingsViewController *destViewController = [segue destinationViewController];
+         
+         
+         }
+    /*if(indexPath.row == 0)
+    {
+        
+        
+        //Implement the Settings
+        
+        NSLog(@"You chose the status cell");
+    }
+    
+    else if (indexPath.row == 1 ){
+        
+        SettingsViewController *destView = (SettingsViewController *)segue.destinationViewController;
+        
+        NSLog(@"You chose the settings menu!!");
+        
+        [self performSegueWithIdentifier:@"settingsSegue" sender:self];
+        
+        
+    }
+     
+     */
+    /*
+    if ([segue.identifier isEqualToString:@"settingsSegue"]){
+        
+        SettingsViewController *destViewController = (SettingsViewController *)segue.destinationViewController;
+        
+        
+    }
+    
+     */
+    
+}
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     
     [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
-    [self performSegueWithIdentifier:@"settingsSegue" sender:self];
+    
+ //  [self performSegueWithIdentifier:@"settingsSegue" sender:self];
+    
+   // [self performSegueWithIdentifier:@"settingsSegue" sender:self];
     
     
+    /*
+    if(indexPath.row ==1 ){
+        
+        NSLog(@"You selected the Settings Row");
+        
+ 
+ //       SettingsViewController *svc = [[SettingsViewController alloc]init];
+        
+       // UIStoryboardSegue *segue = [[UIStoryboardSegue alloc]initWithIdentifier:nil  source:self destination:svc];
+        
+        
+        
+       // svc = (SettingsViewController *)segue.destinationViewController;
+        
+     //   [self presentViewController:svc animated:YES completion:nil];
+        
+     //   [self.navigationController pushViewController:svc animated:YES];
+   
+    }
+    
+    */
     
     
 }

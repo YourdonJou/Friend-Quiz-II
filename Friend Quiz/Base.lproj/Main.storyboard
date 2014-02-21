@@ -207,20 +207,44 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="BgJ-Qw-XeQ">
-                                <rect key="frame" x="0.0" y="26" width="320" height="568"/>
+                                <rect key="frame" x="0.0" y="44" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="CY6-jF-UAa">
+                                        <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CY6-jF-UAa" id="fgF-0U-gXb">
+                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="eAz-Pt-tfl" kind="custom" identifier="settingsSegue" customClass="SWRevealViewControllerSegue" id="Kt7-Ct-5yj"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="pQn-X0-S2S" id="Voz-ih-TbW"/>
                                     <outlet property="delegate" destination="pQn-X0-S2S" id="Qzw-zf-Xcu"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="anO-XB-ndJ">
+                                <rect key="frame" x="32" y="6" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Press Me">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="eAz-Pt-tfl" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegue" id="tXT-Dr-j7W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="cell" destination="CY6-jF-UAa" id="iNv-X2-efU"/>
                         <outlet property="tableView" destination="BgJ-Qw-XeQ" id="rnt-ZM-kjR"/>
-                        <segue destination="eAz-Pt-tfl" kind="custom" identifier="settingsSegue" customClass="SWRevealViewControllerSegue" id="Pa0-fV-DoF"/>
+                        <outlet property="testBtn" destination="anO-XB-ndJ" id="QhR-6J-rsg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xfg-K2-xAw" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -255,6 +279,10 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="D0M-oo-jxx"/>
+                    <connections>
+                        <outlet property="listButton" destination="MgY-1W-fpz" id="52G-5w-Mh8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44l-i1-0pZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,7 +317,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTf-bN-VLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1683" y="-1409"/>
+            <point key="canvasLocation" x="1806" y="-1404"/>
         </scene>
         <!--Help Menu View Controller-->
         <scene sceneID="MKh-xO-1kS">
@@ -415,7 +443,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOE-jK-pl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1481" y="-804"/>
+            <point key="canvasLocation" x="1491" y="-690"/>
         </scene>
         <!--Pack Select View Controller - Title-->
         <scene sceneID="iv7-Nu-f09">
@@ -1303,6 +1331,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="Kt7-Ct-5yj"/>
         <segue reference="339-oy-3yD"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -89,6 +89,27 @@
 
 //This method is impolemented to check if a Facebook Session is started.  IF it is it will return a TRUE value and it will confirm that the user is logged in.
 
+- (NSDictionary*)parseURLParmams:(NSString *)query{
+    
+    
+    NSArray *pairs = [query componentsSeparatedByString:@"&"];
+    NSMutableArray *params = [[NSMutableArray alloc]init];
+    
+    for (NSString *pair in pairs) {
+        
+        NSArray *kv = [pair componentsSeparatedByString:@"="];
+        NSString *val =[kv[1] stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+     //   params[kv[0]]= val;
+     
+        
+        
+    }
+    return params;
+    
+    
+    
+}
+
 -(BOOL)checkFacebookSession
 {
     if([FBSession activeSession].state == FBSessionStateCreatedTokenLoaded)

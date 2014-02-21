@@ -471,6 +471,7 @@ static NSString * const SWSegueRightIdentifier = @"sw_right";
         }
         else if ( [identifier isEqualToString:SWSegueRightIdentifier] )
         {
+          
             segue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc)
             {
                 [self _setRightViewController:dvc];
