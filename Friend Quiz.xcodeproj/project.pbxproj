@@ -191,7 +191,6 @@
 				AAD1944F18AC440700116E23 /* PackSelectViewController.m */,
 				AAD1944B18AC39D600116E23 /* QuestionPack.h */,
 				AAD1944C18AC39D600116E23 /* QuestionPack.m */,
-				EB9B1889189A1F52001E9D60 /* Main.storyboard */,
 				EBA5EF2E18B5CD4F00493FBF /* SettingsViewController.h */,
 				EBA5EF2F18B5CD4F00493FBF /* SettingsViewController.m */,
 				EBA5EF3118B5CD6100493FBF /* MyProfileViewController.h */,
@@ -261,6 +260,7 @@
 				EBA5EF3718B5CE6000493FBF /* Images */,
 				EBA5EF2118B161CC00493FBF /* SWRevealViewController.h */,
 				EBA5EF2218B161CC00493FBF /* SWRevealViewController.m */,
+				EB9B1889189A1F52001E9D60 /* Main.storyboard */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";

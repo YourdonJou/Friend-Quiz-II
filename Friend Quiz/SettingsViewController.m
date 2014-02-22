@@ -33,8 +33,11 @@
     
     self.listButton.action = @selector(revealToggle:);
     
+
  
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    NSLog(@"Settings View Loaded!");
     
 }
 

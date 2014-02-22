@@ -7,6 +7,7 @@
 //
 
 #import "MyProfileViewController.h"
+#import "SWRevealViewController.h"
 
 @interface MyProfileViewController ()
 
@@ -26,6 +27,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    _listButton.target = self.revealViewController;
+    
+    _listButton.action = @selector(revealToggle:);
+    
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 	// Do any additional setup after loading the view.
 }
 

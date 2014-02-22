@@ -39,6 +39,7 @@
     [super viewDidLoad];
     
     self.tableView.delegate = self;
+    self.tableView.dataSource =self;
     
     
     //menuItems = [[NSArray alloc]init];
@@ -82,9 +83,19 @@
    // NSString *CellIdentifier = [menuItems objectAtIndex:indexPath.row];
     
     
-    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+
+    /*
+    if(cell== nil)
+       {
+    UITableViewCell *cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+       }
+  
+    */
+    
+    
+      //self.cellData = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
 
     
     
@@ -99,6 +110,7 @@
     return cell;
 }
 
+
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     
@@ -110,11 +122,20 @@
         
         SettingsViewController *destViewController = (SettingsViewController *)segue.destinationViewController;
         
-        destViewController.title = [menuChoices objectAtIndex:indexPath.row];
+     //   destViewController.title = [menuChoices objectAtIndex:indexPath.row];
          
          
          }
     
+    else if( [segue.identifier isEqualToString:@"profileSegue"])
+    {
+        
+        MyProfileViewController *destViewController = (MyProfileViewController *)segue.destinationViewController;
+        
+        //   destViewController.title = [menuChoices objectAtIndex:indexPath.row];
+        
+        
+    }
     
     
     

@@ -10,8 +10,11 @@
 
 @interface SideMenuViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) IBOutlet UITableViewCell *cell;
 
-@property (strong, nonatomic) IBOutlet UIButton *testBtn;
+//@property (strong, nonatomic) IBOutlet UITableViewCell *cell;
+//@property (strong, nonatomic) IBOutlet UITableViewCell *otherCell;
+
+//@property (strong, nonatomic) IBOutlet UITableViewCell *cellData;
+
 
 @end
