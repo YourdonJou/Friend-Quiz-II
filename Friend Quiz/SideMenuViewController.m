@@ -9,6 +9,7 @@
 #import "SideMenuViewController.h"
 #import "SettingsViewController.h"
 #import "MyProfileViewController.h"
+#import "SWRevealViewController.h"
 
 @interface SideMenuViewController ()
 
@@ -17,7 +18,11 @@
 @implementation SideMenuViewController{
     
     
-    NSArray *menuItems;
+   // NSArray *menuItems;
+    
+    NSArray *menuChoices;
+    
+    
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -32,8 +37,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    menuItems = [[NSArray alloc]init];
-    menuItems = @[@"Your Status", @"Settings", @"My Profile", @"My Awards", @"Help"];
+    
+    self.tableView.delegate = self;
+    
+    
+    //menuItems = [[NSArray alloc]init];
+   
+    menuChoices = @[@"status", @"settings", @"profile", @"awards", @"help"];
+  //  menuItems = @[@"Your Status", @"Settings", @"My Profile", @"My Awards", @"Help"];
 	// Do any additional setup after loading the view.
     
    // [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"CellIdentifier"];
@@ -55,27 +66,35 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [menuItems count];
+    //return [menuItems count];
+    
+    return [menuChoices count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString *CellIdentifier = [menuItems objectAtIndex:indexPath.row];
+    NSString *CellIdentifier = [menuChoices objectAtIndex:indexPath.row];
     
   //  static NSString *CellIdentifier = @"Cell";
     
     
-    UITableViewCell *cell = [_tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+   // NSString *CellIdentifier = [menuItems objectAtIndex:indexPath.row];
+    
+    
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
 
     
-    if (cell==nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    
+    
         
-    }
+    
     
    // UITableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    cell.textLabel.text = [menuItems objectAtIndex:indexPath.row];
+   // cell.textLabel.text = [menuChoices objectAtIndex:indexPath.row];
     
     return cell;
 }
@@ -86,17 +105,38 @@
     NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     
   
-    if( [segue.identifier isEqualToString:@"sw_front"])
+    if( [segue.identifier isEqualToString:@"settingsSegue"])
     {
         
-        SettingsViewController *destViewController = [segue destinationViewController];
+        SettingsViewController *destViewController = (SettingsViewController *)segue.destinationViewController;
+        
+        destViewController.title = [menuChoices objectAtIndex:indexPath.row];
          
          
          }
+    
+    
+    
+    
+    if ( [segue isKindOfClass: [SWRevealViewControllerSegue class]] ) {
+        SWRevealViewControllerSegue *swSegue = (SWRevealViewControllerSegue*) segue;
+        
+        swSegue.performBlock = ^(SWRevealViewControllerSegue* rvc_segue, UIViewController* svc, UIViewController* dvc) {
+            
+            UINavigationController* navController = (UINavigationController*)self.revealViewController.frontViewController;
+            [navController setViewControllers: @[dvc] animated: NO ];
+            [self.revealViewController setFrontViewPosition: FrontViewPositionLeft animated: YES];
+        };
+
+    
+}
+
+
+
     /*if(indexPath.row == 0)
     {
-        
-        
+     
+     
         //Implement the Settings
         
         NSLog(@"You chose the status cell");
