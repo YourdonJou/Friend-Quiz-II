@@ -259,7 +259,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="eAz-Pt-tfl" kind="custom" customClass="SWRevealViewControllerSegue" id="PW2-93-Nmv"/>
+                                            <segue destination="eAz-Pt-tfl" kind="custom" identifier="settingsSegue" customClass="SWRevealViewControllerSegue" id="PW2-93-Nmv"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="awards" id="ciU-nA-IOf">
@@ -296,9 +296,6 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Ky2-HM-zy5" kind="custom" customClass="SWRevealViewControllerSegue" id="y7Y-xA-wib"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="help" id="vlR-nF-Li3">
                                         <rect key="frame" x="0.0" y="242" width="320" height="44"/>
@@ -419,18 +416,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTf-bN-VLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1892" y="-2073"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="VCA-LS-qfi">
-            <objects>
-                <navigationController definesPresentationContext="YES" id="Ky2-HM-zy5" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ext-8s-3wJ">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Ik-Sk-BjO" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1401" y="-2101"/>
         </scene>
         <!--Help Menu View Controller-->
         <scene sceneID="MKh-xO-1kS">
