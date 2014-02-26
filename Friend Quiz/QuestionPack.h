@@ -22,13 +22,15 @@
 
 @property int questionIndex;
 
-// Question 1
+
+// Questions
+
 @property NSMutableArray *questionTitle;
 
 @property NSMutableArray *questionSuggestedAnswers;
 @property NSMutableArray *questionAnswers;
 
-@property int questionCorrectAnswerIndex;
+@property NSMutableArray *questionCorrectAnswerIndex;
 
 
 

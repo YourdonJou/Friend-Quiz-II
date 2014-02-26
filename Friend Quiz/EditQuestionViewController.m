@@ -201,7 +201,7 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
         
         
         // Send the correct answer index
-        [QuestionPack sharedCenter].questionCorrectAnswerIndex = correctAnswerIndex;
+        [[QuestionPack sharedCenter].questionCorrectAnswerIndex setObject: [NSString stringWithFormat: @"%d", correctAnswerIndex] atIndexedSubscript:[QuestionPack sharedCenter].questionIndex];
         
         // Send correct answers
         if (![QuestionPack sharedCenter].questionAnswers)
