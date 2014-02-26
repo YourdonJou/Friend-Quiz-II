@@ -10,4 +10,17 @@
 
 @interface ExternalQuestionPack : NSObject
 
+// Pack ID
+@property int questionPackID;
+@property NSString *sender;
+@property NSString *receiver;
+
+// Questions
+@property NSMutableArray *questionTitle;
+@property NSMutableArray *questionAnswers;
+@property NSMutableArray *questionCorrectAnswerIndex;
+
+
+
+
 @end

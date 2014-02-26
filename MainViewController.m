@@ -17,7 +17,13 @@
 @end
 
 @implementation MainViewController
-@synthesize sidebarButton, nameLabel, pictureView,loginView,loginView2;
+
+
+@synthesize sidebarButton, nameLabel, pictureView,loginView2, arrayReceivedRequest;
+
+
+
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -63,6 +69,14 @@
         NSLog(@"Facebook user logged in!!!!");
         
     }
+    
+    
+    
+    //Test Code
+    NSArray *data = [[NSArray alloc]initWithObjects: @"Default Pack", @"Mix Pack", @"Easy Pack", @"Hard Pack", @"Best Friend Pack", @"Fruit Pack", @"Color Pack", @"Location Pack", nil];
+    
+    
+    arrayReceivedRequest = data;
     
 
 }
@@ -156,5 +170,84 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
+//Table View Start ---------
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [arrayReceivedRequest count];
+}
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    cell.textLabel.text = [arrayReceivedRequest objectAtIndex: indexPath.row];
+    
+    return cell;
+}
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    
+    cell.textLabel.font = [UIFont fontWithName:@"Georgia-Bold" size:18.0];
+    cell.textLabel.textColor = [UIColor colorWithRed:(32/255.0) green:(51/255.0) blue:(202/255.0) alpha:1];
+    
+    
+    UIView *backColor = [[UIView alloc] init] ;
+    backColor.backgroundColor = [UIColor colorWithRed:(161/255.0) green:(140/255.0) blue:(255/255.0) alpha:1];
+    cell.selectedBackgroundView = backColor;
+    
+    
+    
+}
+// Table View End ---------
+
+
+
+
+// TableView Swipe Delete Methods ---------------
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+
+- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSMutableArray *arrayReceivedRequestTemp = [self createMutableArray: arrayReceivedRequest];
+        
+    
+    if (editingStyle == UITableViewCellEditingStyleDelete) {
+        //remove the deleted object from your data source.
+        //If your data source is an NSMutableArray, do this
+        [arrayReceivedRequestTemp removeObjectAtIndex: indexPath.row];
+        arrayReceivedRequest = arrayReceivedRequestTemp;
+
+        
+        [self.tableviewRequestReceive reloadData];
+        
+        
+        // Save Data
+        
+    }
+}
+// TableView Swipe Delete Methods ---------------
+
+
+
+// Array to MutableArray
+- (NSMutableArray *)createMutableArray:(NSArray *)array
+{
+    return [NSMutableArray arrayWithArray:array];
+}
+
+
 
 @end

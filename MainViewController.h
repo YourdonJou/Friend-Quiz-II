@@ -11,11 +11,14 @@
 
 @interface MainViewController : UIViewController <FBLoginViewDelegate>
 
+@property NSMutableArray *arrayReceivedRequest;
+
+
+@property (weak, nonatomic) IBOutlet UITableView *tableviewRequestReceive;
 
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *sidebarButton;
 @property (strong, nonatomic) IBOutlet FBProfilePictureView *pictureView;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
-@property (strong, nonatomic) IBOutlet FBLoginView *loginView;
 @property (strong, nonatomic) IBOutlet FBLoginView *loginView2;
 
 @end
