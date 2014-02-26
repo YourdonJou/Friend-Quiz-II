@@ -11,11 +11,17 @@
 #import "EditQuestionViewController.h"
 #import "QuestionPack.h"
 
-@interface PackSelectViewController : UIViewController
+@interface PackSelectViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property int selectedQuestionPackID;
 
-@property NSMutableArray *arrayQuestionPack;
+@property NSMutableArray *arrayQuestionPacks;
+
+@property (weak, nonatomic) IBOutlet UITableView *tableviewQuestionPacks;
+
+
+
+
 
 -(void)selectQuestionPackWithID: (int)packID;
 

@@ -14,7 +14,7 @@
 
 @implementation PackSelectViewController
 
-@synthesize selectedQuestionPackID, arrayQuestionPack;
+@synthesize selectedQuestionPackID, arrayQuestionPacks;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,9 +30,13 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    NSArray *data = [[NSArray alloc]initWithObjects: @"Default Pack", @"Mix Pack", @"Easy Pack", @"Hard Pack", @"Best Friend Pack", @"Fruit Pack", @"Color Pack", @"Location Pack", nil];
-    arrayQuestionPack = data;
+    self.tableviewQuestionPacks.delegate = self;
+    self.tableviewQuestionPacks.dataSource = self;
     
+    NSArray *data = [[NSArray alloc]initWithObjects: @"Default Pack", @"Mix Pack", @"Easy Pack", @"Hard Pack", @"Best Friend Pack", @"Fruit Pack", @"Color Pack", @"Location Pack", nil];
+    
+    
+    arrayQuestionPacks = data;
     
     [QuestionPack sharedCenter].questionIndex = 0;
     
@@ -55,21 +59,43 @@
     [[QuestionPack sharedCenter]enterQuestionPackIDandGetInfoFromDatabase:packID];
 }
 
--(NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
 }
 
-
--(NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return [arrayQuestionPack count];
+    return [arrayQuestionPacks count];
 }
 
--(NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    return [arrayQuestionPack objectAtIndex:row];
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    cell.textLabel.text = [arrayQuestionPacks objectAtIndex: indexPath.row];
+    
+    return cell;
 }
+
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    cell.backgroundColor = [UIColor clearColor];
+    cell.contentView.backgroundColor = [UIColor clearColor];
+    
+    cell.textLabel.font = [UIFont fontWithName:@"Georgia-Bold" size:18.0];
+    cell.textLabel.textColor = [UIColor colorWithRed:(32/255.0) green:(51/255.0) blue:(202/255.0) alpha:1];
+    
+    
+    UIView *backColor = [[UIView alloc] init] ;
+    backColor.backgroundColor = [UIColor colorWithRed:(161/255.0) green:(140/255.0) blue:(255/255.0) alpha:1];
+    cell.selectedBackgroundView = backColor;
+    
+    
+    
+}
+
 
 
 @end
