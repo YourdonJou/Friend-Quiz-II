@@ -15,10 +15,11 @@
 
 @property int selectedQuestionPackID;
 
+@property NSMutableArray *arrayQuestionPack;
+
 -(void)selectQuestionPackWithID: (int)packID;
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
-
 
 
 @end
