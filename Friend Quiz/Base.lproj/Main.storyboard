@@ -350,11 +350,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Settings Menu" id="9VH-xb-bWo">
-                                        <barButtonItem key="leftBarButtonItem" image="menu.png" id="MgY-1W-fpz">
-                                            <color key="tintColor" red="0.071725457490000005" green="0.19669828819999999" blue="0.45108695650000002" alpha="1" colorSpace="calibratedRGB"/>
-                                        </barButtonItem>
-                                    </navigationItem>
+                                    <navigationItem title="Title" id="t2i-8x-gNt"/>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This is a settings Menu" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YCW-E6-inD">
@@ -363,17 +359,55 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GqF-Tj-pTH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Settings Menu" id="T1t-o1-6nZ">
+                                        <barButtonItem key="leftBarButtonItem" image="menu.png" id="9ln-bk-ATL"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="D0M-oo-jxx"/>
-                    <connections>
-                        <outlet property="listButton" destination="MgY-1W-fpz" id="52G-5w-Mh8"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44l-i1-0pZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1469" y="-1374"/>
+            <point key="canvasLocation" x="1761" y="-1366"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="qGS-EG-oCs">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="0Ex-Sg-Zuh" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="lHE-Co-Lr5">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="ob5-Fw-Lkz" kind="relationship" relationship="rootViewController" id="8ux-EN-FCe"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WcJ-aN-Ckk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1216" y="-2013"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="7T2-dZ-fQq">
+            <objects>
+                <viewController id="ob5-Fw-Lkz" customClass="TestViewController" sceneMemberID="viewController">
+                    <navigationBar key="view" contentMode="scaleToFill" id="MzU-zf-hZw">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                        <items>
+                            <navigationItem title="Title" id="Cas-Ib-EfM"/>
+                        </items>
+                    </navigationBar>
+                    <navigationItem key="navigationItem" id="2GZ-su-b3e"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W9O-2B-bbq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1676" y="-2211"/>
         </scene>
         <!--My Profile View Controller-->
         <scene sceneID="8fy-EN-7Vu">

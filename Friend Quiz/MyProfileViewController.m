@@ -28,6 +28,12 @@
 {
     [super viewDidLoad];
     
+    
+   // _sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
+    
+
+
+    _listButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
     _listButton.target = self.revealViewController;
     
     _listButton.action = @selector(revealToggle:);
