@@ -14,7 +14,7 @@
 
 @implementation AnswerQuestionViewController
 
-@synthesize selectedExternalQuestionPack, question1label, question2label, question3label, question4label, questionTitleLabel;
+@synthesize selectedExternalQuestionPack, question1label, question2label, question3label, question4label, questionTitleLabel, selectedQuestionIndex;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,16 +46,15 @@
     
     // Get question detail
     
-    questionTitleLabel.text = data.questionTitle[[QuestionPack sharedCenter].questionIndex] ;
+    questionTitleLabel.text = selectedExternalQuestionPack.questionTitle[[QuestionPack sharedCenter].questionIndex] ;
     
-    [question1label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][0]forState:UIControlStateNormal  ];
+    [question1label setTitle:[selectedExternalQuestionPack.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][0]forState:UIControlStateNormal  ];
     
-    [question2label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][1]forState:UIControlStateNormal  ];
+    [question2label setTitle:[selectedExternalQuestionPack.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][1]forState:UIControlStateNormal  ];
     
-    [question3label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][2]forState:UIControlStateNormal  ];
+    [question3label setTitle:[selectedExternalQuestionPack.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][2]forState:UIControlStateNormal  ];
     
-    [question4label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][3]forState:UIControlStateNormal  ];
-    
+    [question4label setTitle:[selectedExternalQuestionPack.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][3]forState:UIControlStateNormal  ];
     
 }
 
@@ -63,6 +62,28 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+
+- (void)checkIfAnswerIsCorrect
+{
+    NSString *correctAnswerIndex = selectedExternalQuestionPack.questionCorrectAnswerIndex[[QuestionPack sharedCenter].questionIndex];
+    if([correctAnswerIndex integerValue] == selectedQuestionIndex)
+    {
+        // Answer Correct
+        
+        UIAlertView *alert2 = [[UIAlertView alloc] initWithTitle:@"Text" message:@"Correct" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        
+        [alert2 show];
+    }
+    else
+    {
+        // Answer Not Correct
+        
+        UIAlertView *alert2 = [[UIAlertView alloc] initWithTitle:@"Text" message:@"Incorrect" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+        
+        [alert2 show];
+    }
 }
 
 
@@ -87,25 +108,33 @@
 
 - (IBAction)question1button:(id)sender
 {
+    selectedQuestionIndex = 0;
     
+    [self checkIfAnswerIsCorrect];
     [self exitToNextVCCheck];
 }
 
 - (IBAction)question2button:(id)sender
 {
+    selectedQuestionIndex = 1;
     
+    [self checkIfAnswerIsCorrect];
     [self exitToNextVCCheck];
 }
 
 - (IBAction)question3button:(id)sender
 {
+    selectedQuestionIndex = 2;
     
+    [self checkIfAnswerIsCorrect];
     [self exitToNextVCCheck];
 }
 
 - (IBAction)question4button:(id)sender
 {
+    selectedQuestionIndex = 3;
     
+    [self checkIfAnswerIsCorrect];
     [self exitToNextVCCheck];
 }
 

@@ -16,7 +16,10 @@
 
 @property ExternalQuestionPack *selectedExternalQuestionPack;
 
+@property int selectedQuestionIndex;
+
 @property (weak, nonatomic) IBOutlet UILabel *questionTitleLabel;
+
 
 
 @property (weak, nonatomic) IBOutlet UIButton *question1label;
