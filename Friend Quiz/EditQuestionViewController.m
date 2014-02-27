@@ -146,7 +146,7 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
 
 - (IBAction)q1EditButton:(id)sender {
     
-    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Edit Question Answer" message:@"Question 1 Answer:" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles:@"Add", nil];
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Edit Question Answer" message:@"Question 1 Answer:" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles:@"Ok", nil];
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     
     [alert setTag:0];
@@ -156,7 +156,7 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
 
 - (IBAction)q2EditButton:(id)sender {
     
-    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Edit Question Answer" message:@"Question 2 Answer:" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles:@"Add", nil];
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Edit Question Answer" message:@"Question 2 Answer:" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles:@"Ok", nil];
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     
     [alert setTag:1];
@@ -166,7 +166,7 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
 
 - (IBAction)q3EditButton:(id)sender {
     
-    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Edit Question Answer" message:@"Question 3 Answer:" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles:@"Add", nil];
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Edit Question Answer" message:@"Question 3 Answer:" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles:@"Ok", nil];
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     
     [alert setTag:2];
@@ -176,7 +176,7 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
 
 - (IBAction)q4EditButton:(id)sender {
     
-    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Edit Question Answer" message:@"Question 4 Answer:" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles:@"Add", nil];
+    UIAlertView * alert = [[UIAlertView alloc] initWithTitle:@"Edit Question Answer" message:@"Question 4 Answer:" delegate:self cancelButtonTitle:@"Cancel"  otherButtonTitles:@"Ok", nil];
     alert.alertViewStyle = UIAlertViewStylePlainTextInput;
     
     [alert setTag:3];

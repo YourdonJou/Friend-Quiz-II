@@ -485,7 +485,7 @@
         <!--Navigation Controller-->
         <scene sceneID="giD-54-KiV">
             <objects>
-                <navigationController definesPresentationContext="YES" id="3kr-ur-dQE" sceneMemberID="viewController">
+                <navigationController definesPresentationContext="YES" navigationBarHidden="YES" id="3kr-ur-dQE" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="cOZ-t9-jZJ">
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
