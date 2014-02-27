@@ -1168,6 +1168,9 @@
                                 <state key="normal" title="Q4">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="question4button:" destination="O8i-4J-MvF" eventType="touchUpInside" id="dsS-Ky-vFE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mg6-kI-ei6">
                                 <rect key="frame" x="13" y="334" width="294" height="98"/>
@@ -1177,6 +1180,9 @@
                                 <state key="normal" title="Q3">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="question3button:" destination="O8i-4J-MvF" eventType="touchUpInside" id="xfn-md-89b"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eio-2d-VEx">
                                 <rect key="frame" x="13" y="216" width="294" height="98"/>
@@ -1186,6 +1192,9 @@
                                 <state key="normal" title="Q2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="question2button:" destination="O8i-4J-MvF" eventType="touchUpInside" id="NaD-Sc-YYm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdf-JX-X4g">
                                 <rect key="frame" x="13" y="98" width="294" height="98"/>
@@ -1195,11 +1204,19 @@
                                 <state key="normal" title="Q1">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="question1button:" destination="O8i-4J-MvF" eventType="touchUpInside" id="4c8-69-bTm"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="question1label" destination="Tdf-JX-X4g" id="bSz-bf-7ok"/>
+                        <outlet property="question2label" destination="eio-2d-VEx" id="RQH-nT-Byk"/>
+                        <outlet property="question3label" destination="Mg6-kI-ei6" id="yl4-4h-8Lj"/>
+                        <outlet property="question4label" destination="VjE-w7-ghI" id="3Qb-4P-Duh"/>
+                        <outlet property="questionTitleLabel" destination="5nz-de-DQc" id="Of4-vT-dDg"/>
                         <segue destination="PG6-pU-yXr" kind="modal" identifier="toGameResult" id="kJU-YJ-2Rw"/>
                     </connections>
                 </viewController>

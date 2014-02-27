@@ -8,6 +8,31 @@
 
 #import <UIKit/UIKit.h>
 
+#import "ExternalQuestionPack.h"
+#import "QuestionPack.h"
+
 @interface AnswerQuestionViewController : UIViewController
+
+
+@property (weak, nonatomic) IBOutlet UILabel *questionTitleLabel;
+
+
+@property (weak, nonatomic) IBOutlet UIButton *question1label;
+@property (weak, nonatomic) IBOutlet UIButton *question2label;
+@property (weak, nonatomic) IBOutlet UIButton *question3label;
+@property (weak, nonatomic) IBOutlet UIButton *question4label;
+
+
+- (IBAction)question1button:(id)sender;
+- (IBAction)question2button:(id)sender;
+- (IBAction)question3button:(id)sender;
+- (IBAction)question4button:(id)sender;
+
+
+
+
+
+
+
 
 @end

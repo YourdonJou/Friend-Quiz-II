@@ -35,4 +35,54 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (void)exitToNextVCCheck
+{
+    // Exit Condition
+    if([QuestionPack sharedCenter].questionIndex == 5)
+    {
+        [self performSegueWithIdentifier:@"toGameResult" sender:nil];
+    }
+    else
+    {
+        [self performSegueWithIdentifier:@"toSelf" sender:nil];
+    }
+    
+    
+    [QuestionPack sharedCenter].questionIndex ++;
+}
+
+- (IBAction)question1button:(id)sender
+{
+    
+    
+}
+
+- (IBAction)question2button:(id)sender
+{
+    
+    
+}
+
+- (IBAction)question3button:(id)sender
+{
+    
+    
+}
+
+- (IBAction)question4button:(id)sender
+{
+    
+    
+}
+
+
+
 @end
+
+
+
+
+
+
+
