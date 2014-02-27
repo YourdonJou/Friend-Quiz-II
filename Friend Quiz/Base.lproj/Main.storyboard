@@ -1110,10 +1110,10 @@
             </objects>
             <point key="canvasLocation" x="2138" y="104"/>
         </scene>
-        <!--View Controller-->
+        <!--Answer Question View Controller-->
         <scene sceneID="aMC-eI-E7V">
             <objects>
-                <viewController id="O8i-4J-MvF" sceneMemberID="viewController">
+                <viewController id="O8i-4J-MvF" customClass="AnswerQuestionViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3Ea-pJ-THc"/>
                         <viewControllerLayoutGuide type="bottom" id="fxW-YY-8sJ"/>
@@ -1200,7 +1200,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <segue destination="PG6-pU-yXr" kind="modal" id="kJU-YJ-2Rw"/>
+                        <segue destination="PG6-pU-yXr" kind="modal" identifier="toGameResult" id="kJU-YJ-2Rw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3X-Dd-veH" userLabel="First Responder" sceneMemberID="firstResponder"/>

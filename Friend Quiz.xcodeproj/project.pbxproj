@@ -19,6 +19,7 @@
 		AAA1675318B5C1A100E4495D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA1675218B5C1A100E4495D /* FacebookSDK.framework */; };
 		AAC95D4B18BEACD6003D72F9 /* ExternalQuestionPack.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC95D4A18BEACD6003D72F9 /* ExternalQuestionPack.m */; };
 		AAC95D4E18BEBF17003D72F9 /* GameResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC95D4D18BEBF17003D72F9 /* GameResultViewController.m */; };
+		AAC95D5118BEC159003D72F9 /* AnswerQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC95D5018BEC159003D72F9 /* AnswerQuestionViewController.m */; };
 		AAD1944D18AC39D600116E23 /* QuestionPack.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1944C18AC39D600116E23 /* QuestionPack.m */; };
 		AAD1945018AC440700116E23 /* PackSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1944F18AC440700116E23 /* PackSelectViewController.m */; };
 		AAD1945318AC452D00116E23 /* EditQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1945218AC452D00116E23 /* EditQuestionViewController.m */; };
@@ -81,6 +82,8 @@
 		AAC95D4A18BEACD6003D72F9 /* ExternalQuestionPack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalQuestionPack.m; sourceTree = "<group>"; };
 		AAC95D4C18BEBF17003D72F9 /* GameResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResultViewController.h; sourceTree = "<group>"; };
 		AAC95D4D18BEBF17003D72F9 /* GameResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameResultViewController.m; sourceTree = "<group>"; };
+		AAC95D4F18BEC159003D72F9 /* AnswerQuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerQuestionViewController.h; sourceTree = "<group>"; };
+		AAC95D5018BEC159003D72F9 /* AnswerQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerQuestionViewController.m; sourceTree = "<group>"; };
 		AAD1944B18AC39D600116E23 /* QuestionPack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionPack.h; sourceTree = "<group>"; };
 		AAD1944C18AC39D600116E23 /* QuestionPack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionPack.m; sourceTree = "<group>"; };
 		AAD1944E18AC440700116E23 /* PackSelectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackSelectViewController.h; sourceTree = "<group>"; };
@@ -192,6 +195,8 @@
 				EBA5EF1F18ADC49000493FBF /* MainViewController.m */,
 				EB9B1886189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.h */,
 				EB9B1887189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.m */,
+				AAC95D4F18BEC159003D72F9 /* AnswerQuestionViewController.h */,
+				AAC95D5018BEC159003D72F9 /* AnswerQuestionViewController.m */,
 				AAC95D4C18BEBF17003D72F9 /* GameResultViewController.h */,
 				AAC95D4D18BEBF17003D72F9 /* GameResultViewController.m */,
 				AAD1949E18AC572500116E23 /* SendRequestViewController.h */,
@@ -409,6 +414,7 @@
 				7AF8C866189B77C30098E573 /* ChooseQuestionPacks.m in Sources */,
 				AAD1944D18AC39D600116E23 /* QuestionPack.m in Sources */,
 				AAC95D4B18BEACD6003D72F9 /* ExternalQuestionPack.m in Sources */,
+				AAC95D5118BEC159003D72F9 /* AnswerQuestionViewController.m in Sources */,
 				EB9B188E189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m in Sources */,
 				7AFEE0AD189C591900D84FA3 /* question.m in Sources */,
 				7AFEE0B0189C5AF500D84FA3 /* CategoryTV.m in Sources */,
