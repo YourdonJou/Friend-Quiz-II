@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
+#import "MainViewController.h"
+
 @interface SendRequestViewController : UIViewController
+- (IBAction)testbutton:(id)sender;
 
 @end

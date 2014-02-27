@@ -500,7 +500,7 @@
         <!--Main View Controller - Main Menu-->
         <scene sceneID="NSl-Ow-SN2">
             <objects>
-                <viewController id="DtT-uW-E79" customClass="MainViewController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainVC" id="DtT-uW-E79" customClass="MainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kV1-iX-DCe"/>
                         <viewControllerLayoutGuide type="bottom" id="mlZ-OS-l9b"/>
@@ -956,6 +956,9 @@
                                 <state key="normal" title="Test Answer Question">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="testbutton:" destination="JjB-H6-aGr" eventType="touchUpInside" id="Lm9-O1-ef9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
