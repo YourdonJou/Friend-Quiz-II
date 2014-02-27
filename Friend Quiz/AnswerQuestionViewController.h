@@ -14,6 +14,8 @@
 @interface AnswerQuestionViewController : UIViewController
 
 
+@property ExternalQuestionPack *selectedExternalQuestionPack;
+
 @property (weak, nonatomic) IBOutlet UILabel *questionTitleLabel;
 
 
