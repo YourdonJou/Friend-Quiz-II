@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="12F45" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
@@ -226,6 +226,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="DtT-uW-E79" kind="custom" customClass="SWRevealViewControllerSegue" id="9TU-ri-o1A"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="settings" id="edY-fn-ZoV">
                                         <rect key="frame" x="0.0" y="66" width="320" height="44"/>
@@ -583,7 +586,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCF-gN-2zm" customClass="FBLoginView">
+                            <view hidden="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iCF-gN-2zm" customClass="FBLoginView">
                                 <rect key="frame" x="177" y="79" width="132" height="43"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -604,7 +607,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TOE-jK-pl6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1635" y="-589"/>
+            <point key="canvasLocation" x="1717" y="-689"/>
         </scene>
         <!--Pack Select View Controller - Title-->
         <scene sceneID="iv7-Nu-f09">
@@ -1115,6 +1118,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="DvB-dC-dNk"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWy-Nw-pBr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1221,6 +1225,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Wrx-1K-Tb6"/>
                     <connections>
                         <outlet property="question1label" destination="Tdf-JX-X4g" id="bSz-bf-7ok"/>
                         <outlet property="question2label" destination="eio-2d-VEx" id="RQH-nT-Byk"/>
@@ -1577,6 +1582,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="c74-Yy-Gsx"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Jk-ud-igq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1594,6 +1600,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="9TU-ri-o1A"/>
         <segue reference="339-oy-3yD"/>
         <segue reference="fIF-Ki-DVP"/>
     </inferredMetricsTieBreakers>
