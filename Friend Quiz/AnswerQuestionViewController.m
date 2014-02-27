@@ -47,13 +47,13 @@
     // Get question detail
     questionTitleLabel.text = data.questionTitle[[QuestionPack sharedCenter].questionIndex] ;
     
-    [question1label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][0]forState:UIControlStateNormal  ];
+    //[question1label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][0]forState:UIControlStateNormal  ];
     
-    [question2label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][1]forState:UIControlStateNormal  ];
+    //[question2label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][1]forState:UIControlStateNormal  ];
     
-    [question3label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][2]forState:UIControlStateNormal  ];
+    //[question3label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][2]forState:UIControlStateNormal  ];
     
-    [question4label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][3]forState:UIControlStateNormal  ];
+    //[question4label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][3]forState:UIControlStateNormal  ];
     
     
 }
