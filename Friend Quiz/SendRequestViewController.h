@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 #import "MainViewController.h"
+#import "QuestionPack.h"
 
 @interface SendRequestViewController : UIViewController
 - (IBAction)testbutton:(id)sender;

@@ -565,7 +565,7 @@
                                                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                     </state>
                                                     <connections>
-                                                        <segue destination="RZB-gW-PDA" kind="modal" id="Tt0-qU-8Js"/>
+                                                        <segue destination="RZB-gW-PDA" kind="push" id="Tt0-qU-8Js"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -951,9 +951,9 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUN-qU-kXt">
-                                <rect key="frame" x="86" y="269" width="149" height="30"/>
+                                <rect key="frame" x="86" y="269" width="141" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Test Answer Question">
+                                <state key="normal" title="Go Back (for testing)">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1109,7 +1109,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="O8i-4J-MvF" kind="modal" id="fIF-Ki-DVP"/>
+                                    <segue destination="O8i-4J-MvF" kind="push" id="fIF-Ki-DVP"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1153,7 +1153,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="O8i-4J-MvF" kind="modal" identifier="toSelf" id="lOF-Ag-eRR"/>
+                                    <segue destination="O8i-4J-MvF" kind="push" identifier="toSelf" id="lOF-Ag-eRR"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Timer:  07" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZO-A0-nE5">
@@ -1227,7 +1227,7 @@
                         <outlet property="question3label" destination="Mg6-kI-ei6" id="yl4-4h-8Lj"/>
                         <outlet property="question4label" destination="VjE-w7-ghI" id="3Qb-4P-Duh"/>
                         <outlet property="questionTitleLabel" destination="5nz-de-DQc" id="Of4-vT-dDg"/>
-                        <segue destination="PG6-pU-yXr" kind="modal" identifier="toGameResult" id="kJU-YJ-2Rw"/>
+                        <segue destination="PG6-pU-yXr" kind="push" identifier="toGameResult" id="kJU-YJ-2Rw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="c3X-Dd-veH" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1564,6 +1564,16 @@
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKT-Kd-8pb">
+                                <rect key="frame" x="94" y="528" width="141" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go Back (for testing)">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="gobacktestbutton:" destination="PG6-pU-yXr" eventType="touchUpInside" id="KYt-mq-03Z"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>

@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "QuestionPack.h"
 
 
 @interface GameResultViewController : UIViewController
+
+- (IBAction)gobacktestbutton:(id)sender;
 
 @end

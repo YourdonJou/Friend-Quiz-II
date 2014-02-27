@@ -45,15 +45,16 @@
     selectedExternalQuestionPack = data;
     
     // Get question detail
+    
     questionTitleLabel.text = data.questionTitle[[QuestionPack sharedCenter].questionIndex] ;
     
-    //[question1label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][0]forState:UIControlStateNormal  ];
+    [question1label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][0]forState:UIControlStateNormal  ];
     
-    //[question2label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][1]forState:UIControlStateNormal  ];
+    [question2label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][1]forState:UIControlStateNormal  ];
     
-    //[question3label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][2]forState:UIControlStateNormal  ];
+    [question3label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][2]forState:UIControlStateNormal  ];
     
-    //[question4label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][3]forState:UIControlStateNormal  ];
+    [question4label setTitle:[data.questionAnswers objectAtIndex:[QuestionPack sharedCenter].questionIndex][3]forState:UIControlStateNormal  ];
     
     
 }
@@ -67,8 +68,11 @@
 
 - (void)exitToNextVCCheck
 {
+    
+    [QuestionPack sharedCenter].questionIndex ++;
+    
     // Exit Condition
-    if([QuestionPack sharedCenter].questionIndex == 4)
+    if([QuestionPack sharedCenter].questionIndex == 5)
     {
         [self performSegueWithIdentifier:@"toGameResult" sender:nil];
     }
@@ -78,7 +82,7 @@
     }
     
     
-    [QuestionPack sharedCenter].questionIndex ++;
+    
 }
 
 - (IBAction)question1button:(id)sender
