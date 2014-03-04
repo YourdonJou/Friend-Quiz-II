@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		7A14A31A189B7029008FAEC7 /* GameStart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14A319189B7029008FAEC7 /* GameStart.m */; };
+		7A1C069718C2FFD00055729C /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A1C069618C2FFD00055729C /* FacebookSDK.framework */; };
+		7A1C069B18C3005C0055729C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1C069818C3005C0055729C /* Default-568h@2x.png */; };
+		7A1C069C18C3005C0055729C /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1C069918C3005C0055729C /* Default.png */; };
+		7A1C069D18C3005C0055729C /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1C069A18C3005C0055729C /* Default@2x.png */; };
+		7A1C069F18C3024E0055729C /* award-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 7A1C069E18C3024E0055729C /* award-icon.png */; };
 		7AF8C866189B77C30098E573 /* ChooseQuestionPacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8C865189B77C30098E573 /* ChooseQuestionPacks.m */; };
 		7AF8C86C189B7AC30098E573 /* AnswerQuestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8C86B189B7AC30098E573 /* AnswerQuestions.m */; };
 		7AFEE0A4189C4D0600D84FA3 /* background_image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFEE0A3189C4D0600D84FA3 /* background_image_2.png */; };
@@ -16,7 +21,6 @@
 		7AFEE0AD189C591900D84FA3 /* question.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0AC189C591900D84FA3 /* question.m */; };
 		7AFEE0B0189C5AF500D84FA3 /* CategoryTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0AF189C5AF500D84FA3 /* CategoryTV.m */; };
 		7AFEE0B3189C5C5D00D84FA3 /* Sendrequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0B2189C5C5D00D84FA3 /* Sendrequest.m */; };
-		AAA1675318B5C1A100E4495D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA1675218B5C1A100E4495D /* FacebookSDK.framework */; };
 		AAC95D4B18BEACD6003D72F9 /* ExternalQuestionPack.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC95D4A18BEACD6003D72F9 /* ExternalQuestionPack.m */; };
 		AAC95D4E18BEBF17003D72F9 /* GameResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC95D4D18BEBF17003D72F9 /* GameResultViewController.m */; };
 		AAC95D5118BEC159003D72F9 /* AnswerQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC95D5018BEC159003D72F9 /* AnswerQuestionViewController.m */; };
@@ -67,6 +71,11 @@
 /* Begin PBXFileReference section */
 		7A14A318189B7029008FAEC7 /* GameStart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStart.h; sourceTree = "<group>"; };
 		7A14A319189B7029008FAEC7 /* GameStart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStart.m; sourceTree = "<group>"; };
+		7A1C069618C2FFD00055729C /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		7A1C069818C3005C0055729C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../../documents-export-2014-02-28/Default-568h@2x.png"; sourceTree = "<group>"; };
+		7A1C069918C3005C0055729C /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "../../documents-export-2014-02-28/Default.png"; sourceTree = "<group>"; };
+		7A1C069A18C3005C0055729C /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../../documents-export-2014-02-28/Default@2x.png"; sourceTree = "<group>"; };
+		7A1C069E18C3024E0055729C /* award-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "award-icon.png"; path = "../../../../Downloads/award-icon.png"; sourceTree = "<group>"; };
 		7AF8C864189B77C30098E573 /* ChooseQuestionPacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseQuestionPacks.h; sourceTree = "<group>"; };
 		7AF8C865189B77C30098E573 /* ChooseQuestionPacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseQuestionPacks.m; sourceTree = "<group>"; };
 		7AF8C86A189B7AC30098E573 /* AnswerQuestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerQuestions.h; sourceTree = "<group>"; };
@@ -82,7 +91,6 @@
 		7AFEE0AF189C5AF500D84FA3 /* CategoryTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTV.m; sourceTree = "<group>"; };
 		7AFEE0B1189C5C5D00D84FA3 /* Sendrequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sendrequest.h; sourceTree = "<group>"; };
 		7AFEE0B2189C5C5D00D84FA3 /* Sendrequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sendrequest.m; sourceTree = "<group>"; };
-		AAA1675218B5C1A100E4495D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		AAC95D4918BEACD6003D72F9 /* ExternalQuestionPack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalQuestionPack.h; sourceTree = "<group>"; };
 		AAC95D4A18BEACD6003D72F9 /* ExternalQuestionPack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalQuestionPack.m; sourceTree = "<group>"; };
 		AAC95D4C18BEBF17003D72F9 /* GameResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResultViewController.h; sourceTree = "<group>"; };
@@ -146,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9B187A189A1F51001E9D60 /* CoreGraphics.framework in Frameworks */,
-				AAA1675318B5C1A100E4495D /* FacebookSDK.framework in Frameworks */,
+				7A1C069718C2FFD00055729C /* FacebookSDK.framework in Frameworks */,
 				EB9B187C189A1F51001E9D60 /* UIKit.framework in Frameworks */,
 				EB9B1878189A1F51001E9D60 /* Foundation.framework in Frameworks */,
 			);
@@ -168,6 +176,7 @@
 		EB96185218C03B460047862A /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				7A1C069E18C3024E0055729C /* award-icon.png */,
 				EB96185318C03B460047862A /* help-icon1.png */,
 				EB96185418C03B460047862A /* home-icon.png */,
 				EB96185518C03B460047862A /* profile-icon.png */,
@@ -199,7 +208,7 @@
 		EB9B1876189A1F51001E9D60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AAA1675218B5C1A100E4495D /* FacebookSDK.framework */,
+				7A1C069618C2FFD00055729C /* FacebookSDK.framework */,
 				EB9B1877189A1F51001E9D60 /* Foundation.framework */,
 				EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */,
 				EB9B187B189A1F51001E9D60 /* UIKit.framework */,
@@ -310,6 +319,9 @@
 		EBA5EF3718B5CE6000493FBF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7A1C069818C3005C0055729C /* Default-568h@2x.png */,
+				7A1C069918C3005C0055729C /* Default.png */,
+				7A1C069A18C3005C0055729C /* Default@2x.png */,
 				EB96185218C03B460047862A /* icons */,
 				EBA5EF3818B5CE7900493FBF /* menu.png */,
 			);
@@ -395,11 +407,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AFEE0A4189C4D0600D84FA3 /* background_image_2.png in Resources */,
+				7A1C069B18C3005C0055729C /* Default-568h@2x.png in Resources */,
 				EB96185B18C03B460047862A /* setting-icon.png in Resources */,
 				EB96185918C03B460047862A /* home-icon.png in Resources */,
+				7A1C069D18C3005C0055729C /* Default@2x.png in Resources */,
 				EB96185A18C03B460047862A /* profile-icon.png in Resources */,
+				7A1C069F18C3024E0055729C /* award-icon.png in Resources */,
 				EBA5EF3918B5CE7900493FBF /* menu.png in Resources */,
 				EB9B1890189A1F52001E9D60 /* Images.xcassets in Resources */,
+				7A1C069C18C3005C0055729C /* Default.png in Resources */,
 				EB9B1882189A1F51001E9D60 /* InfoPlist.strings in Resources */,
 				EB9B188B189A1F52001E9D60 /* Main.storyboard in Resources */,
 				EB96185818C03B460047862A /* help-icon1.png in Resources */,
@@ -572,13 +588,14 @@
 		EB9B18A7189A1F52001E9D60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nhiem Truong (W2XDW9MWKK)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/christianretureta/Documents/FacebookSDK,
 					"/Users/yourdonjou/Desktop/INFO-4290-Friend-Quiz",
 					"/Users/yourdonjou/Desktop/Friend-Quiz-II",
+					/Users/nhiemtruong/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Friend Quiz/Friend Quiz-Prefix.pch";
@@ -591,13 +608,14 @@
 		EB9B18A8189A1F52001E9D60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nhiem Truong (W2XDW9MWKK)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/christianretureta/Documents/FacebookSDK,
 					"/Users/yourdonjou/Desktop/INFO-4290-Friend-Quiz",
 					"/Users/yourdonjou/Desktop/Friend-Quiz-II",
+					/Users/nhiemtruong/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Friend Quiz/Friend Quiz-Prefix.pch";
