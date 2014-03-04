@@ -588,8 +588,11 @@
 		EB9B18A7189A1F52001E9D60 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+<<<<<<< HEAD
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nhiem Truong (W2XDW9MWKK)";
+=======
+>>>>>>> FETCH_HEAD
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/christianretureta/Documents/FacebookSDK,
@@ -608,8 +611,11 @@
 		EB9B18A8189A1F52001E9D60 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+<<<<<<< HEAD
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Nhiem Truong (W2XDW9MWKK)";
+=======
+>>>>>>> FETCH_HEAD
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					/Users/christianretureta/Documents/FacebookSDK,
