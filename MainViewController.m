@@ -60,12 +60,6 @@
     sidebarButton.target = self.revealViewController;
     sidebarButton.action = @selector(revealToggle:);
     
-    
-    [self.menuButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
-    
-    //self.menuButton.target = self.revealViewController;
-    //self.menuButton.action = @selector(revealToggle:);
-    
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 	// Do any additional setup after loading the view.
     

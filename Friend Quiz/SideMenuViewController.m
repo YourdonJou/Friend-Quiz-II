@@ -42,15 +42,6 @@
     self.tableView.dataSource =self;
     
     
-    self.view.backgroundColor = [UIColor colorWithWhite:0.4f alpha:0.2f];
-    
-    self.tableView.separatorColor= [UIColor colorWithWhite:0.9f alpha:0.2f];
-    self.tableView.backgroundColor = [UIColor colorWithWhite:0.2f alpha:0.8f];
-                    
-     
-     
-    
-    
     //menuItems = [[NSArray alloc]init];
    
     menuChoices = @[@"status", @"settings", @"profile", @"awards", @"help"];
@@ -81,21 +72,6 @@
     return [menuChoices count];
 }
 
-//table view will draw the cell
--(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath
-{
- 
-    //change the background color of each cell
-    [cell setBackgroundColor:[UIColor colorWithWhite:0.3f alpha:0.2f]];
-    
-    
-    self.tableView.separatorColor= [UIColor colorWithWhite:0.9f alpha:0.2f];
-    
-
-
-    
-    
-}
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *CellIdentifier = [menuChoices objectAtIndex:indexPath.row];
