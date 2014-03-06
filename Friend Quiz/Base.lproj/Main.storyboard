@@ -591,6 +591,13 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qow-Ac-yvM">
+                                <rect key="frame" x="15" y="9" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="setting-icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -598,6 +605,7 @@
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="xFv-IJ-g49"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="barButton" destination="Qow-Ac-yvM" id="n5b-aM-zjY"/>
                         <outlet property="loginView2" destination="iCF-gN-2zm" id="wVd-KM-W0L"/>
                         <outlet property="nameLabel" destination="Npq-X6-ESr" id="z7n-2W-0CV"/>
                         <outlet property="pictureView" destination="ZMb-c7-XXC" id="pd9-EY-253"/>
@@ -1592,6 +1600,7 @@
     <resources>
         <image name="background_image_2.png" width="640" height="1136"/>
         <image name="menu.png" width="28" height="20"/>
+        <image name="setting-icon.png" width="44" height="44"/>
     </resources>
     <color key="tintColor" red="0.071725457493733449" green="0.19669828818274959" blue="0.45108695652173914" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

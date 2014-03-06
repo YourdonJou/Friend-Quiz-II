@@ -20,5 +20,6 @@
 @property (strong, nonatomic) IBOutlet FBProfilePictureView *pictureView;
 @property (strong, nonatomic) IBOutlet UILabel *nameLabel;
 @property (strong, nonatomic) IBOutlet FBLoginView *loginView2;
+@property (strong, nonatomic) IBOutlet UIButton *barButton;
 
 @end

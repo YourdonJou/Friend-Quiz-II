@@ -19,7 +19,7 @@
 @implementation MainViewController
 
 
-@synthesize sidebarButton, nameLabel, pictureView,loginView2, arrayReceivedRequest;
+@synthesize sidebarButton, nameLabel, pictureView,loginView2, arrayReceivedRequest, barButton;
 
 
 
@@ -45,6 +45,7 @@
         
         [self performSegueWithIdentifier:@"gameSegue" sender:self];
         
+        
     }
 }
 
@@ -57,8 +58,9 @@
     
     loginView2.delegate = self;
     
-    sidebarButton.target = self.revealViewController;
-    sidebarButton.action = @selector(revealToggle:);
+    [barButton targetForAction:@selector(revealToggle:) withSender:self.revealViewController];
+   // barButton.target = self.revealViewController;
+    //barButton.action = @selector(revealToggle:);
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 	// Do any additional setup after loading the view.

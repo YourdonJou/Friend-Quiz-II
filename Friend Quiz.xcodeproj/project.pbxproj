@@ -25,6 +25,11 @@
 		AAD1945318AC452D00116E23 /* EditQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1945218AC452D00116E23 /* EditQuestionViewController.m */; };
 		AAD194A018AC572500116E23 /* SendRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1949F18AC572500116E23 /* SendRequestViewController.m */; };
 		EB96185118BC45BB0047862A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB96185018BC45BA0047862A /* TestViewController.m */; };
+		EB96186318C8180C0047862A /* help-icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96185E18C8180B0047862A /* help-icon1.png */; };
+		EB96186418C8180C0047862A /* home-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96185F18C8180B0047862A /* home-icon.png */; };
+		EB96186518C8180C0047862A /* profile-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96186018C8180B0047862A /* profile-icon.png */; };
+		EB96186618C8180C0047862A /* setting-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96186118C8180B0047862A /* setting-icon.png */; };
+		EB96186718C8180C0047862A /* tatistic-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96186218C8180B0047862A /* tatistic-icon.png */; };
 		EB9B1878189A1F51001E9D60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B1877189A1F51001E9D60 /* Foundation.framework */; };
 		EB9B187A189A1F51001E9D60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */; };
 		EB9B187C189A1F51001E9D60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B187B189A1F51001E9D60 /* UIKit.framework */; };
@@ -94,6 +99,11 @@
 		AAD1949F18AC572500116E23 /* SendRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendRequestViewController.m; sourceTree = "<group>"; };
 		EB96184F18BC45BA0047862A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		EB96185018BC45BA0047862A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		EB96185E18C8180B0047862A /* help-icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-icon1.png"; sourceTree = "<group>"; };
+		EB96185F18C8180B0047862A /* home-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-icon.png"; sourceTree = "<group>"; };
+		EB96186018C8180B0047862A /* profile-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-icon.png"; sourceTree = "<group>"; };
+		EB96186118C8180B0047862A /* setting-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-icon.png"; sourceTree = "<group>"; };
+		EB96186218C8180B0047862A /* tatistic-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tatistic-icon.png"; sourceTree = "<group>"; };
 		EB9B1874189A1F51001E9D60 /* Friend Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friend Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9B1877189A1F51001E9D60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +165,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EB96185D18C8180B0047862A /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				EB96185E18C8180B0047862A /* help-icon1.png */,
+				EB96185F18C8180B0047862A /* home-icon.png */,
+				EB96186018C8180B0047862A /* profile-icon.png */,
+				EB96186118C8180B0047862A /* setting-icon.png */,
+				EB96186218C8180B0047862A /* tatistic-icon.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
 		EB9B186B189A1F50001E9D60 = {
 			isa = PBXGroup;
 			children = (
@@ -288,6 +310,7 @@
 		EBA5EF3718B5CE6000493FBF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EB96185D18C8180B0047862A /* icons */,
 				EBA5EF3818B5CE7900493FBF /* menu.png */,
 			);
 			name = Images;
@@ -372,10 +395,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AFEE0A4189C4D0600D84FA3 /* background_image_2.png in Resources */,
+				EB96186618C8180C0047862A /* setting-icon.png in Resources */,
+				EB96186418C8180C0047862A /* home-icon.png in Resources */,
+				EB96186518C8180C0047862A /* profile-icon.png in Resources */,
 				EBA5EF3918B5CE7900493FBF /* menu.png in Resources */,
 				EB9B1890189A1F52001E9D60 /* Images.xcassets in Resources */,
 				EB9B1882189A1F51001E9D60 /* InfoPlist.strings in Resources */,
 				EB9B188B189A1F52001E9D60 /* Main.storyboard in Resources */,
+				EB96186318C8180C0047862A /* help-icon1.png in Resources */,
+				EB96186718C8180C0047862A /* tatistic-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
