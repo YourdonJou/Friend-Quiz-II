@@ -10,5 +10,6 @@
 
 @interface SettingsViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *listButton;
+@property (strong, nonatomic) IBOutlet UIButton *barbutton;
 
 @end

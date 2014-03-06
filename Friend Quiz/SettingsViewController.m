@@ -15,6 +15,7 @@
 
 @implementation SettingsViewController
 
+@synthesize barbutton;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -32,6 +33,8 @@
     self.listButton.target = self.revealViewController;
     
     self.listButton.action = @selector(revealToggle:);
+    
+    [barbutton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
     
 
  

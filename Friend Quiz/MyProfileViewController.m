@@ -14,7 +14,7 @@
 @end
 
 @implementation MyProfileViewController
-
+@synthesize barButton;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -31,12 +31,13 @@
     
    // _sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
     
+    [barButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
 
 
-    _listButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
-    _listButton.target = self.revealViewController;
+  //  _listButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
+  //  _listButton.target = self.revealViewController;
     
-    _listButton.action = @selector(revealToggle:);
+   // _listButton.action = @selector(revealToggle:);
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 	// Do any additional setup after loading the view.

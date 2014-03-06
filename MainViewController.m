@@ -57,8 +57,9 @@
     [FBProfilePictureView class];
     
     loginView2.delegate = self;
+
     
-    [barButton targetForAction:@selector(revealToggle:) withSender:self.revealViewController];
+    [barButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
    // barButton.target = self.revealViewController;
     //barButton.action = @selector(revealToggle:);
     

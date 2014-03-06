@@ -30,6 +30,7 @@
 		EB96186518C8180C0047862A /* profile-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96186018C8180B0047862A /* profile-icon.png */; };
 		EB96186618C8180C0047862A /* setting-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96186118C8180B0047862A /* setting-icon.png */; };
 		EB96186718C8180C0047862A /* tatistic-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96186218C8180B0047862A /* tatistic-icon.png */; };
+		EB96186918C81AF10047862A /* award-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96186818C81AF10047862A /* award-icon.png */; };
 		EB9B1878189A1F51001E9D60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B1877189A1F51001E9D60 /* Foundation.framework */; };
 		EB9B187A189A1F51001E9D60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */; };
 		EB9B187C189A1F51001E9D60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B187B189A1F51001E9D60 /* UIKit.framework */; };
@@ -104,6 +105,7 @@
 		EB96186018C8180B0047862A /* profile-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "profile-icon.png"; sourceTree = "<group>"; };
 		EB96186118C8180B0047862A /* setting-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-icon.png"; sourceTree = "<group>"; };
 		EB96186218C8180B0047862A /* tatistic-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tatistic-icon.png"; sourceTree = "<group>"; };
+		EB96186818C81AF10047862A /* award-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "award-icon.png"; sourceTree = "<group>"; };
 		EB9B1874189A1F51001E9D60 /* Friend Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friend Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9B1877189A1F51001E9D60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -168,6 +170,7 @@
 		EB96185D18C8180B0047862A /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				EB96186818C81AF10047862A /* award-icon.png */,
 				EB96185E18C8180B0047862A /* help-icon1.png */,
 				EB96185F18C8180B0047862A /* home-icon.png */,
 				EB96186018C8180B0047862A /* profile-icon.png */,
@@ -394,6 +397,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB96186918C81AF10047862A /* award-icon.png in Resources */,
 				7AFEE0A4189C4D0600D84FA3 /* background_image_2.png in Resources */,
 				EB96186618C8180C0047862A /* setting-icon.png in Resources */,
 				EB96186418C8180C0047862A /* home-icon.png in Resources */,

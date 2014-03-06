@@ -10,5 +10,6 @@
 
 @interface MyProfileViewController : UIViewController
 
-@property (strong, nonatomic) IBOutlet UIBarButtonItem *listButton;
+@property (strong, nonatomic) IBOutlet UIButton *barButton;
+
 @end
