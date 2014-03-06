@@ -31,6 +31,8 @@
 		EB96186618C8180C0047862A /* setting-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96186118C8180B0047862A /* setting-icon.png */; };
 		EB96186718C8180C0047862A /* tatistic-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96186218C8180B0047862A /* tatistic-icon.png */; };
 		EB96186918C81AF10047862A /* award-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96186818C81AF10047862A /* award-icon.png */; };
+		EB96186C18C820F80047862A /* AwardsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB96186B18C820F80047862A /* AwardsViewController.m */; };
+		EB96186F18C821C80047862A /* StatusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB96186E18C821C80047862A /* StatusViewController.m */; };
 		EB9B1878189A1F51001E9D60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B1877189A1F51001E9D60 /* Foundation.framework */; };
 		EB9B187A189A1F51001E9D60 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */; };
 		EB9B187C189A1F51001E9D60 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB9B187B189A1F51001E9D60 /* UIKit.framework */; };
@@ -106,6 +108,10 @@
 		EB96186118C8180B0047862A /* setting-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "setting-icon.png"; sourceTree = "<group>"; };
 		EB96186218C8180B0047862A /* tatistic-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "tatistic-icon.png"; sourceTree = "<group>"; };
 		EB96186818C81AF10047862A /* award-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "award-icon.png"; sourceTree = "<group>"; };
+		EB96186A18C820F80047862A /* AwardsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AwardsViewController.h; sourceTree = "<group>"; };
+		EB96186B18C820F80047862A /* AwardsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AwardsViewController.m; sourceTree = "<group>"; };
+		EB96186D18C821C80047862A /* StatusViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusViewController.h; sourceTree = "<group>"; };
+		EB96186E18C821C80047862A /* StatusViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusViewController.m; sourceTree = "<group>"; };
 		EB9B1874189A1F51001E9D60 /* Friend Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Friend Quiz.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB9B1877189A1F51001E9D60 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -180,6 +186,43 @@
 			path = icons;
 			sourceTree = "<group>";
 		};
+		EB96187018C821DC0047862A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EB9B1889189A1F52001E9D60 /* Main.storyboard */,
+				EBA5EF1E18ADC49000493FBF /* MainViewController.h */,
+				AAC95D4F18BEC159003D72F9 /* AnswerQuestionViewController.h */,
+				AAC95D5018BEC159003D72F9 /* AnswerQuestionViewController.m */,
+				AAC95D4C18BEBF17003D72F9 /* GameResultViewController.h */,
+				AAC95D4D18BEBF17003D72F9 /* GameResultViewController.m */,
+				AAD1949E18AC572500116E23 /* SendRequestViewController.h */,
+				AAD1949F18AC572500116E23 /* SendRequestViewController.m */,
+				AAD1945118AC452D00116E23 /* EditQuestionViewController.h */,
+				AAD1945218AC452D00116E23 /* EditQuestionViewController.m */,
+				AAD1944E18AC440700116E23 /* PackSelectViewController.h */,
+				AAD1944F18AC440700116E23 /* PackSelectViewController.m */,
+				EBA5EF1F18ADC49000493FBF /* MainViewController.m */,
+				EB96186D18C821C80047862A /* StatusViewController.h */,
+				EB96186E18C821C80047862A /* StatusViewController.m */,
+				EB96186A18C820F80047862A /* AwardsViewController.h */,
+				EB96186B18C820F80047862A /* AwardsViewController.m */,
+				EBA5EF2E18B5CD4F00493FBF /* SettingsViewController.h */,
+				EBA5EF2F18B5CD4F00493FBF /* SettingsViewController.m */,
+				EBA5EF3118B5CD6100493FBF /* MyProfileViewController.h */,
+				EBA5EF3218B5CD6100493FBF /* MyProfileViewController.m */,
+				EBA5EF3418B5CD6E00493FBF /* HelpMenuViewController.h */,
+				EBA5EF3518B5CD6E00493FBF /* HelpMenuViewController.m */,
+				EBA5EF0E18A9E4D400493FBF /* MainMenuViewController.h */,
+				EBA5EF0F18A9E4D400493FBF /* MainMenuViewController.m */,
+				EBA5EF1418ADB97200493FBF /* SideMenuViewController.h */,
+				EB96184F18BC45BA0047862A /* TestViewController.h */,
+				EB96185018BC45BA0047862A /* TestViewController.m */,
+				EBA5EF2118B161CC00493FBF /* SWRevealViewController.h */,
+				EBA5EF2218B161CC00493FBF /* SWRevealViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		EB9B186B189A1F50001E9D60 = {
 			isa = PBXGroup;
 			children = (
@@ -215,36 +258,14 @@
 			isa = PBXGroup;
 			children = (
 				EBA5EF1718ADC22900493FBF /* Libraries */,
-				7AFEE0A3189C4D0600D84FA3 /* background_image_2.png */,
-				EBA5EF1E18ADC49000493FBF /* MainViewController.h */,
-				EBA5EF1F18ADC49000493FBF /* MainViewController.m */,
 				EB9B1886189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.h */,
 				EB9B1887189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.m */,
-				AAC95D4F18BEC159003D72F9 /* AnswerQuestionViewController.h */,
-				AAC95D5018BEC159003D72F9 /* AnswerQuestionViewController.m */,
-				AAC95D4C18BEBF17003D72F9 /* GameResultViewController.h */,
-				AAC95D4D18BEBF17003D72F9 /* GameResultViewController.m */,
-				AAD1949E18AC572500116E23 /* SendRequestViewController.h */,
-				AAD1949F18AC572500116E23 /* SendRequestViewController.m */,
-				AAD1945118AC452D00116E23 /* EditQuestionViewController.h */,
-				AAD1945218AC452D00116E23 /* EditQuestionViewController.m */,
-				AAD1944E18AC440700116E23 /* PackSelectViewController.h */,
-				AAD1944F18AC440700116E23 /* PackSelectViewController.m */,
 				AAC95D4918BEACD6003D72F9 /* ExternalQuestionPack.h */,
 				AAC95D4A18BEACD6003D72F9 /* ExternalQuestionPack.m */,
 				AAD1944B18AC39D600116E23 /* QuestionPack.h */,
 				AAD1944C18AC39D600116E23 /* QuestionPack.m */,
-				EBA5EF2E18B5CD4F00493FBF /* SettingsViewController.h */,
-				EBA5EF2F18B5CD4F00493FBF /* SettingsViewController.m */,
-				EBA5EF3118B5CD6100493FBF /* MyProfileViewController.h */,
-				EBA5EF3218B5CD6100493FBF /* MyProfileViewController.m */,
-				EBA5EF3418B5CD6E00493FBF /* HelpMenuViewController.h */,
-				EBA5EF3518B5CD6E00493FBF /* HelpMenuViewController.m */,
 				EB9B188C189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.h */,
 				EB9B188D189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m */,
-				EBA5EF0E18A9E4D400493FBF /* MainMenuViewController.h */,
-				EBA5EF0F18A9E4D400493FBF /* MainMenuViewController.m */,
-				EBA5EF1418ADB97200493FBF /* SideMenuViewController.h */,
 				EBA5EF1518ADB97200493FBF /* SideMenuViewController.m */,
 				7A14A318189B7029008FAEC7 /* GameStart.h */,
 				7A14A319189B7029008FAEC7 /* GameStart.m */,
@@ -300,12 +321,8 @@
 		EBA5EF1718ADC22900493FBF /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
+				EB96187018C821DC0047862A /* ViewControllers */,
 				EBA5EF3718B5CE6000493FBF /* Images */,
-				EBA5EF2118B161CC00493FBF /* SWRevealViewController.h */,
-				EBA5EF2218B161CC00493FBF /* SWRevealViewController.m */,
-				EB9B1889189A1F52001E9D60 /* Main.storyboard */,
-				EB96184F18BC45BA0047862A /* TestViewController.h */,
-				EB96185018BC45BA0047862A /* TestViewController.m */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -313,6 +330,7 @@
 		EBA5EF3718B5CE6000493FBF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				7AFEE0A3189C4D0600D84FA3 /* background_image_2.png */,
 				EB96185D18C8180B0047862A /* icons */,
 				EBA5EF3818B5CE7900493FBF /* menu.png */,
 			);
@@ -446,12 +464,14 @@
 				7AF8C866189B77C30098E573 /* ChooseQuestionPacks.m in Sources */,
 				AAD1944D18AC39D600116E23 /* QuestionPack.m in Sources */,
 				AAC95D4B18BEACD6003D72F9 /* ExternalQuestionPack.m in Sources */,
+				EB96186F18C821C80047862A /* StatusViewController.m in Sources */,
 				AAC95D5118BEC159003D72F9 /* AnswerQuestionViewController.m in Sources */,
 				EB9B188E189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m in Sources */,
 				7AFEE0AD189C591900D84FA3 /* question.m in Sources */,
 				7AFEE0B0189C5AF500D84FA3 /* CategoryTV.m in Sources */,
 				EB96185118BC45BB0047862A /* TestViewController.m in Sources */,
 				AAC95D4E18BEBF17003D72F9 /* GameResultViewController.m in Sources */,
+				EB96186C18C820F80047862A /* AwardsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

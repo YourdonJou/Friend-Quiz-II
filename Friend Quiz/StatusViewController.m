@@ -1,20 +1,20 @@
 //
-//  HelpMenuViewController.m
+//  StatusViewController.m
 //  Friend Quiz
 //
-//  Created by Christian Retureta on 2014-02-19.
+//  Created by Christian Retureta on 2014-03-05.
 //  Copyright (c) 2014 Christian Retureta. All rights reserved.
 //
 
-#import "HelpMenuViewController.h"
 #import "SWRevealViewController.h"
+#import "StatusViewController.h"
 
-@interface HelpMenuViewController ()
+@interface StatusViewController ()
 
 @end
 
-@implementation HelpMenuViewController
-@synthesize barButton;
+@implementation StatusViewController
+@synthesize sideMenuButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,9 +30,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    //initialize the bar button to show the side menu
-    
-    [barButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
+    [sideMenuButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning

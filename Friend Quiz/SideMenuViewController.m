@@ -41,10 +41,16 @@
     self.tableView.delegate = self;
     self.tableView.dataSource =self;
     
+    self.view.backgroundColor = [UIColor colorWithWhite:1.9f alpha:0.3f];
     
+    //Add the colour to the table view
+
+    self.tableView.backgroundColor = [UIColor colorWithWhite:1.9f alpha:0.3f];
+    
+    self.tableView.separatorColor = [UIColor colorWithWhite:0.3f alpha:0.3f];
     //menuItems = [[NSArray alloc]init];
    
-    menuChoices = @[@"status", @"settings", @"profile", @"awards", @"help"];
+    menuChoices = @[@"home",@"status", @"settings", @"profile", @"awards", @"help"];
   //  menuItems = @[@"Your Status", @"Settings", @"My Profile", @"My Awards", @"Help"];
 	// Do any additional setup after loading the view.
     
@@ -110,7 +116,17 @@
     return cell;
 }
 
-
+//method to set the cell color and table view separator color
+-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    [cell setBackgroundColor:[UIColor colorWithWhite:0.1f alpha:0.3f]];
+    
+    
+    self.tableView.separatorColor = [UIColor colorWithWhite:0.8f alpha:0.3f];
+    
+    
+    
+}
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     
