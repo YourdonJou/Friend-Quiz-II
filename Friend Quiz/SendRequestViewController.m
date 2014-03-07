@@ -41,6 +41,21 @@
     
     [QuestionPack sharedCenter].questionIndex = 0;
     
-    [self.navigationController popToViewController:[[self.navigationController viewControllers] objectAtIndex:0] animated:YES];
+   // [self.navigationController popToViewController:[[self.navigationController viewControllers] objectAtIndex:0] animated:YES];
+    
+    
+    [FBWebDialogs
+     
+     presentRequestsDialogModallyWithSession:nil
+     
+     message:@"Send request to your friends"
+     
+     title:@"Send Request"
+     
+     parameters:nil
+     
+     handler:^(FBWebDialogResult result, NSURL *resultURL, NSError *error) {}
+     
+     ];
 }
 @end

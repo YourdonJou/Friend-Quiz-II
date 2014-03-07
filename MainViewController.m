@@ -73,6 +73,13 @@
         
     }
     
+    if([FBSession activeSession].state == FBSessionStateCreatedTokenLoaded){
+        
+        
+        [self performSegueWithIdentifier:@"gameSegue" sender:self];
+        
+        
+    }
     
     
     //Test Code
