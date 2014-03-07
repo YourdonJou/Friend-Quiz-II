@@ -13,5 +13,11 @@
 
 @interface SendRequestViewController : UIViewController
 - (IBAction)testbutton:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *requestBtn;
+@property (strong, nonatomic) IBOutlet UIButton *shareButton;
+
+- (IBAction)requestBtnTouched:(id)sender;
+
+- (IBAction)shareTouched:(id)sender;
 
 @end

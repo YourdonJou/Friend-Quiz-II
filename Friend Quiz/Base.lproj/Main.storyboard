@@ -1066,6 +1066,9 @@
                                 <state key="normal" title="Send Request">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="requestBtnTouched:" destination="JjB-H6-aGr" eventType="touchUpInside" id="gGp-TL-2w8"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uUN-qU-kXt">
                                 <rect key="frame" x="86" y="269" width="141" height="30"/>
@@ -1077,10 +1080,27 @@
                                     <action selector="testbutton:" destination="JjB-H6-aGr" eventType="touchUpInside" id="Lm9-O1-ef9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Dq-6i-i2R">
+                                <rect key="frame" x="20" y="376" width="280" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98927275609999998" green="1" blue="0.048747651740000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Share">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="requestBtnTouched:" destination="JjB-H6-aGr" eventType="touchUpInside" id="aOQ-LB-gtJ"/>
+                                    <action selector="shareTouched:" destination="JjB-H6-aGr" eventType="touchUpInside" id="K5X-c0-kdZ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="bRJ-Ri-GVO"/>
+                    <connections>
+                        <outlet property="requestBtn" destination="kpK-Cc-gcV" id="KbO-Jf-Eaq"/>
+                        <outlet property="shareButton" destination="0Dq-6i-i2R" id="wAE-wL-hFt"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d4U-cF-RW4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
