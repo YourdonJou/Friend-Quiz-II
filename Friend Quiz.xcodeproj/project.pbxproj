@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7A14A31A189B7029008FAEC7 /* GameStart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14A319189B7029008FAEC7 /* GameStart.m */; };
+		7A6B724F18C991B5000D5ADB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6B724E18C991B5000D5ADB /* FacebookSDK.framework */; };
 		7AF8C866189B77C30098E573 /* ChooseQuestionPacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8C865189B77C30098E573 /* ChooseQuestionPacks.m */; };
 		7AF8C86C189B7AC30098E573 /* AnswerQuestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8C86B189B7AC30098E573 /* AnswerQuestions.m */; };
 		7AFEE0A4189C4D0600D84FA3 /* background_image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFEE0A3189C4D0600D84FA3 /* background_image_2.png */; };
@@ -16,7 +17,6 @@
 		7AFEE0AD189C591900D84FA3 /* question.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0AC189C591900D84FA3 /* question.m */; };
 		7AFEE0B0189C5AF500D84FA3 /* CategoryTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0AF189C5AF500D84FA3 /* CategoryTV.m */; };
 		7AFEE0B3189C5C5D00D84FA3 /* Sendrequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0B2189C5C5D00D84FA3 /* Sendrequest.m */; };
-		AAA1675318B5C1A100E4495D /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AAA1675218B5C1A100E4495D /* FacebookSDK.framework */; };
 		AAC95D4B18BEACD6003D72F9 /* ExternalQuestionPack.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC95D4A18BEACD6003D72F9 /* ExternalQuestionPack.m */; };
 		AAC95D4E18BEBF17003D72F9 /* GameResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC95D4D18BEBF17003D72F9 /* GameResultViewController.m */; };
 		AAC95D5118BEC159003D72F9 /* AnswerQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC95D5018BEC159003D72F9 /* AnswerQuestionViewController.m */; };
@@ -70,6 +70,7 @@
 /* Begin PBXFileReference section */
 		7A14A318189B7029008FAEC7 /* GameStart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStart.h; sourceTree = "<group>"; };
 		7A14A319189B7029008FAEC7 /* GameStart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStart.m; sourceTree = "<group>"; };
+		7A6B724E18C991B5000D5ADB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
 		7AF8C864189B77C30098E573 /* ChooseQuestionPacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseQuestionPacks.h; sourceTree = "<group>"; };
 		7AF8C865189B77C30098E573 /* ChooseQuestionPacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseQuestionPacks.m; sourceTree = "<group>"; };
 		7AF8C86A189B7AC30098E573 /* AnswerQuestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerQuestions.h; sourceTree = "<group>"; };
@@ -85,7 +86,6 @@
 		7AFEE0AF189C5AF500D84FA3 /* CategoryTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTV.m; sourceTree = "<group>"; };
 		7AFEE0B1189C5C5D00D84FA3 /* Sendrequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sendrequest.h; sourceTree = "<group>"; };
 		7AFEE0B2189C5C5D00D84FA3 /* Sendrequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sendrequest.m; sourceTree = "<group>"; };
-		AAA1675218B5C1A100E4495D /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		AAC95D4918BEACD6003D72F9 /* ExternalQuestionPack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalQuestionPack.h; sourceTree = "<group>"; };
 		AAC95D4A18BEACD6003D72F9 /* ExternalQuestionPack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalQuestionPack.m; sourceTree = "<group>"; };
 		AAC95D4C18BEBF17003D72F9 /* GameResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResultViewController.h; sourceTree = "<group>"; };
@@ -154,7 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9B187A189A1F51001E9D60 /* CoreGraphics.framework in Frameworks */,
-				AAA1675318B5C1A100E4495D /* FacebookSDK.framework in Frameworks */,
+				7A6B724F18C991B5000D5ADB /* FacebookSDK.framework in Frameworks */,
 				EB9B187C189A1F51001E9D60 /* UIKit.framework in Frameworks */,
 				EB9B1878189A1F51001E9D60 /* Foundation.framework in Frameworks */,
 			);
@@ -245,7 +245,7 @@
 		EB9B1876189A1F51001E9D60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				AAA1675218B5C1A100E4495D /* FacebookSDK.framework */,
+				7A6B724E18C991B5000D5ADB /* FacebookSDK.framework */,
 				EB9B1877189A1F51001E9D60 /* Foundation.framework */,
 				EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */,
 				EB9B187B189A1F51001E9D60 /* UIKit.framework */,
@@ -603,6 +603,7 @@
 					/Users/christianretureta/Documents/FacebookSDK,
 					"/Users/yourdonjou/Desktop/INFO-4290-Friend-Quiz",
 					"/Users/yourdonjou/Desktop/Friend-Quiz-II",
+					/Users/nhiemtruong/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Friend Quiz/Friend Quiz-Prefix.pch";
@@ -622,6 +623,7 @@
 					/Users/christianretureta/Documents/FacebookSDK,
 					"/Users/yourdonjou/Desktop/INFO-4290-Friend-Quiz",
 					"/Users/yourdonjou/Desktop/Friend-Quiz-II",
+					/Users/nhiemtruong/Documents/FacebookSDK,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Friend Quiz/Friend Quiz-Prefix.pch";
