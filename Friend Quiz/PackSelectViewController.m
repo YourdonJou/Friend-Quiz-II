@@ -38,6 +38,8 @@
     
     arrayQuestionPacks = data;
     
+    
+    
     [QuestionPack sharedCenter].questionIndex = 0;
     
 }
