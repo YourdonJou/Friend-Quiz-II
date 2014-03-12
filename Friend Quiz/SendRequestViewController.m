@@ -92,7 +92,7 @@
 - (IBAction)requestBtnTouched:(id)sender {
     
     
-        NSMutableDictionary* params =   [NSMutableDictionary dictionaryWithObjectsAndKeys: nil];
+    NSMutableDictionary *params =   [NSMutableDictionary dictionaryWithObjectsAndKeys: nil];
     
     [FBWebDialogs
      presentRequestsDialogModallyWithSession:nil
