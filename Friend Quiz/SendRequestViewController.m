@@ -92,13 +92,52 @@
 - (IBAction)requestBtnTouched:(id)sender {
     
     
+        NSMutableDictionary* params =   [NSMutableDictionary dictionaryWithObjectsAndKeys: nil];
+    
     [FBWebDialogs
      presentRequestsDialogModallyWithSession:nil
-     message:@"Send Request Test"
-     title:nil
-     parameters:nil
-     handler:^(FBWebDialogResult result, NSURL *resultURL, NSError *error) {}
-     ];
+     message:@"I just invited you to play Friend Quiz! Do you want to join me?"
+     title:@"How well do you know me?"
+     parameters:params
+     handler:^(FBWebDialogResult result, NSURL *resultURL, NSError *error) {
+     
+         if (error) {
+             // Case A: Error launching the dialog or sending request.
+             NSLog(@"Error sending request.");
+         } else {
+             if (result == FBWebDialogResultDialogNotCompleted) {
+                 // Case B: User clicked the "x" icon
+                 NSLog(@"User canceled request.");
+             } else {
+                 NSLog(@"Request Sent.");
+             }
+
+         }}
+     
+  ];
+    
+
+    
+    //Code from Friend Smasher Game
+ /*   [FBWebDialogs presentRequestsDialogModallyWithSession:nil
+                                                  message:[NSString stringWithFormat:@"I just smashed %d friends! Can you beat it?", nScore]
+                                                    title:@"Smashing!"
+                                               parameters:params
+                                                  handler:^(FBWebDialogResult result, NSURL *resultURL, NSError *error) {
+                                                      if (error) {
+                                                          // Case A: Error launching the dialog or sending request.
+                                                          NSLog(@"Error sending request.");
+                                                      } else {
+                                                          if (result == FBWebDialogResultDialogNotCompleted) {
+                                                              // Case B: User clicked the "x" icon
+                                                              NSLog(@"User canceled request.");
+                                                          } else {
+                                                              NSLog(@"Request Sent.");
+                                                          }
+                                                      }}
+                                              friendCache:nil];
+  
+  */
 }
 - (IBAction)shareTouched:(id)sender {
     
