@@ -19,7 +19,7 @@
 @implementation MainViewController
 
 
-@synthesize sidebarButton, nameLabel, pictureView,loginView2, arrayReceivedRequest, barButton;
+@synthesize sidebarButton, nameLabel, pictureView,loginView2, arrayReceivedRequest, barButton, userID,userName;
 
 
 
@@ -81,8 +81,38 @@
         
     }
     
- 
-    
+   if([[FBSession activeSession]isOpen])
+   {
+       
+       //Check if we have publish permissions
+       if([FBSession.activeSession.permissions indexOfObject:@"publish_actions" ]== NSNotFound)
+       {
+           NSLog(@"Publish Permissions Not Found");
+           
+       }
+       
+       else{
+           
+           [[FBRequest requestForMe] startWithCompletionHandler:^(FBRequestConnection *connection, NSDictionary<FBGraphUser> *user, NSError *error) {
+               if (!error) {
+                   
+                   //Yourdon, you can use this code to retrieve the user ID and name and store it on the DB
+                   userName = user.name;
+                   userID = user.id;
+                   
+                  // userEmail = [user objectForKey:@"email"];
+                   //Show that the user ID and name show on the console:
+                   NSLog(@"Your User ID is %@.  \n Your user name is %@", userID,userName);
+                   
+                   //  self.emailLabel.text = [user objectForKey:@"email"];
+               }
+           }];
+
+           
+       }
+       
+   }
+    // Facebook.sess
     
     //Test Code
     NSArray *data = [[NSArray alloc]initWithObjects: @"Default Pack", @"Mix Pack", @"Easy Pack", @"Hard Pack", @"Best Friend Pack", @"Fruit Pack", @"Color Pack", @"Location Pack", nil];

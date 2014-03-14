@@ -190,7 +190,6 @@
 			isa = PBXGroup;
 			children = (
 				EB9B1889189A1F52001E9D60 /* Main.storyboard */,
-				EBA5EF1E18ADC49000493FBF /* MainViewController.h */,
 				AAC95D4F18BEC159003D72F9 /* AnswerQuestionViewController.h */,
 				AAC95D5018BEC159003D72F9 /* AnswerQuestionViewController.m */,
 				AAC95D4C18BEBF17003D72F9 /* GameResultViewController.h */,
@@ -201,6 +200,7 @@
 				AAD1945218AC452D00116E23 /* EditQuestionViewController.m */,
 				AAD1944E18AC440700116E23 /* PackSelectViewController.h */,
 				AAD1944F18AC440700116E23 /* PackSelectViewController.m */,
+				EBA5EF1E18ADC49000493FBF /* MainViewController.h */,
 				EBA5EF1F18ADC49000493FBF /* MainViewController.m */,
 				EB96186D18C821C80047862A /* StatusViewController.h */,
 				EB96186E18C821C80047862A /* StatusViewController.m */,
