@@ -15,6 +15,9 @@
 - (IBAction)testbutton:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *requestBtn;
 @property (strong, nonatomic) IBOutlet UIButton *shareButton;
+@property (strong, nonatomic) NSString *userName;
+@property (strong, nonatomic) NSString *userID;
+@property (strong,nonatomic) NSString *userEmail; 
 
 - (IBAction)requestBtnTouched:(id)sender;
 

@@ -17,7 +17,7 @@
 
 @implementation SendRequestViewController
 
-@synthesize requestBtn;
+@synthesize requestBtn, userName, userEmail,userID;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -51,6 +51,8 @@
         NSLog(@"Publish permissions not found");
     }
     
+    
+    
     else{
         
         
@@ -58,6 +60,22 @@
         NSLog(@"Publish permissions found");
 
     }
+    
+ 
+    //Retrieve user name and email address
+    [[FBRequest requestForMe] startWithCompletionHandler:^(FBRequestConnection *connection, NSDictionary<FBGraphUser> *user, NSError *error) {
+        if (!error) {
+           userName = user.name;
+            userID = user.id;
+            
+            userEmail = [user objectForKey:@"email"];
+            
+            NSLog(@"Your User ID is %@. \n Your email is %@. \n Your user name is %@", userID,userEmail,userName);
+            
+          //  self.emailLabel.text = [user objectForKey:@"email"];
+        }
+    }];
+       // Facebook.session.user.id =
    // [[FBSession activeSession] requestNewPublishPermissions:permissions defaultAudience:FBSessionDefaultAudienceFriends completionHandler:^(FBSession *session, NSError *error) {
         NSLog(@"Reauthorized with publish permissions.");
 }
