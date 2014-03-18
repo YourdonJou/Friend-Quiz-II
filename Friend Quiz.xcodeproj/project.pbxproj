@@ -24,6 +24,9 @@
 		AAD1945018AC440700116E23 /* PackSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1944F18AC440700116E23 /* PackSelectViewController.m */; };
 		AAD1945318AC452D00116E23 /* EditQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1945218AC452D00116E23 /* EditQuestionViewController.m */; };
 		AAD194A018AC572500116E23 /* SendRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1949F18AC572500116E23 /* SendRequestViewController.m */; };
+		EB5D904618D7E64200E8BE1B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5D904518D7E64200E8BE1B /* CoreData.framework */; };
+		EB5D904918D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB5D904718D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld */; };
+		EB5D904A18D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB5D904718D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld */; };
 		EB96185118BC45BB0047862A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB96185018BC45BA0047862A /* TestViewController.m */; };
 		EB96186318C8180C0047862A /* help-icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96185E18C8180B0047862A /* help-icon1.png */; };
 		EB96186418C8180C0047862A /* home-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96185F18C8180B0047862A /* home-icon.png */; };
@@ -100,6 +103,8 @@
 		AAD1945218AC452D00116E23 /* EditQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditQuestionViewController.m; sourceTree = "<group>"; };
 		AAD1949E18AC572500116E23 /* SendRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendRequestViewController.h; sourceTree = "<group>"; };
 		AAD1949F18AC572500116E23 /* SendRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendRequestViewController.m; sourceTree = "<group>"; };
+		EB5D904518D7E64200E8BE1B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		EB5D904818D7E66C00E8BE1B /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		EB96184F18BC45BA0047862A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		EB96185018BC45BA0047862A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		EB96185E18C8180B0047862A /* help-icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-icon1.png"; sourceTree = "<group>"; };
@@ -153,6 +158,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5D904618D7E64200E8BE1B /* CoreData.framework in Frameworks */,
 				EB9B187A189A1F51001E9D60 /* CoreGraphics.framework in Frameworks */,
 				7A6B724F18C991B5000D5ADB /* FacebookSDK.framework in Frameworks */,
 				EB9B187C189A1F51001E9D60 /* UIKit.framework in Frameworks */,
@@ -227,6 +233,7 @@
 		EB9B186B189A1F50001E9D60 = {
 			isa = PBXGroup;
 			children = (
+				EB5D904718D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld */,
 				EB9B187D189A1F51001E9D60 /* Friend Quiz */,
 				EB9B189C189A1F52001E9D60 /* Friend QuizTests */,
 				EB9B1876189A1F51001E9D60 /* Frameworks */,
@@ -246,6 +253,7 @@
 		EB9B1876189A1F51001E9D60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EB5D904518D7E64200E8BE1B /* CoreData.framework */,
 				7A6B724E18C991B5000D5ADB /* FacebookSDK.framework */,
 				EB9B1877189A1F51001E9D60 /* Foundation.framework */,
 				EB9B1879189A1F51001E9D60 /* CoreGraphics.framework */,
@@ -445,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EB9B1888189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.m in Sources */,
+				EB5D904918D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld in Sources */,
 				EBA5EF2318B161CC00493FBF /* SWRevealViewController.m in Sources */,
 				EB9B1884189A1F51001E9D60 /* main.m in Sources */,
 				7A14A31A189B7029008FAEC7 /* GameStart.m in Sources */,
@@ -479,6 +488,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5D904A18D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld in Sources */,
 				EB9B18A3189A1F52001E9D60 /* Friend_QuizTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -706,6 +716,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EB5D904718D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EB5D904818D7E66C00E8BE1B /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = EB5D904818D7E66C00E8BE1B /* CoreDataModel.xcdatamodel */;
+			path = CoreDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EB9B186C189A1F51001E9D60 /* Project object */;
 }

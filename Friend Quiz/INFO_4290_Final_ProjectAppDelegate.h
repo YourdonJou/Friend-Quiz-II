@@ -9,10 +9,21 @@
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
 
-@interface INFO_4290_Final_ProjectAppDelegate : UIResponder <UIApplicationDelegate, FBLoginViewDelegate>
+@interface INFO_4290_Final_ProjectAppDelegate : UIResponder <UIApplicationDelegate, FBLoginViewDelegate>{
+    
+    NSManagedObjectContext *managedObjectContext;
+    NSManagedObjectModel *managedObjectModel;
+    NSPersistentStoreCoordinator *persistentStoreCoordinator;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain, readonly) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
+@property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
+- (NSURL *)applicationDocumentsDirectory;
 
+- (void)saveContext;
+//Read more at http://duuro.com/integrate-core-data-with-an-existing-project/#ZD4mMLkQe6y4D9d5.99
 
 
 -(BOOL)checkFacebookSession; 
