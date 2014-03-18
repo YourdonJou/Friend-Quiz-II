@@ -84,6 +84,7 @@
    if([[FBSession activeSession]isOpen])
    {
        
+       
        //Check if we have publish permissions
        if([FBSession.activeSession.permissions indexOfObject:@"publish_actions" ]== NSNotFound)
        {
