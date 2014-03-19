@@ -15,7 +15,7 @@
 @implementation PrepareForAnswerQuestionViewController
 
 
-@synthesize rows;
+@synthesize rows, selectedExternalQuestionPackTOPASS;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -47,9 +47,67 @@
 		rows = [dict objectForKey:@"QuestionPack"];
 	}
     
-	NSLog(@"Array: %@",rows);
+    NSDictionary *dict2 = [rows objectAtIndex: 0];
     
-    NSLog(@"Array: %@",[dict objectForKey:@"Q1A1"]);
+	NSLog(@"Array: %@",dict2);
+    
+    NSLog(@"Array: %@",[dict2 objectForKey:@"Q1A1"]);
+    
+    NSArray *questionTitle = [NSArray arrayWithObjects:
+                              [dict2 objectForKey:@"Q1"],
+                              [dict2 objectForKey:@"Q2"],
+                              [dict2 objectForKey:@"Q3"],
+                              [dict2 objectForKey:@"Q4"],
+                              [dict2 objectForKey:@"Q5"], nil];
+    
+    NSArray *Q1A = [NSArray arrayWithObjects:
+                    [dict2 objectForKey:@"Q1A1"],
+                    [dict2 objectForKey:@"Q1A2"],
+                    [dict2 objectForKey:@"Q1A3"],
+                    [dict2 objectForKey:@"Q1A4"], nil];
+    
+    NSArray *Q2A = [NSArray arrayWithObjects:
+                    [dict2 objectForKey:@"Q2A1"],
+                    [dict2 objectForKey:@"Q2A2"],
+                    [dict2 objectForKey:@"Q2A3"],
+                    [dict2 objectForKey:@"Q2A4"], nil];
+    
+    NSArray *Q3A = [NSArray arrayWithObjects:
+                    [dict2 objectForKey:@"Q3A1"],
+                    [dict2 objectForKey:@"Q3A2"],
+                    [dict2 objectForKey:@"Q3A3"],
+                    [dict2 objectForKey:@"Q3A4"], nil];
+    
+    NSArray *Q4A = [NSArray arrayWithObjects:
+                    [dict2 objectForKey:@"Q4A1"],
+                    [dict2 objectForKey:@"Q4A2"],
+                    [dict2 objectForKey:@"Q4A3"],
+                    [dict2 objectForKey:@"Q4A4"], nil];
+    
+    NSArray *Q5A = [NSArray arrayWithObjects:
+                    [dict2 objectForKey:@"Q5A1"],
+                    [dict2 objectForKey:@"Q5A2"],
+                    [dict2 objectForKey:@"Q5A3"],
+                    [dict2 objectForKey:@"Q5A4"], nil];
+    
+    NSArray *questionAnswer = [NSArray arrayWithObjects: Q1A, Q2A, Q3A, Q4A, Q5A, nil];
+    
+    NSArray *questionCorrectAnswerIndex = [NSArray arrayWithObjects:
+                              [dict2 objectForKey:@"Q1AI"],
+                              [dict2 objectForKey:@"Q2AI"],
+                              [dict2 objectForKey:@"Q3AI"],
+                              [dict2 objectForKey:@"Q4AI"],
+                              [dict2 objectForKey:@"Q5AI"], nil];
+    
+    
+    
+    [selectedExternalQuestionPackTOPASS setQuestionPackID:[dict2 objectForKey:@"ID"] ];
+    
+    [selectedExternalQuestionPackTOPASS setQuestionTitle: questionTitle ];
+    
+    [selectedExternalQuestionPackTOPASS setQuestionAnswers: questionAnswer];
+    
+    [selectedExternalQuestionPackTOPASS setQuestionCorrectAnswerIndex: questionCorrectAnswerIndex];
 }
 
 - (void)didReceiveMemoryWarning
