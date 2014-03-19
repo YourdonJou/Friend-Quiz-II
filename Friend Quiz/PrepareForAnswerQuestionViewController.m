@@ -48,6 +48,8 @@
 	}
     
 	NSLog(@"Array: %@",rows);
+    
+    NSLog(@"Array: %@",[dict objectForKey:@"Q1A1"]);
 }
 
 - (void)didReceiveMemoryWarning

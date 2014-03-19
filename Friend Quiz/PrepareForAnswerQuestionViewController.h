@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "CJSONDeserializer.h"
+#import "ExternalQuestionPack.h"
 
 
 @interface PrepareForAnswerQuestionViewController : UIViewController
 
+@property ExternalQuestionPack *selectedExternalQuestionPackTOPASS;
 @property NSArray *rows;
 
 @end
