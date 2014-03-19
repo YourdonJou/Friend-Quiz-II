@@ -11,6 +11,8 @@
 #import "ExternalQuestionPack.h"
 #import "QuestionPack.h"
 
+#import "CJSONDeserializer.h"
+
 @interface AnswerQuestionViewController : UIViewController
 
 
@@ -18,7 +20,11 @@
 
 @property int selectedQuestionIndex;
 
+@property NSArray *rows;
+
 @property (weak, nonatomic) IBOutlet UILabel *questionTitleLabel;
+
+
 
 
 

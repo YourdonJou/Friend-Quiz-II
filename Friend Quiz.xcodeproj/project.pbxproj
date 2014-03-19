@@ -17,6 +17,9 @@
 		7AFEE0AD189C591900D84FA3 /* question.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0AC189C591900D84FA3 /* question.m */; };
 		7AFEE0B0189C5AF500D84FA3 /* CategoryTV.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0AF189C5AF500D84FA3 /* CategoryTV.m */; };
 		7AFEE0B3189C5C5D00D84FA3 /* Sendrequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0B2189C5C5D00D84FA3 /* Sendrequest.m */; };
+		AAAFBFC818DA56CF00D1029D /* CJSONDeserializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAFBFC218DA56CF00D1029D /* CJSONDeserializer.m */; };
+		AAAFBFC918DA56CF00D1029D /* CJSONSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAFBFC418DA56CF00D1029D /* CJSONSerializer.m */; };
+		AAAFBFCA18DA56CF00D1029D /* NSDictionary_JSONExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AAAFBFC718DA56CF00D1029D /* NSDictionary_JSONExtensions.m */; };
 		AAC95D4B18BEACD6003D72F9 /* ExternalQuestionPack.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC95D4A18BEACD6003D72F9 /* ExternalQuestionPack.m */; };
 		AAC95D4E18BEBF17003D72F9 /* GameResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC95D4D18BEBF17003D72F9 /* GameResultViewController.m */; };
 		AAC95D5118BEC159003D72F9 /* AnswerQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAC95D5018BEC159003D72F9 /* AnswerQuestionViewController.m */; };
@@ -89,6 +92,13 @@
 		7AFEE0AF189C5AF500D84FA3 /* CategoryTV.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTV.m; sourceTree = "<group>"; };
 		7AFEE0B1189C5C5D00D84FA3 /* Sendrequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sendrequest.h; sourceTree = "<group>"; };
 		7AFEE0B2189C5C5D00D84FA3 /* Sendrequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sendrequest.m; sourceTree = "<group>"; };
+		AAAFBFC118DA56CF00D1029D /* CJSONDeserializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONDeserializer.h; sourceTree = "<group>"; };
+		AAAFBFC218DA56CF00D1029D /* CJSONDeserializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONDeserializer.m; sourceTree = "<group>"; };
+		AAAFBFC318DA56CF00D1029D /* CJSONSerializer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJSONSerializer.h; sourceTree = "<group>"; };
+		AAAFBFC418DA56CF00D1029D /* CJSONSerializer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJSONSerializer.m; sourceTree = "<group>"; };
+		AAAFBFC518DA56CF00D1029D /* JSONRepresentation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONRepresentation.h; sourceTree = "<group>"; };
+		AAAFBFC618DA56CF00D1029D /* NSDictionary_JSONExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSDictionary_JSONExtensions.h; sourceTree = "<group>"; };
+		AAAFBFC718DA56CF00D1029D /* NSDictionary_JSONExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSDictionary_JSONExtensions.m; sourceTree = "<group>"; };
 		AAC95D4918BEACD6003D72F9 /* ExternalQuestionPack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExternalQuestionPack.h; sourceTree = "<group>"; };
 		AAC95D4A18BEACD6003D72F9 /* ExternalQuestionPack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExternalQuestionPack.m; sourceTree = "<group>"; };
 		AAC95D4C18BEBF17003D72F9 /* GameResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameResultViewController.h; sourceTree = "<group>"; };
@@ -179,6 +189,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AAAFBFC018DA56CF00D1029D /* JSONTouch */ = {
+			isa = PBXGroup;
+			children = (
+				AAAFBFC118DA56CF00D1029D /* CJSONDeserializer.h */,
+				AAAFBFC218DA56CF00D1029D /* CJSONDeserializer.m */,
+				AAAFBFC318DA56CF00D1029D /* CJSONSerializer.h */,
+				AAAFBFC418DA56CF00D1029D /* CJSONSerializer.m */,
+				AAAFBFC518DA56CF00D1029D /* JSONRepresentation.h */,
+				AAAFBFC618DA56CF00D1029D /* NSDictionary_JSONExtensions.h */,
+				AAAFBFC718DA56CF00D1029D /* NSDictionary_JSONExtensions.m */,
+			);
+			path = JSONTouch;
+			sourceTree = "<group>";
+		};
 		EB96185D18C8180B0047862A /* icons */ = {
 			isa = PBXGroup;
 			children = (
@@ -267,6 +291,7 @@
 			isa = PBXGroup;
 			children = (
 				EBA5EF1718ADC22900493FBF /* Libraries */,
+				AAAFBFC018DA56CF00D1029D /* JSONTouch */,
 				EB9B1886189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.h */,
 				EB9B1887189A1F52001E9D60 /* INFO_4290_Final_ProjectAppDelegate.m */,
 				AAC95D4918BEACD6003D72F9 /* ExternalQuestionPack.h */,
@@ -474,8 +499,11 @@
 				AAD1944D18AC39D600116E23 /* QuestionPack.m in Sources */,
 				AAC95D4B18BEACD6003D72F9 /* ExternalQuestionPack.m in Sources */,
 				EB96186F18C821C80047862A /* StatusViewController.m in Sources */,
+				AAAFBFC918DA56CF00D1029D /* CJSONSerializer.m in Sources */,
 				AAC95D5118BEC159003D72F9 /* AnswerQuestionViewController.m in Sources */,
+				AAAFBFCA18DA56CF00D1029D /* NSDictionary_JSONExtensions.m in Sources */,
 				EB9B188E189A1F52001E9D60 /* INFO_4290_Final_ProjectViewController.m in Sources */,
+				AAAFBFC818DA56CF00D1029D /* CJSONDeserializer.m in Sources */,
 				7AFEE0AD189C591900D84FA3 /* question.m in Sources */,
 				7AFEE0B0189C5AF500D84FA3 /* CategoryTV.m in Sources */,
 				EB96185118BC45BB0047862A /* TestViewController.m in Sources */,

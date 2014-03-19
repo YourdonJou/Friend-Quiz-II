@@ -14,7 +14,7 @@
 
 @implementation AnswerQuestionViewController
 
-@synthesize selectedExternalQuestionPack, question1label, question2label, question3label, question4label, questionTitleLabel, selectedQuestionIndex;
+@synthesize selectedExternalQuestionPack, question1label, question2label, question3label, question4label, questionTitleLabel, selectedQuestionIndex, rows;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -41,6 +41,27 @@
     
     [data setQuestionCorrectAnswerIndex:[QuestionPack sharedCenter].questionCorrectAnswerIndex];
     // test code end
+    
+    // Get Question pack as a unique game from external DB
+    NSURL *url = [NSURL URLWithString:@"http://racketrepublic.com/jsontest.php"];
+	NSString *jsonreturn = [[NSString alloc] initWithContentsOfURL:url];
+	
+	NSLog(jsonreturn); // Look at the console and you can see what the restults are
+	
+	NSData *jsonData = [jsonreturn dataUsingEncoding:NSUTF32BigEndianStringEncoding];
+	NSError *error = nil;
+	
+	// In "real" code you should surround this with try and catch
+	NSDictionary * dict = [[CJSONDeserializer deserializer] deserializeAsDictionary:jsonData error:&error];
+	if (dict)
+	{
+		rows = [dict objectForKey:@"users"];
+	}
+    
+	NSLog(@"Array: %@",rows);
+    
+    
+    
     
     selectedExternalQuestionPack = data;
     

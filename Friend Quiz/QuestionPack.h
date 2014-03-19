@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+
 @interface QuestionPack : NSObject
 
 
@@ -21,6 +22,9 @@
 @property int questionPackID;
 
 @property int questionIndex;
+
+
+
 
 
 // Questions

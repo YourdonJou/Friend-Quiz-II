@@ -39,7 +39,8 @@ static QuestionPack *sharedAwardCenter = nil;    // static instance variable
 {
     questionPackID = packID;
     
-    //Database code
+    //Database code - Get default question pack info from internal Sql lite
+    
     
     //testing code
     questionTitle = [NSMutableArray arrayWithObjects:
