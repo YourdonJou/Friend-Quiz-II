@@ -9,11 +9,15 @@
 #import <UIKit/UIKit.h>
 #import "CJSONDeserializer.h"
 #import "ExternalQuestionPack.h"
+#import "AnswerQuestionViewController.h"
 
 
 @interface PrepareForAnswerQuestionViewController : UIViewController
 
 @property ExternalQuestionPack *selectedExternalQuestionPackTOPASS;
 @property NSArray *rows;
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
+
 
 @end

@@ -40,15 +40,18 @@
     [data setQuestionAnswers:[QuestionPack sharedCenter].questionAnswers];
     
     [data setQuestionCorrectAnswerIndex:[QuestionPack sharedCenter].questionCorrectAnswerIndex];
+    
+    //selectedExternalQuestionPack = data;
     // test code end
     
     // Get Question pack as a unique game from external DB
     
     
+    NSLog(@"%@", data);
+    
+    NSLog(@"%@", selectedExternalQuestionPack);
     
     
-    
-    selectedExternalQuestionPack = data;
     
     // Get question detail
     
