@@ -46,10 +46,10 @@
     
     // Get Question pack as a unique game from external DB
     
+    NSLog(@"Data is : %@",[QuestionPack sharedCenter].questionTitle);
     
     
-    
-    selectedExternalQuestionPack = [QuestionPack sharedCenter].externalQuestionPack;
+    //selectedExternalQuestionPack = [QuestionPack sharedCenter].externalQuestionPack;
     
     // Get question detail
     

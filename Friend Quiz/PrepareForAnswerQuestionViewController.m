@@ -138,11 +138,6 @@
 
 
 
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
-{
-    AnswerQuestionViewController *destination = [segue destinationViewController];
-    destination.selectedExternalQuestionPack = selectedExternalQuestionPackTOPASS;
-}
 
 
 
