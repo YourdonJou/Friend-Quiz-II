@@ -90,7 +90,7 @@
     
     [QuestionPack sharedCenter].questionIndex = 0;
     
-   // [self.navigationController popToViewController:[[self.navigationController viewControllers] objectAtIndex:0] animated:YES];
+   [self.navigationController popToViewController:[[self.navigationController viewControllers] objectAtIndex:0] animated:YES];
     
     
     [FBWebDialogs
