@@ -53,7 +53,7 @@
     
     NSLog(@"Array: %@",[dict2 objectForKey:@"Q1A1"]);
     
-    NSArray *questionTitle = [NSArray arrayWithObjects:
+    NSMutableArray *questionTitle = [NSArray arrayWithObjects:
                               [dict2 objectForKey:@"Q1"],
                               [dict2 objectForKey:@"Q2"],
                               [dict2 objectForKey:@"Q3"],
@@ -90,9 +90,9 @@
                     [dict2 objectForKey:@"Q5A3"],
                     [dict2 objectForKey:@"Q5A4"], nil];
     
-    NSArray *questionAnswer = [NSArray arrayWithObjects: Q1A, Q2A, Q3A, Q4A, Q5A, nil];
+    NSMutableArray *questionAnswer = [NSArray arrayWithObjects: Q1A, Q2A, Q3A, Q4A, Q5A, nil];
     
-    NSArray *questionCorrectAnswerIndex = [NSArray arrayWithObjects:
+    NSMutableArray *questionCorrectAnswerIndex = [NSArray arrayWithObjects:
                               [dict2 objectForKey:@"Q1AI"],
                               [dict2 objectForKey:@"Q2AI"],
                               [dict2 objectForKey:@"Q3AI"],
@@ -101,13 +101,21 @@
     
     
     
-    [selectedExternalQuestionPackTOPASS setQuestionPackID:[dict2 objectForKey:@"ID"] ];
+    //[selectedExternalQuestionPackTOPASS setQuestionPackID:[[dict2 objectForKey:@"ID"]integerValue] ];
     
-    [selectedExternalQuestionPackTOPASS setQuestionTitle: questionTitle ];
+    [selectedExternalQuestionPackTOPASS setQuestionPackID:12 ];
     
     [selectedExternalQuestionPackTOPASS setQuestionAnswers: questionAnswer];
     
     [selectedExternalQuestionPackTOPASS setQuestionCorrectAnswerIndex: questionCorrectAnswerIndex];
+    
+    
+    [QuestionPack sharedCenter].externalQuestionPack = selectedExternalQuestionPackTOPASS;
+    
+    
+    NSLog(@"contents of packID: %d", selectedExternalQuestionPackTOPASS.questionPackID);
+    NSLog(@"contents of newArray: %@", questionAnswer);
+    NSLog(@"contents of newArray: %@", questionCorrectAnswerIndex);
 }
 
 - (void)didReceiveMemoryWarning

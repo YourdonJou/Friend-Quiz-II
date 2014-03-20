@@ -51,7 +51,7 @@
     
     NSLog(@"%@", selectedExternalQuestionPack);
     
-    
+    selectedExternalQuestionPack = [QuestionPack sharedCenter].externalQuestionPack;
     
     // Get question detail
     

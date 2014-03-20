@@ -10,6 +10,7 @@
 #import "CJSONDeserializer.h"
 #import "ExternalQuestionPack.h"
 #import "AnswerQuestionViewController.h"
+#import "QuestionPack.h"
 
 
 @interface PrepareForAnswerQuestionViewController : UIViewController

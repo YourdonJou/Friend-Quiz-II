@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ExternalQuestionPack.h"
 
 
 @interface QuestionPack : NSObject
@@ -37,5 +38,8 @@
 @property NSMutableArray *questionCorrectAnswerIndex;
 
 
+
+// External Question Pack
+@property ExternalQuestionPack *externalQuestionPack;
 
 @end
