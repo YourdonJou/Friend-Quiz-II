@@ -39,6 +39,8 @@
 		EB5D907C18DAA22A00E8BE1B /* orange.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5D907418DAA22A00E8BE1B /* orange.png */; };
 		EB5D907D18DAA22A00E8BE1B /* pink.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5D907518DAA22A00E8BE1B /* pink.png */; };
 		EB5D907E18DAA22A00E8BE1B /* sky.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5D907618DAA22A00E8BE1B /* sky.png */; };
+		EB5D908118DBFECF00E8BE1B /* Help_GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5D908018DBFECF00E8BE1B /* Help_GameViewController.m */; };
+		EB5D908218DBFECF00E8BE1B /* Help_GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5D908018DBFECF00E8BE1B /* Help_GameViewController.m */; };
 		EB96185118BC45BB0047862A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB96185018BC45BA0047862A /* TestViewController.m */; };
 		EB96186318C8180C0047862A /* help-icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96185E18C8180B0047862A /* help-icon1.png */; };
 		EB96186418C8180C0047862A /* home-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96185F18C8180B0047862A /* home-icon.png */; };
@@ -134,6 +136,8 @@
 		EB5D907418DAA22A00E8BE1B /* orange.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = orange.png; sourceTree = "<group>"; };
 		EB5D907518DAA22A00E8BE1B /* pink.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pink.png; sourceTree = "<group>"; };
 		EB5D907618DAA22A00E8BE1B /* sky.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sky.png; sourceTree = "<group>"; };
+		EB5D907F18DBFECF00E8BE1B /* Help_GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Help_GameViewController.h; sourceTree = "<group>"; };
+		EB5D908018DBFECF00E8BE1B /* Help_GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Help_GameViewController.m; sourceTree = "<group>"; };
 		EB96184F18BC45BA0047862A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		EB96185018BC45BA0047862A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		EB96185E18C8180B0047862A /* help-icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-icon1.png"; sourceTree = "<group>"; };
@@ -254,6 +258,8 @@
 			isa = PBXGroup;
 			children = (
 				EB9B1889189A1F52001E9D60 /* Main.storyboard */,
+				EB5D907F18DBFECF00E8BE1B /* Help_GameViewController.h */,
+				EB5D908018DBFECF00E8BE1B /* Help_GameViewController.m */,
 				AAAFBFCB18DA5D7E00D1029D /* PrepareForAnswerQuestionViewController.h */,
 				AAAFBFCC18DA5D7E00D1029D /* PrepareForAnswerQuestionViewController.m */,
 				AAC95D4F18BEC159003D72F9 /* AnswerQuestionViewController.h */,
@@ -539,6 +545,7 @@
 				AAD194A018AC572500116E23 /* SendRequestViewController.m in Sources */,
 				7AF8C86C189B7AC30098E573 /* AnswerQuestions.m in Sources */,
 				7AFEE0B3189C5C5D00D84FA3 /* Sendrequest.m in Sources */,
+				EB5D908118DBFECF00E8BE1B /* Help_GameViewController.m in Sources */,
 				EBA5EF3618B5CD6E00493FBF /* HelpMenuViewController.m in Sources */,
 				7AF8C866189B77C30098E573 /* ChooseQuestionPacks.m in Sources */,
 				AAD1944D18AC39D600116E23 /* QuestionPack.m in Sources */,
@@ -562,6 +569,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EB5D908218DBFECF00E8BE1B /* Help_GameViewController.m in Sources */,
 				EB5D904A18D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld in Sources */,
 				EB9B18A3189A1F52001E9D60 /* Friend_QuizTests.m in Sources */,
 			);
