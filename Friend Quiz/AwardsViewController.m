@@ -32,6 +32,13 @@
     [sideMenuButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
 	// Do any additional setup after loading the view.
     
+    
+    //enable ScrollView
+    [self.scrollView setScrollEnabled:YES];
+    [self.scrollView setContentSize:(CGSizeMake(300, 800))];
+   // self.view = self.scrollView;
+    
+   // [self.scrollView addSubview:self.view];
    /*
     UISwipeGestureRecognizer *swipeRight = [[UISwipeGestureRecognizer alloc]
                                             initWithTarget:self action:@selector(handleSwipe:)];

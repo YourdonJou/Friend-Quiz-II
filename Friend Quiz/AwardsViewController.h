@@ -12,6 +12,7 @@
 @property (strong, nonatomic) IBOutlet UIButton *sideMenuButton;
 @property (strong, nonatomic) IBOutlet UIImageView *achivement1MessageView;
 @property (strong, nonatomic) IBOutlet UIButton *achivement1Message;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (strong, nonatomic) IBOutlet UIButton *achivement1Balloon;
 - (IBAction)ballonSelected:(id)sender;
 
