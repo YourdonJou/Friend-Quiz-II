@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SWRevealViewController.h"
 
 @interface Help_GameViewController : UIViewController
+@property (strong, nonatomic) IBOutlet UIButton *barButton;
+@property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
 
 @end

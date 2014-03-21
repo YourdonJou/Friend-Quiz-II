@@ -1,18 +1,18 @@
 //
-//  Help_GameViewController.m
+//  Help_FacebookViewController.m
 //  Friend Quiz
 //
-//  Created by Christian Retureta on 2014-03-20.
+//  Created by Christian Retureta on 2014-03-21.
 //  Copyright (c) 2014 Christian Retureta. All rights reserved.
 //
 
-#import "Help_GameViewController.h"
+#import "Help_FacebookViewController.h"
 
-@interface Help_GameViewController ()
+@interface Help_FacebookViewController ()
 
 @end
 
-@implementation Help_GameViewController
+@implementation Help_FacebookViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,11 +27,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
-    [self.barButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
-    
-    
-    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 }
 
 - (void)didReceiveMemoryWarning

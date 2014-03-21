@@ -92,7 +92,7 @@
     
     NSString *CellIdentifier = [menuItems objectAtIndex:indexPath.row];
     
-    UITableView *cell = [self.helpTableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    UITableViewCell *cell = [self.helpTableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
     
     
