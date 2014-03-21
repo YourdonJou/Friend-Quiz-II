@@ -48,7 +48,16 @@
     [self.scrollView setScrollEnabled:YES];
     [self.scrollView setContentSize:(CGSizeMake(250, 500))];
     
-    menuItems = [[NSArray alloc]initWithObjects:@"game", @"achievements", @"facebook", @"question", nil];
+    
+ //   menuItems = [[NSArray alloc]init];
+
+    
+    menuItems = @[@"game",@"achievements",@"facebook", @"question"];
+  //  menuItems = [[NSArray alloc]initWithObjects:@"game", @"achievements", @"facebook", @"question"];
+    
+    
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+
 }
 
 - (void)didReceiveMemoryWarning

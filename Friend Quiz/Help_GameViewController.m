@@ -13,6 +13,7 @@
 @end
 
 @implementation Help_GameViewController
+@sy
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,10 +29,10 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.barButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
+  //  [self.barButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
     
     
-    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+  //  [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,4 +52,6 @@
 }
 */
 
+- (IBAction)q1ButtonSelected:(id)sender {
+}
 @end

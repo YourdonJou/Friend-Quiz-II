@@ -12,5 +12,9 @@
 @interface Help_GameViewController : UIViewController
 @property (strong, nonatomic) IBOutlet UIButton *barButton;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
+@property (strong, nonatomic) IBOutlet UIButton *q1Button;
+@property (strong, nonatomic) IBOutlet UILabel *q1Answer;
+
+- (IBAction)q1ButtonSelected:(id)sender;
 
 @end

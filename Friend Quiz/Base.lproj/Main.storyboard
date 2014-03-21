@@ -583,27 +583,73 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Help Game " lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="PUg-eJ-sbi">
-                                <rect key="frame" x="130" y="76" width="92" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="GFp-K1-UoX">
-                                <rect key="frame" x="-13" y="64" width="99" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="setting-icon.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <navigationBar contentMode="scaleToFill" id="Qsj-Iw-okK">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="tGd-ed-XhR">
+                                    <navigationItem title="The Game" id="tGd-ed-XhR">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="F55-bv-Ks1">
                                             <connections>
-                                                <segue destination="2Rr-nf-8mO" kind="push" id="iCQ-MT-B1F"/>
+                                                <segue destination="2Rr-nf-8mO" kind="modal" id="Ne0-SH-b2D"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="middleTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h6D-mp-ksF">
+                                <rect key="frame" x="11" y="29" width="299" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <string key="text">Friend Quiz is a fun way to get to know your friends. How well do you think you know them? Find out by creating a game and sending it to your friends!</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kYx-kS-OFx">
+                                <rect key="frame" x="0.0" y="222" width="282" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="How do I invite my Friends?"/>
+                                <connections>
+                                    <action selector="q1ButtonSelected:" destination="WyS-oj-VNy" eventType="touchUpInside" id="gmJ-b5-lje"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To invite friends. Create a new quiz and answer the questions you want your friend to answer." lineBreakMode="wordWrap" numberOfLines="3" adjustsFontSizeToFit="NO" id="Nnw-qP-Tyq">
+                                <rect key="frame" x="34" y="245" width="248" height="77"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="5ST-pk-JkH"/>
+                    <connections>
+                        <outlet property="backButton" destination="F55-bv-Ks1" id="94i-ke-B2p"/>
+                        <outlet property="q1Answer" destination="Nnw-qP-Tyq" id="yPE-xb-O0O"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9Pl-ww-cPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1905" y="-2150"/>
+        </scene>
+        <!--Help Facebook View Controller-->
+        <scene sceneID="iYi-4Z-Oeg">
+            <objects>
+                <viewController id="gtS-Qw-gDP" customClass="Help_FacebookViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nu9-Ay-0PZ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky.png" id="HeV-aY-tqg">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" id="Ixa-4Y-aUn">
+                                <rect key="frame" x="0.0" y="7" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Facebook Help" id="FG7-Ub-JRq">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="CJX-xb-Xbc">
+                                            <connections>
+                                                <segue destination="2Rr-nf-8mO" kind="modal" id="5fJ-VA-waD"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -612,42 +658,44 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="backButton" destination="F55-bv-Ks1" id="94i-ke-B2p"/>
-                        <outlet property="barButton" destination="GFp-K1-UoX" id="RQg-86-Kkr"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9Pl-ww-cPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1806" y="-2745"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="iYi-4Z-Oeg">
-            <objects>
-                <viewController id="gtS-Qw-gDP" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nu9-Ay-0PZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
+                    <navigationItem key="navigationItem" id="3lA-Da-kxn"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWH-sO-XYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2077" y="-2780"/>
+            <point key="canvasLocation" x="2217" y="-2763"/>
         </scene>
-        <!--View Controller-->
+        <!--Help Achievements View Controller-->
         <scene sceneID="mc5-oS-HXV">
             <objects>
-                <viewController id="tQL-Y9-iyL" sceneMemberID="viewController">
+                <viewController id="tQL-Y9-iyL" customClass="Help_AchievementsViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ijy-FY-pCw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky.png" id="GX1-wL-qMJ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" id="OyQ-qE-b44">
+                                <rect key="frame" x="0.0" y="5" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Achivement Help" id="QMa-6f-zop">
+                                        <barButtonItem key="leftBarButtonItem" title="Back" id="EWC-9J-O3g">
+                                            <connections>
+                                                <segue destination="2Rr-nf-8mO" kind="modal" id="wHj-gR-hU5"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KCw-Pu-a7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2473" y="-2780"/>
+            <point key="canvasLocation" x="2491" y="-2714"/>
         </scene>
         <!--Help Menu View Controller-->
         <scene sceneID="MKh-xO-1kS">
@@ -661,13 +709,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3WB-VM-MD3">
-                                <rect key="frame" x="20" y="20" width="55" height="41"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="setting-icon.png">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XTg-jC-TKT">
                                 <rect key="frame" x="0.0" y="77" width="320" height="400"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -693,9 +734,6 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="WyS-oj-VNy" kind="push" id="JWJ-jO-K4P"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="achievements" id="ZXQ-j1-3hR">
                                         <rect key="frame" x="0.0" y="66" width="320" height="44"/>
@@ -717,6 +755,9 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="tQL-Y9-iyL" kind="modal" id="gYo-R2-cCd"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="facebook" id="tkI-Xw-wLH">
                                         <rect key="frame" x="0.0" y="110" width="320" height="44"/>
@@ -738,6 +779,9 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="gtS-Qw-gDP" kind="modal" id="I1U-KX-zrS"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="question" id="8BA-d4-VIK">
                                         <rect key="frame" x="0.0" y="154" width="320" height="44"/>
@@ -759,13 +803,24 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="WyS-oj-VNy" kind="modal" id="6uw-ch-c1Y"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3WB-VM-MD3">
+                                <rect key="frame" x="20" y="20" width="55" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="setting-icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="tAV-pN-VJg"/>
                     <connections>
                         <outlet property="barButton" destination="3WB-VM-MD3" id="R9V-7W-r3E"/>
                         <outlet property="helpTableView" destination="XTg-jC-TKT" id="KiW-My-dcr"/>
@@ -1887,6 +1942,6 @@
         <segue reference="9TU-ri-o1A"/>
         <segue reference="339-oy-3yD"/>
         <segue reference="fIF-Ki-DVP"/>
-        <segue reference="iCQ-MT-B1F"/>
+        <segue reference="Ne0-SH-b2D"/>
     </inferredMetricsTieBreakers>
 </document>
