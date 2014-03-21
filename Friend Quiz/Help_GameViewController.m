@@ -13,7 +13,7 @@
 @end
 
 @implementation Help_GameViewController
-@sy
+@synthesize q1Answer, q1Button;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -33,6 +33,8 @@
     
     
   //  [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    [q1Answer setHidden:YES];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,5 +55,7 @@
 */
 
 - (IBAction)q1ButtonSelected:(id)sender {
+    
+    [q1Answer setHidden: NO];
 }
 @end

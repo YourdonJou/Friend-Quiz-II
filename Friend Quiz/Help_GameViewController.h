@@ -14,7 +14,9 @@
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
 @property (strong, nonatomic) IBOutlet UIButton *q1Button;
 @property (strong, nonatomic) IBOutlet UILabel *q1Answer;
+@property (strong, nonatomic) IBOutlet UINavigationBar *bar;
 
 - (IBAction)q1ButtonSelected:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *testBack;
 
 @end

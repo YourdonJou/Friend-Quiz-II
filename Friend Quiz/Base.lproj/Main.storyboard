@@ -590,14 +590,14 @@
                                     <navigationItem title="The Game" id="tGd-ed-XhR">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="F55-bv-Ks1">
                                             <connections>
-                                                <segue destination="2Rr-nf-8mO" kind="modal" id="Ne0-SH-b2D"/>
+                                                <segue destination="2Rr-nf-8mO" kind="modal" id="aI4-df-tRP"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="middleTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="h6D-mp-ksF">
-                                <rect key="frame" x="11" y="29" width="299" height="169"/>
+                                <rect key="frame" x="11" y="68" width="299" height="96"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Friend Quiz is a fun way to get to know your friends. How well do you think you know them? Find out by creating a game and sending it to your friends!</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
@@ -617,13 +617,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="NS5-pm-3ai">
+                                <rect key="frame" x="12" y="167" width="63" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="TestBack">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="gtS-Qw-gDP" kind="modal" id="nuk-uU-mYt"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="5ST-pk-JkH"/>
                     <connections>
                         <outlet property="backButton" destination="F55-bv-Ks1" id="94i-ke-B2p"/>
+                        <outlet property="bar" destination="Qsj-Iw-okK" id="1ll-Q0-iPx"/>
                         <outlet property="q1Answer" destination="Nnw-qP-Tyq" id="yPE-xb-O0O"/>
+                        <outlet property="testBack" destination="NS5-pm-3ai" id="Xjk-Uw-yuZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Pl-ww-cPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -1942,6 +1954,7 @@
         <segue reference="9TU-ri-o1A"/>
         <segue reference="339-oy-3yD"/>
         <segue reference="fIF-Ki-DVP"/>
-        <segue reference="Ne0-SH-b2D"/>
+        <segue reference="aI4-df-tRP"/>
+        <segue reference="I1U-KX-zrS"/>
     </inferredMetricsTieBreakers>
 </document>

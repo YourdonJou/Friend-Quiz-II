@@ -43,10 +43,10 @@
     
     self.helpTableView.backgroundColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.4];
     
-    [barButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
+   [barButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
     
-    [self.scrollView setScrollEnabled:YES];
-    [self.scrollView setContentSize:(CGSizeMake(250, 500))];
+  //  [self.scrollView setScrollEnabled:YES];
+ //   [self.scrollView setContentSize:(CGSizeMake(250, 500))];
     
     
  //   menuItems = [[NSArray alloc]init];
