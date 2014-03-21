@@ -130,13 +130,13 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     
-    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+  //  NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
     
   
     if( [segue.identifier isEqualToString:@"settingsSegue"])
     {
         
-        SettingsViewController *destViewController = (SettingsViewController *)segue.destinationViewController;
+    //    SettingsViewController *destViewController = (SettingsViewController *)segue.destinationViewController;
         
      //   destViewController.title = [menuChoices objectAtIndex:indexPath.row];
          
@@ -146,7 +146,7 @@
     else if( [segue.identifier isEqualToString:@"profileSegue"])
     {
         
-        MyProfileViewController *destViewController = (MyProfileViewController *)segue.destinationViewController;
+     //   MyProfileViewController *destViewController = (MyProfileViewController *)segue.destinationViewController;
         
         //   destViewController.title = [menuChoices objectAtIndex:indexPath.row];
         
