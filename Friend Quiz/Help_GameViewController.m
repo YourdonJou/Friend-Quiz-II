@@ -27,6 +27,10 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    [self.q1Answer setHidden: YES];
+    [self.q2Answer setHidden: YES];
     // Do any additional setup after loading the view.
     
   //  [self.barButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
@@ -44,7 +48,7 @@
 }
 
 /*
-#pragma mark - Navigation
+#pragma mark - Navigations
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -57,5 +61,29 @@
 - (IBAction)q1ButtonSelected:(id)sender {
     
     [q1Answer setHidden: NO];
+    
+   // self.achivement1MessageView.transform = CGAffineTransformMakeScale(0.01, 0.01);
+    
+    
+    
+    
+    self.q1Answer.transform = CGAffineTransformMakeScale(0.01, 0.5);
+   
+    [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
+        // animate it to the identity transform (100% scale)
+        self.q1Answer.transform = CGAffineTransformIdentity;
+    } completion:^(BOOL finished){
+        
+        self.q2Button.frame.origin.y = 100 - self.q2Button.frame.origin.y;
+        // if you want to do something once the animation finishes, put it here
+    }];
 }
+
+
+
+- (IBAction)q2ButtonSelected:(id)sender {
+    
+    [self.q2Answer setHidden:NO];
+}
+
 @end

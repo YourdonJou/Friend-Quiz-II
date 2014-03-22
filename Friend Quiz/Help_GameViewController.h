@@ -14,9 +14,14 @@
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *backButton;
 @property (strong, nonatomic) IBOutlet UIButton *q1Button;
 @property (strong, nonatomic) IBOutlet UILabel *q1Answer;
-@property (strong, nonatomic) IBOutlet UINavigationBar *bar;
+@property (strong, nonatomic) IBOutlet UIButton *q2Button;
+@property (strong, nonatomic) IBOutlet UILabel *q2Answer;
+@property (strong, nonatomic) IBOutlet UIButton *testBack;
 
 - (IBAction)q1ButtonSelected:(id)sender;
-@property (strong, nonatomic) IBOutlet UIButton *testBack;
+
+- (IBAction)q2ButtonSelected:(id)sender;
+
+
 
 @end

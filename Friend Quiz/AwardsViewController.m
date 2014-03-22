@@ -13,7 +13,10 @@
 
 @end
 
-@implementation AwardsViewController
+@implementation AwardsViewController{
+    
+    BOOL animated;
+}
 @synthesize sideMenuButton;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -28,6 +31,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    animated = NO;
     
     [sideMenuButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
 	// Do any additional setup after loading the view.
@@ -96,6 +101,8 @@
 - (IBAction)ballonSelected:(id)sender {
     
     
+    if(!animated)
+    {
     [self.achivement1MessageView setHidden:NO];
     
     // instantaneously make the image view small (scaled to 1% of its actual size)
@@ -106,6 +113,15 @@
     } completion:^(BOOL finished){
         // if you want to do something once the animation finishes, put it here
     }];
+        
+        animated = YES;
+    }
     
+    else{
+        
+        
+        [self.achivement1MessageView setHidden:YES];
+        animated = NO;
+    }
 }
 @end
