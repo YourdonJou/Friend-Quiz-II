@@ -45,6 +45,8 @@
 		EB5D908618DCD21D00E8BE1B /* Help_AchievementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5D908418DCD21D00E8BE1B /* Help_AchievementsViewController.m */; };
 		EB5D908918DCD22F00E8BE1B /* Help_FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5D908818DCD22F00E8BE1B /* Help_FacebookViewController.m */; };
 		EB5D908A18DCD22F00E8BE1B /* Help_FacebookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5D908818DCD22F00E8BE1B /* Help_FacebookViewController.m */; };
+		EB5D908D18DD226000E8BE1B /* Help_QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5D908C18DD226000E8BE1B /* Help_QuestionViewController.m */; };
+		EB5D908E18DD226000E8BE1B /* Help_QuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB5D908C18DD226000E8BE1B /* Help_QuestionViewController.m */; };
 		EB96185118BC45BB0047862A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EB96185018BC45BA0047862A /* TestViewController.m */; };
 		EB96186318C8180C0047862A /* help-icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96185E18C8180B0047862A /* help-icon1.png */; };
 		EB96186418C8180C0047862A /* home-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EB96185F18C8180B0047862A /* home-icon.png */; };
@@ -146,6 +148,8 @@
 		EB5D908418DCD21D00E8BE1B /* Help_AchievementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Help_AchievementsViewController.m; sourceTree = "<group>"; };
 		EB5D908718DCD22F00E8BE1B /* Help_FacebookViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Help_FacebookViewController.h; sourceTree = "<group>"; };
 		EB5D908818DCD22F00E8BE1B /* Help_FacebookViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Help_FacebookViewController.m; sourceTree = "<group>"; };
+		EB5D908B18DD226000E8BE1B /* Help_QuestionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Help_QuestionViewController.h; sourceTree = "<group>"; };
+		EB5D908C18DD226000E8BE1B /* Help_QuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Help_QuestionViewController.m; sourceTree = "<group>"; };
 		EB96184F18BC45BA0047862A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		EB96185018BC45BA0047862A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		EB96185E18C8180B0047862A /* help-icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-icon1.png"; sourceTree = "<group>"; };
@@ -266,6 +270,8 @@
 			isa = PBXGroup;
 			children = (
 				EB9B1889189A1F52001E9D60 /* Main.storyboard */,
+				EB5D908B18DD226000E8BE1B /* Help_QuestionViewController.h */,
+				EB5D908C18DD226000E8BE1B /* Help_QuestionViewController.m */,
 				EB5D908318DCD21D00E8BE1B /* Help_AchievementsViewController.h */,
 				EB5D908418DCD21D00E8BE1B /* Help_AchievementsViewController.m */,
 				EB5D908718DCD22F00E8BE1B /* Help_FacebookViewController.h */,
@@ -559,6 +565,7 @@
 				7AF8C86C189B7AC30098E573 /* AnswerQuestions.m in Sources */,
 				7AFEE0B3189C5C5D00D84FA3 /* Sendrequest.m in Sources */,
 				EB5D908118DBFECF00E8BE1B /* Help_GameViewController.m in Sources */,
+				EB5D908D18DD226000E8BE1B /* Help_QuestionViewController.m in Sources */,
 				EBA5EF3618B5CD6E00493FBF /* HelpMenuViewController.m in Sources */,
 				7AF8C866189B77C30098E573 /* ChooseQuestionPacks.m in Sources */,
 				AAD1944D18AC39D600116E23 /* QuestionPack.m in Sources */,
@@ -586,6 +593,7 @@
 				EB5D908218DBFECF00E8BE1B /* Help_GameViewController.m in Sources */,
 				EB5D908618DCD21D00E8BE1B /* Help_AchievementsViewController.m in Sources */,
 				EB5D904A18D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld in Sources */,
+				EB5D908E18DD226000E8BE1B /* Help_QuestionViewController.m in Sources */,
 				EB9B18A3189A1F52001E9D60 /* Friend_QuizTests.m in Sources */,
 				EB5D908A18DCD22F00E8BE1B /* Help_FacebookViewController.m in Sources */,
 			);

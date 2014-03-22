@@ -590,7 +590,7 @@
                                     <navigationItem title="The Game" id="tGd-ed-XhR">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="F55-bv-Ks1">
                                             <connections>
-                                                <segue destination="2Rr-nf-8mO" kind="modal" id="ueB-3m-d4G"/>
+                                                <segue destination="2Rr-nf-8mO" kind="custom" id="Ap3-ii-Qj0"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -623,9 +623,6 @@
                                 <state key="normal" title="TestBack">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <segue destination="gtS-Qw-gDP" kind="modal" id="nuk-uU-mYt"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -640,7 +637,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Pl-ww-cPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1928" y="-1982"/>
+            <point key="canvasLocation" x="1948" y="-2528"/>
         </scene>
         <!--Help Facebook View Controller-->
         <scene sceneID="iYi-4Z-Oeg">
@@ -661,7 +658,7 @@
                                     <navigationItem title="Facebook Help" id="FG7-Ub-JRq">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="CJX-xb-Xbc">
                                             <connections>
-                                                <segue destination="eAz-Pt-tfl" kind="modal" id="eDk-aJ-tMX"/>
+                                                <segue destination="2Rr-nf-8mO" kind="custom" id="UpM-u5-2Ng"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -674,7 +671,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWH-sO-XYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2333" y="-1536"/>
+            <point key="canvasLocation" x="2067" y="-1724"/>
         </scene>
         <!--Help Achievements View Controller-->
         <scene sceneID="mc5-oS-HXV">
@@ -695,7 +692,7 @@
                                     <navigationItem title="Achivement Help" id="QMa-6f-zop">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="EWC-9J-O3g">
                                             <connections>
-                                                <segue destination="2Rr-nf-8mO" kind="modal" id="wHj-gR-hU5"/>
+                                                <segue destination="2Rr-nf-8mO" kind="custom" id="sAO-tG-Tnj"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -707,7 +704,39 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KCw-Pu-a7V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2491" y="-2714"/>
+            <point key="canvasLocation" x="2386" y="-2483"/>
+        </scene>
+        <!--Help Question View Controller-->
+        <scene sceneID="mvR-YR-md1">
+            <objects>
+                <viewController id="6TN-4L-cJg" customClass="Help_QuestionViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jR2-nx-gqC" customClass="Hel">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yXQ-o2-DZa">
+                                <rect key="frame" x="113" y="86" width="32" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="PBP-hO-vxP">
+                                <rect key="frame" x="43" y="41" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="2Rr-nf-8mO" kind="custom" id="FOs-XP-b2f"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i6s-B9-E8d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2172" y="-2042"/>
         </scene>
         <!--Help Menu View Controller-->
         <scene sceneID="MKh-xO-1kS">
@@ -746,6 +775,9 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="6TN-4L-cJg" kind="custom" id="c7T-Vd-egc"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="achievements" id="ZXQ-j1-3hR">
                                         <rect key="frame" x="0.0" y="66" width="320" height="44"/>
@@ -768,7 +800,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="tQL-Y9-iyL" kind="modal" id="gYo-R2-cCd"/>
+                                            <segue destination="tQL-Y9-iyL" kind="custom" id="Drq-48-05y"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="facebook" id="tkI-Xw-wLH">
@@ -792,7 +824,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="gtS-Qw-gDP" kind="modal" id="I1U-KX-zrS"/>
+                                            <segue destination="gtS-Qw-gDP" kind="custom" id="Shf-mi-L5P"/>
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="question" id="8BA-d4-VIK">
@@ -816,7 +848,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="WyS-oj-VNy" kind="modal" id="6uw-ch-c1Y"/>
+                                            <segue destination="WyS-oj-VNy" kind="custom" id="nxE-vo-QPt"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -1965,8 +1997,6 @@
         <segue reference="9TU-ri-o1A"/>
         <segue reference="339-oy-3yD"/>
         <segue reference="fIF-Ki-DVP"/>
-        <segue reference="ueB-3m-d4G"/>
-        <segue reference="nuk-uU-mYt"/>
-        <segue reference="eDk-aJ-tMX"/>
+        <segue reference="UpM-u5-2Ng"/>
     </inferredMetricsTieBreakers>
 </document>
