@@ -68,6 +68,7 @@
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
     
+       [barButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
     
    // menuItems = @[@"game",@"achievements",@"facebook", @"question"];
     

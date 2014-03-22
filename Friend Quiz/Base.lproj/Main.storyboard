@@ -444,7 +444,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dTf-bN-VLI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2023" y="-2110"/>
+            <point key="canvasLocation" x="1321" y="-2648"/>
         </scene>
         <!--Status View Controller-->
         <scene sceneID="4ZU-NO-1jB">
@@ -590,7 +590,7 @@
                                     <navigationItem title="The Game" id="tGd-ed-XhR">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="F55-bv-Ks1">
                                             <connections>
-                                                <segue destination="2Rr-nf-8mO" kind="modal" id="aI4-df-tRP"/>
+                                                <segue destination="2Rr-nf-8mO" kind="modal" id="ueB-3m-d4G"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -640,7 +640,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Pl-ww-cPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1905" y="-2150"/>
+            <point key="canvasLocation" x="1928" y="-1982"/>
         </scene>
         <!--Help Facebook View Controller-->
         <scene sceneID="iYi-4Z-Oeg">
@@ -661,7 +661,7 @@
                                     <navigationItem title="Facebook Help" id="FG7-Ub-JRq">
                                         <barButtonItem key="leftBarButtonItem" title="Back" id="CJX-xb-Xbc">
                                             <connections>
-                                                <segue destination="2Rr-nf-8mO" kind="modal" id="5fJ-VA-waD"/>
+                                                <segue destination="eAz-Pt-tfl" kind="modal" id="eDk-aJ-tMX"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -674,7 +674,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWH-sO-XYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2031" y="-2802"/>
+            <point key="canvasLocation" x="2333" y="-1536"/>
         </scene>
         <!--Help Achievements View Controller-->
         <scene sceneID="mc5-oS-HXV">
@@ -722,7 +722,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="XTg-jC-TKT">
-                                <rect key="frame" x="0.0" y="77" width="320" height="400"/>
+                                <rect key="frame" x="0.0" y="76" width="320" height="400"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
@@ -821,9 +821,20 @@
                                     </tableViewCell>
                                 </prototypes>
                                 <sections/>
+                                <connections>
+                                    <outlet property="dataSource" destination="hOT-Dc-hDY" id="XS9-VW-tgC"/>
+                                    <outlet property="delegate" destination="hOT-Dc-hDY" id="oax-OS-WGW"/>
+                                </connections>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="3WB-VM-MD3">
-                                <rect key="frame" x="20" y="20" width="55" height="41"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="TDE-av-ifU">
+                                <rect key="frame" x="11" y="13" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="setting-icon.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="IZt-gR-uQJ">
+                                <rect key="frame" x="11" y="13" width="44" height="44"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="setting-icon.png">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -834,7 +845,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="tAV-pN-VJg"/>
                     <connections>
-                        <outlet property="barButton" destination="3WB-VM-MD3" id="R9V-7W-r3E"/>
+                        <outlet property="barButton" destination="IZt-gR-uQJ" id="3m0-7L-1Yd"/>
                         <outlet property="helpTableView" destination="XTg-jC-TKT" id="KiW-My-dcr"/>
                     </connections>
                 </viewController>
@@ -1954,7 +1965,8 @@
         <segue reference="9TU-ri-o1A"/>
         <segue reference="339-oy-3yD"/>
         <segue reference="fIF-Ki-DVP"/>
-        <segue reference="5fJ-VA-waD"/>
-        <segue reference="I1U-KX-zrS"/>
+        <segue reference="ueB-3m-d4G"/>
+        <segue reference="nuk-uU-mYt"/>
+        <segue reference="eDk-aJ-tMX"/>
     </inferredMetricsTieBreakers>
 </document>

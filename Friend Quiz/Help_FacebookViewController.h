@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Help_FacebookViewController : UIViewController
+@interface Help_FacebookViewController : UIViewController <UINavigationBarDelegate>
 
 @end

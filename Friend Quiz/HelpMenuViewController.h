@@ -11,6 +11,7 @@
 @interface HelpMenuViewController : UIViewController <UITableViewDelegate,UITableViewDataSource>
 @property (strong, nonatomic) IBOutlet UIButton *barButton;
 
+
 @property (strong, nonatomic) IBOutlet UITableView *helpTableView;
 
 @end

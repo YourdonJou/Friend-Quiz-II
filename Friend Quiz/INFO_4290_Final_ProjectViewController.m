@@ -34,13 +34,13 @@
     //inherit the shared app delegate object.
     appDelegate= (INFO_4290_Final_ProjectAppDelegate *)[[UIApplication sharedApplication]delegate];
     //Refer to the check Facebook Session method in the App Delegate.m file
-    [appDelegate checkFacebookSession];
+ //   [appDelegate checkFacebookSession];
     
-    NSLog(@"View did appeared");
+  //  NSLog(@"View did appeared");
 
     
     //initialize an object from the main view controller
-    MainMenuViewController *mVC = [[MainMenuViewController alloc]init];
+  //  MainMenuViewController *mVC = [[MainMenuViewController alloc]init];
     //If User is logged in (Method is in the AppDelegate.m class
     if([appDelegate checkFacebookSession] == TRUE){
         
@@ -77,7 +77,7 @@
     
     loginView.delegate = self;
 
-    NSLog(@"View did load");
+//    NSLog(@"View did load");
 
     
   
@@ -131,13 +131,13 @@
 
     self.profilePic.profileID = user.id;
     
-    NSLog(@"View was freaking loaded!!");
+   // NSLog(@"View was freaking loaded!!");
     
    
     if([appDelegate checkFacebookSession] == TRUE){
         
         
-        NSLog(@"Found the Facebook TOKEN!!");
+     //   NSLog(@"Found the Facebook TOKEN!!");
         
         [self performSegueWithIdentifier:@"gameSegue" sender:self];
         
