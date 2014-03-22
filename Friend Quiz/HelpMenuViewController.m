@@ -16,7 +16,9 @@
 @implementation HelpMenuViewController{
     
     
-    NSArray *menuItems;
+    NSMutableArray *menuItems;
+    
+    
 }
 @synthesize barButton;
 
@@ -29,6 +31,51 @@
     return self;
 }
 
+-(void)viewWillAppear:(BOOL)animated{
+    
+    
+    self.helpTableView.delegate = self;
+    self.helpTableView.dataSource = self;
+    
+    
+    menuItems = [[NSMutableArray alloc]init];
+    
+    [menuItems addObject:@"game"];
+    
+    [menuItems addObject:@"achievements"];
+    
+
+    
+    [menuItems addObject:@"facebook"];
+    
+
+    
+    [menuItems addObject:@"question"];
+    
+    for(int i = 0; i < [menuItems count]; i++)
+    {
+        
+        
+        NSLog(@"Items in array are %@",menuItems[i]);
+        
+    }
+    
+    
+    self.helpTableView.backgroundColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.4];
+    
+
+    
+    
+    [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
+    
+    
+   // menuItems = @[@"game",@"achievements",@"facebook", @"question"];
+    
+    NSLog(@"View Will appear loaded");
+    
+}
+
+/*
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -43,6 +90,21 @@
     
     self.helpTableView.backgroundColor = [UIColor colorWithRed:0.3 green:0.3 blue:0.3 alpha:0.4];
     
+    
+    menuItems = [[NSMutableArray alloc]init];
+    
+    [menuItems addObject:@"game"];
+    
+    [menuItems addObject:@"achievements"];
+    
+    
+    
+    [menuItems addObject:@"facebook"];
+    
+    
+    
+    [menuItems addObject:@"question"];
+    
    [barButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
     
   //  [self.scrollView setScrollEnabled:YES];
@@ -52,13 +114,15 @@
  //   menuItems = [[NSArray alloc]init];
 
     
-    menuItems = @[@"game",@"achievements",@"facebook", @"question"];
+  //  menuItems = @[@"game",@"achievements",@"facebook", @"question"];
   //  menuItems = [[NSArray alloc]initWithObjects:@"game", @"achievements", @"facebook", @"question"];
     
     
     [self.view addGestureRecognizer:self.revealViewController.panGestureRecognizer];
 
 }
+ 
+ */
 
 - (void)didReceiveMemoryWarning
 {
@@ -82,8 +146,8 @@
 #pragma Table View Data Sources
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
-    return [menuItems count];
-    
+   return [menuItems count];
+    //return 4;
     
 
 }
@@ -107,5 +171,6 @@
     
     
     return cell;
+    
 }
 @end

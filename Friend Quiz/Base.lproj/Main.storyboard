@@ -674,7 +674,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWH-sO-XYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2217" y="-2763"/>
+            <point key="canvasLocation" x="2031" y="-2802"/>
         </scene>
         <!--Help Achievements View Controller-->
         <scene sceneID="mc5-oS-HXV">
@@ -1954,7 +1954,7 @@
         <segue reference="9TU-ri-o1A"/>
         <segue reference="339-oy-3yD"/>
         <segue reference="fIF-Ki-DVP"/>
-        <segue reference="aI4-df-tRP"/>
+        <segue reference="5fJ-VA-waD"/>
         <segue reference="I1U-KX-zrS"/>
     </inferredMetricsTieBreakers>
 </document>

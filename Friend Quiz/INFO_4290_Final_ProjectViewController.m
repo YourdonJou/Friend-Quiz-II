@@ -23,13 +23,37 @@
 }
 @synthesize loginView, profilePic;
 
+-(void) viewWillDisappear:(BOOL)animated{
+    
+    
+    NSLog(@"View disappeared");
+}
+
+
 
 - (void) viewWillAppear:(BOOL)animated{
     
+    
+    NSLog(@"View was loaded!!!");
 
     
+    if([FBSession activeSession].state == FBSessionStateCreatedTokenLoaded){
+        
+        [self performSegueWithIdentifier:@"gameSegue" sender:self];
+
+        
+    }
     
-    
+    if([appDelegate checkFacebookSession] == TRUE){
+        
+        
+        NSLog(@"Logged in to Facebook !!");
+        
+        [self performSegueWithIdentifier:@"gameSegue" sender:self];
+
+        
+
+    }
 
     
 }
@@ -41,6 +65,9 @@
     appDelegate= (INFO_4290_Final_ProjectAppDelegate *)[[UIApplication sharedApplication]delegate];
     //Refer to the check Facebook Session method in the App Delegate.m file
     [appDelegate checkFacebookSession];
+    
+    NSLog(@"View did appeared");
+
     
     //initialize an object from the main view controller
     MainMenuViewController *mVC = [[MainMenuViewController alloc]init];
@@ -79,6 +106,8 @@
     loginView.readPermissions = @[@"basic_info",@"email",@"user_likes"];
     
     loginView.delegate = self;
+
+    NSLog(@"View did load");
 
     
   
@@ -131,6 +160,32 @@
     
 
     self.profilePic.profileID = user.id;
+    
+    NSLog(@"View was freaking loaded!!");
+    
+   
+    if([appDelegate checkFacebookSession] == TRUE){
+        
+        
+        NSLog(@"Found the Facebook TOKEN!!");
+        
+        [self performSegueWithIdentifier:@"gameSegue" sender:self];
+        
+        
+        
+    }
+    
+    
+    /*if([FBSession activeSession].state == FBSessionStateCreatedTokenLoaded){
+        
+        [self performSegueWithIdentifier:@"gameSegue" sender:self];
+        
+        NSLog(@"Found the Facebook TOKEN!!");
+        
+        
+    }
+     
+     */
     
    }
 
