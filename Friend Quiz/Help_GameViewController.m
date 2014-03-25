@@ -74,7 +74,7 @@
         self.q1Answer.transform = CGAffineTransformIdentity;
     } completion:^(BOOL finished){
         
-        self.q2Button.frame.origin.y = 100 - self.q2Button.frame.origin.y;
+     //   self.q2Button.frame.origin.y = 100 - self.q2Button.frame.origin.y;
         // if you want to do something once the animation finishes, put it here
     }];
 }
