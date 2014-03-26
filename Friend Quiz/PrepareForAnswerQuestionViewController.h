@@ -14,6 +14,7 @@
 
 @interface PrepareForAnswerQuestionViewController : UIViewController
 
+
 @property ExternalQuestionPack *selectedExternalQuestionPackTOPASS;
 @property NSArray *rows;
 

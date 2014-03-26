@@ -100,10 +100,9 @@
                               [dict2 objectForKey:@"Q5AI"], nil];
     
     
+    selectedExternalQuestionPackTOPASS = [[ExternalQuestionPack alloc]init];
     
     [selectedExternalQuestionPackTOPASS setQuestionPackID:[[dict2 objectForKey:@"ID"]integerValue] ];
-    
-    //[selectedExternalQuestionPackTOPASS setQuestionPackID:12 ];
     
     [selectedExternalQuestionPackTOPASS setQuestionTitle:questionTitle];
     
@@ -115,9 +114,9 @@
     [QuestionPack sharedCenter].externalQuestionPack = selectedExternalQuestionPackTOPASS;
     
     
-    NSLog(@"contents of packID: %d", [[dict2 objectForKey:@"ID"]integerValue]);
-    NSLog(@"contents of newArray: %@", questionAnswer);
-    NSLog(@"contents of newArray: %@", questionCorrectAnswerIndex);
+    NSLog(@"contents of packID: %d",  selectedExternalQuestionPackTOPASS.questionPackID);
+    NSLog(@"PrepareForAnswerQuestion QuestionTitle %@",  selectedExternalQuestionPackTOPASS.questionTitle);
+    NSLog(@"contents of newArray: %@",  selectedExternalQuestionPackTOPASS.questionCorrectAnswerIndex);
 }
 
 - (void)didReceiveMemoryWarning

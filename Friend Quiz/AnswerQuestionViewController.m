@@ -29,7 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
+    /*
     //test code
     ExternalQuestionPack *data = [[ExternalQuestionPack alloc]init];
     
@@ -42,7 +42,9 @@
     [data setQuestionCorrectAnswerIndex:[QuestionPack sharedCenter].questionCorrectAnswerIndex];
     
     selectedExternalQuestionPack = data;
-    // test code end
+    // test code end */
+    
+    selectedExternalQuestionPack = [QuestionPack sharedCenter].externalQuestionPack;
     
     // Get Question pack as a unique game from external DB
     
