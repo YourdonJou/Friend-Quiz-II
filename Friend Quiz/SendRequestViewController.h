@@ -10,6 +10,7 @@
 
 #import "MainViewController.h"
 #import "QuestionPack.h"
+#import "CJSONDeserializer.h"
 
 @interface SendRequestViewController : UIViewController
 - (IBAction)testbutton:(id)sender;
