@@ -65,6 +65,8 @@
                            ,NULL
                             ];
     
+    NSLog(urlToPass);
+    
     NSURL *url = [NSURL URLWithString:urlToPass];
     
     
