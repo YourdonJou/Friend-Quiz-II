@@ -33,6 +33,37 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    
+    // Get Question Info Internally
+    NSArray *questionTitle = [QuestionPack sharedCenter].questionTitle;
+    
+    NSArray *questionAnswer1 = [QuestionPack sharedCenter].questionAnswers[0];
+    NSArray *questionAnswer2 = [QuestionPack sharedCenter].questionAnswers[1];
+    NSArray *questionAnswer3 = [QuestionPack sharedCenter].questionAnswers[2];
+    NSArray *questionAnswer4 = [QuestionPack sharedCenter].questionAnswers[3];
+    NSArray *questionAnswer5 = [QuestionPack sharedCenter].questionAnswers[4];
+    
+    NSArray *questionAnswerIndex = [QuestionPack sharedCenter].questionCorrectAnswerIndex;
+    
+    
+    // Store all the information to the database
+    NSString *urlToPass = [NSString stringWithFormat:@"http://racketrepublic.com/loadGamePack.php?Q1=%@&Q1A1=%@&Q1A2=%@&Q1A3=%@&Q1A4=%@&Q1AI=%@&Q2=%@&Q2A1=%@&Q2A2=%@&Q2A3=%@&Q2A4=%@&Q2AI=%@&Q3=%@&Q3A1=%@&Q3A2=%@&Q3A3=%@&Q3A4=%@&Q3AI=%@&Q4=%@&Q4A1=%@&Q4A2=%@&Q4A3=%@&Q4A4=%@&Q4AI=%@&Q5=%@&Q5A1=%@&Q5A2=%@&Q5A3=%@&Q5A4=%@&Q5AI=%@&Note=%@",
+                           questionTitle[0],questionAnswer1[0],questionAnswer1[1],questionAnswer1[2],questionAnswer1[3],questionAnswerIndex[0],
+                           
+                           questionTitle[1],questionAnswer1[0],questionAnswer1[1],questionAnswer1[2],questionAnswer1[3],questionAnswerIndex[1],
+                           
+                           questionTitle[2],questionAnswer1[0],questionAnswer1[1],questionAnswer1[2],questionAnswer1[3],questionAnswerIndex[2],
+                           
+                           questionTitle[3],questionAnswer1[0],questionAnswer1[1],questionAnswer1[2],questionAnswer1[3],questionAnswerIndex[3],
+                           
+                           questionTitle[4],questionAnswer1[0],questionAnswer1[1],questionAnswer1[2],questionAnswer1[3],questionAnswerIndex[4]
+                           
+                            ];
+    
+    NSURL *url = [NSURL URLWithString:urlToPass];
+    
+    
+    
 
    
     if([FBSession.activeSession.permissions indexOfObject:@"publish_actions" ]== NSNotFound){
