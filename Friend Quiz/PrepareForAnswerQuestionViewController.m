@@ -15,7 +15,7 @@
 @implementation PrepareForAnswerQuestionViewController
 
 
-@synthesize rows, selectedExternalQuestionPackTOPASS;
+@synthesize rows, selectedExternalQuestionPackTOPASS, gameIDtoGetGameFromDB;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -31,8 +31,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    //Set GameID
+    gameIDtoGetGameFromDB = 1; //Need to be changed later
+    
     // Get Question pack as a unique game from external DB
-    NSURL *url = [NSURL URLWithString:@"http://racketrepublic.com/playGame.php"];
+    NSString *urlToPass = [NSString stringWithFormat:@"http://racketrepublic.com/loadGamePack.php?gameID=%d",gameIDtoGetGameFromDB];
+    
+    NSURL *url = [NSURL URLWithString:urlToPass];
 	NSString *jsonreturn = [[NSString alloc] initWithContentsOfURL:url];
 	
 	NSLog(jsonreturn); // Look at the console and you can see what the restults are

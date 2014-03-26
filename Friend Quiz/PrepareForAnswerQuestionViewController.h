@@ -18,6 +18,8 @@
 @property ExternalQuestionPack *selectedExternalQuestionPackTOPASS;
 @property NSArray *rows;
 
+@property int gameIDtoGetGameFromDB;
+
 
 
 @end

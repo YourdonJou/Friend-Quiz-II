@@ -29,6 +29,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
     /*
     //test code
     ExternalQuestionPack *data = [[ExternalQuestionPack alloc]init];
@@ -44,14 +45,13 @@
     selectedExternalQuestionPack = data;
     // test code end */
     
-    selectedExternalQuestionPack = [QuestionPack sharedCenter].externalQuestionPack;
+    
     
     // Get Question pack as a unique game from external DB
+    selectedExternalQuestionPack = [QuestionPack sharedCenter].externalQuestionPack;
     
-    NSLog(@"AnswerQuestionViewController Data is : %@",[QuestionPack sharedCenter].externalQuestionPack.questionTitle[0]);
     
-    
-    //selectedExternalQuestionPack = [QuestionPack sharedCenter].externalQuestionPack;
+
     
     // Get question detail
     
