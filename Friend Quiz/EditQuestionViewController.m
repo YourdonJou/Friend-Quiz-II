@@ -201,9 +201,15 @@ questionTitleLabel, question1label, question2label, question3label, question4lab
         
         
         // Send the correct answer index
-        //[[QuestionPack sharedCenter].questionCorrectAnswerIndex setObject: [NSString stringWithFormat: @"%d", correctAnswerIndex] atIndexedSubscript:[QuestionPack sharedCenter].questionIndex];
+        if (![QuestionPack sharedCenter].questionCorrectAnswerIndex)
+        {
+            [QuestionPack sharedCenter].questionCorrectAnswerIndex = [[NSMutableArray alloc] initWithCapacity: 5];
+        }
+    
         
         [[QuestionPack sharedCenter].questionCorrectAnswerIndex insertObject:[NSString stringWithFormat: @"%d", correctAnswerIndex] atIndex:[QuestionPack sharedCenter].questionIndex];
+        
+    
         
         // Send correct answers
         if (![QuestionPack sharedCenter].questionAnswers)
