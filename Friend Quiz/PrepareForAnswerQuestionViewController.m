@@ -101,9 +101,11 @@
     
     
     
-    //[selectedExternalQuestionPackTOPASS setQuestionPackID:[[dict2 objectForKey:@"ID"]integerValue] ];
+    [selectedExternalQuestionPackTOPASS setQuestionPackID:[[dict2 objectForKey:@"ID"]integerValue] ];
     
-    [selectedExternalQuestionPackTOPASS setQuestionPackID:12 ];
+    //[selectedExternalQuestionPackTOPASS setQuestionPackID:12 ];
+    
+    [selectedExternalQuestionPackTOPASS setQuestionTitle:questionTitle];
     
     [selectedExternalQuestionPackTOPASS setQuestionAnswers: questionAnswer];
     
@@ -113,7 +115,7 @@
     [QuestionPack sharedCenter].externalQuestionPack = selectedExternalQuestionPackTOPASS;
     
     
-    NSLog(@"contents of packID: %d", selectedExternalQuestionPackTOPASS.questionPackID);
+    NSLog(@"contents of packID: %d", [[dict2 objectForKey:@"ID"]integerValue]);
     NSLog(@"contents of newArray: %@", questionAnswer);
     NSLog(@"contents of newArray: %@", questionCorrectAnswerIndex);
 }
