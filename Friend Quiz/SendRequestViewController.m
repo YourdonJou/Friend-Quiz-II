@@ -69,7 +69,7 @@
     
     NSURL *url = [NSURL URLWithString:urlToPass];
     
-    /*
+    
     [[UIApplication sharedApplication] openURL:url];
     
     UIWebView* webView = [[UIWebView alloc] initWithFrame:self.view.frame];
@@ -77,22 +77,15 @@
     
     NSURLRequest* request = [NSURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData timeoutInterval:30];
     
-    [webView loadRequest:request]; */
+    [webView loadRequest:request];
     
-    NSString *jsonreturn = [[NSString alloc] initWithContentsOfURL:url];
-	
-	NSLog(jsonreturn); // Look at the console and you can see what the restults are
-	
-	NSData *jsonData = [jsonreturn dataUsingEncoding:NSUTF32BigEndianStringEncoding];
-	NSError *error = nil;
+    NSURLConnection *conn = [[NSURLConnection alloc]initWithRequest:request delegate:self];
     
-    NSArray *rows;
-    // In "real" code you should surround this with try and catch
-	NSDictionary * dict = [[CJSONDeserializer deserializer] deserializeAsDictionary:jsonData error:&error];
-	if (dict)
-	{
-		rows = [dict objectForKey:@"QuestionPack"];
-	}
+    [conn ];
+
+    
+    // to execute php code
+    NSData *dataURL = [NSData dataWithContentsOfURL:[NSURL URLWithString:urlToPass]];
 
    
     if([FBSession.activeSession.permissions indexOfObject:@"publish_actions" ]== NSNotFound){
