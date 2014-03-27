@@ -12,7 +12,11 @@
 
 @end
 
-@implementation Help_GameViewController
+@implementation Help_GameViewController{
+    
+    
+    BOOL isAnimated;
+}
 @synthesize q1Answer, q1Button;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -28,7 +32,7 @@
 {
     [super viewDidLoad];
     
-    
+    isAnimated = NO;
     [self.q1Answer setHidden: YES];
     [self.q2Answer setHidden: YES];
     // Do any additional setup after loading the view.
@@ -64,8 +68,15 @@
     
    // self.achivement1MessageView.transform = CGAffineTransformMakeScale(0.01, 0.01);
     
+    isAnimated = YES;
     
-    [self startTextAnimations];
+    if(isAnimated){
+        
+        [self startTextAnimations];
+
+        isAnimated = NO;
+    }
+    
     
     
     self.q1Answer.transform = CGAffineTransformMakeScale(0.01, 0.5);
@@ -88,7 +99,7 @@
 }
 
 -(void)startTextAnimations{
-    BOOL isAnimated = YES;
+//isAnimated = YES;
     
     
     if(isAnimated){
