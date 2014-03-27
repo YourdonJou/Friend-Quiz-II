@@ -22,6 +22,8 @@
 
 - (IBAction)q2ButtonSelected:(id)sender;
 
+-(void)startTextAnimations;
+
 
 
 @end

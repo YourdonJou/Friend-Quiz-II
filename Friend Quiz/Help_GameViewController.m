@@ -65,6 +65,7 @@
    // self.achivement1MessageView.transform = CGAffineTransformMakeScale(0.01, 0.01);
     
     
+    [self startTextAnimations];
     
     
     self.q1Answer.transform = CGAffineTransformMakeScale(0.01, 0.5);
@@ -84,6 +85,44 @@
 - (IBAction)q2ButtonSelected:(id)sender {
     
     [self.q2Answer setHidden:NO];
+}
+
+-(void)startTextAnimations{
+    BOOL isAnimated = YES;
+    
+    
+    if(isAnimated){
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDuration: 0.5];
+    [UIView setAnimationBeginsFromCurrentState:YES];
+    
+    //  self.view.frame.origin
+    self.q2Button.frame = CGRectMake(self.q2Button.frame.origin.x, (self.q2Button.frame.origin.y + 50), self.q2Button.frame.size.width, self.q2Button.frame.size.height);
+    
+    [UIView commitAnimations];
+        isAnimated = NO;
+        
+    }
+    
+    else if (!isAnimated){
+        
+        
+        [UIView beginAnimations:nil context:nil];
+        [UIView setAnimationDelegate:self];
+        [UIView setAnimationDuration: 0.5];
+        [UIView setAnimationBeginsFromCurrentState:YES];
+        
+        //  self.view.frame.origin
+        self.q2Button.frame = CGRectMake(self.q2Button.frame.origin.x, (self.q2Button.frame.origin.y - 50), self.q2Button.frame.size.width, self.q2Button.frame.size.height);
+        
+        [UIView commitAnimations];
+        isAnimated = YES;
+        
+    }
+    
+    
 }
 
 @end
