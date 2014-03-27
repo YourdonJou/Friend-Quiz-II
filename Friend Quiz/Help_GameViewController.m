@@ -140,6 +140,7 @@
     self.q2Button.frame = CGRectMake(self.q2Button.frame.origin.x, (self.q2Button.frame.origin.y - 50), self.q2Button.frame.size.width, self.q2Button.frame.size.height);
     
     [UIView commitAnimations];
+    //
  //   isAnimated = YES;
     
 }
