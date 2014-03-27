@@ -32,7 +32,7 @@
 {
     [super viewDidLoad];
     
-    isAnimated = NO;
+    isAnimated = YES;
     [self.q1Answer setHidden: YES];
     [self.q2Answer setHidden: YES];
     // Do any additional setup after loading the view.
@@ -68,13 +68,22 @@
     
    // self.achivement1MessageView.transform = CGAffineTransformMakeScale(0.01, 0.01);
     
-    isAnimated = YES;
-    
     if(isAnimated){
         
         [self startTextAnimations];
 
         isAnimated = NO;
+        NSLog(@"is Animated is YES");
+        
+    }
+    
+    else {
+        
+        
+        [self revertTextAnimations];
+        isAnimated = YES;
+        
+           NSLog(@"is Animated is NO");
     }
     
     
@@ -102,7 +111,7 @@
 //isAnimated = YES;
     
     
-    if(isAnimated){
+ 
     
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDelegate:self];
@@ -114,25 +123,24 @@
     
     [UIView commitAnimations];
         isAnimated = NO;
-        
-    }
     
-    else if (!isAnimated){
-        
-        
-        [UIView beginAnimations:nil context:nil];
-        [UIView setAnimationDelegate:self];
-        [UIView setAnimationDuration: 0.5];
-        [UIView setAnimationBeginsFromCurrentState:YES];
-        
-        //  self.view.frame.origin
-        self.q2Button.frame = CGRectMake(self.q2Button.frame.origin.x, (self.q2Button.frame.origin.y - 50), self.q2Button.frame.size.width, self.q2Button.frame.size.height);
-        
-        [UIView commitAnimations];
-        isAnimated = YES;
-        
-    }
     
+}
+
+-(void)revertTextAnimations{
+    
+    NSLog(@"Reverting Text Animations Method Called");
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDelegate:self];
+    [UIView setAnimationDuration: 0.5];
+    [UIView setAnimationBeginsFromCurrentState:YES];
+    
+    //  self.view.frame.origin
+    self.q2Button.frame = CGRectMake(self.q2Button.frame.origin.x, (self.q2Button.frame.origin.y - 50), self.q2Button.frame.size.width, self.q2Button.frame.size.height);
+    
+    [UIView commitAnimations];
+ //   isAnimated = YES;
     
 }
 
