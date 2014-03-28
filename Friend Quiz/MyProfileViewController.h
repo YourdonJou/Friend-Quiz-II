@@ -11,5 +11,6 @@
 @interface MyProfileViewController : UIViewController
 
 @property (strong, nonatomic) IBOutlet UIButton *barButton;
+@property (strong, nonatomic) IBOutlet UIScrollView *scrollView;
 
 @end

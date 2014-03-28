@@ -32,6 +32,7 @@
 		AAD1945018AC440700116E23 /* PackSelectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1944F18AC440700116E23 /* PackSelectViewController.m */; };
 		AAD1945318AC452D00116E23 /* EditQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1945218AC452D00116E23 /* EditQuestionViewController.m */; };
 		AAD194A018AC572500116E23 /* SendRequestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AAD1949F18AC572500116E23 /* SendRequestViewController.m */; };
+		EB50AE7418E633AE0000C8A0 /* fire in Resources */ = {isa = PBXBuildFile; fileRef = EB50AE7318E633AD0000C8A0 /* fire */; };
 		EB5D904618D7E64200E8BE1B /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB5D904518D7E64200E8BE1B /* CoreData.framework */; };
 		EB5D904918D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB5D904718D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld */; };
 		EB5D904A18D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EB5D904718D7E66C00E8BE1B /* CoreDataModel.xcdatamodeld */; };
@@ -140,6 +141,7 @@
 		AAD1945218AC452D00116E23 /* EditQuestionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditQuestionViewController.m; sourceTree = "<group>"; };
 		AAD1949E18AC572500116E23 /* SendRequestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SendRequestViewController.h; sourceTree = "<group>"; };
 		AAD1949F18AC572500116E23 /* SendRequestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SendRequestViewController.m; sourceTree = "<group>"; };
+		EB50AE7318E633AD0000C8A0 /* fire */ = {isa = PBXFileReference; lastKnownFileType = file; path = fire; sourceTree = "<group>"; };
 		EB5D904518D7E64200E8BE1B /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		EB5D904818D7E66C00E8BE1B /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		EB5D906F18DAA22A00E8BE1B /* black.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = black.png; sourceTree = "<group>"; };
@@ -275,6 +277,7 @@
 		EB96185D18C8180B0047862A /* icons */ = {
 			isa = PBXGroup;
 			children = (
+				EB50AE7318E633AD0000C8A0 /* fire */,
 				EB96186818C81AF10047862A /* award-icon.png */,
 				EB96185E18C8180B0047862A /* help-icon1.png */,
 				EB96185F18C8180B0047862A /* home-icon.png */,
@@ -539,6 +542,7 @@
 				AA68478F18E3CACF00278A5E /* 80.png in Resources */,
 				EB5D907718DAA22A00E8BE1B /* black.png in Resources */,
 				EB5D907B18DAA22A00E8BE1B /* cloud-4.png in Resources */,
+				EB50AE7418E633AE0000C8A0 /* fire in Resources */,
 				EBA5EF3918B5CE7900493FBF /* menu.png in Resources */,
 				EB9B1890189A1F52001E9D60 /* Images.xcassets in Resources */,
 				EB9B1882189A1F51001E9D60 /* InfoPlist.strings in Resources */,

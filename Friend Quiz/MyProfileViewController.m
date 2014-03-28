@@ -14,7 +14,7 @@
 @end
 
 @implementation MyProfileViewController
-@synthesize barButton;
+@synthesize barButton, scrollView;
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +27,9 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    [scrollView setScrollEnabled:YES];
+    [scrollView setContentSize:(CGSizeMake(200, 600))];
     
     
    // _sidebarButton.tintColor = [UIColor colorWithWhite:0.1f alpha:0.9f];
