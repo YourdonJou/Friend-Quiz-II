@@ -50,7 +50,7 @@
     self.tableView.separatorColor = [UIColor colorWithWhite:0.3f alpha:0.3f];
     //menuItems = [[NSArray alloc]init];
    
-    menuChoices = @[@"home",@"status", @"settings", @"profile", @"awards", @"help"];
+    menuChoices = @[@"home", @"settings", @"profile", @"awards", @"help"];
   //  menuItems = @[@"Your Status", @"Settings", @"My Profile", @"My Awards", @"Help"];
 	// Do any additional setup after loading the view.
     
