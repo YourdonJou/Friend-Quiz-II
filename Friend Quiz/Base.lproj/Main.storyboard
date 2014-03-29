@@ -634,10 +634,6 @@
                                         <rect key="frame" x="126" y="497" width="67" height="45"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black.png" id="5gx-Dh-iJy">
-                                        <rect key="frame" x="238" y="251" width="47" height="79"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="EnV-CO-EDn">
                                         <rect key="frame" x="72" y="564" width="76" height="94"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -649,7 +645,7 @@
                                         </connections>
                                     </button>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-4.png" id="mTb-Fg-ZpH">
-                                        <rect key="frame" x="77" y="348" width="116" height="68"/>
+                                        <rect key="frame" x="63" y="273" width="167" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-4.png" id="8HS-ef-qUO">
@@ -660,6 +656,29 @@
                                         <rect key="frame" x="92" y="11" width="47" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4On-pc-spM">
+                                        <rect key="frame" x="-54" y="353" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Earn 50 Ballons" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Omw-eP-k5P">
+                                        <rect key="frame" x="92" y="304" width="138" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ieh-BL-JWC">
+                                        <rect key="frame" x="230" y="232" width="49" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="black-large.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="balloon2Selected:" destination="FQW-Y9-C7b" eventType="touchUpInside" id="yfK-mX-QRw"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pOe-qG-TlD">
@@ -673,16 +692,20 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="achievement2Balloon" destination="ieh-BL-JWC" id="ttl-V9-btb"/>
+                        <outlet property="achievement2Label" destination="Omw-eP-k5P" id="aJN-h7-9Dp"/>
+                        <outlet property="achievement2Message" destination="mTb-Fg-ZpH" id="rfK-IP-1os"/>
                         <outlet property="achivement1Balloon" destination="EnV-CO-EDn" id="7dl-kB-0Yo"/>
                         <outlet property="achivement1Message" destination="Mpo-5a-5bQ" id="LhP-Io-73H"/>
                         <outlet property="achivement1MessageView" destination="H5K-vF-6Oe" id="ZgP-yx-ScW"/>
+                        <outlet property="backgroundImage" destination="wD8-Ar-zaV" id="ZVf-yG-4Rm"/>
                         <outlet property="scrollView" destination="o0h-6c-Dfr" id="nuw-4n-yGd"/>
                         <outlet property="sideMenuButton" destination="pOe-qG-TlD" id="Naj-vB-aoq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FzL-5Y-Qwt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="965" y="-2036"/>
+            <point key="canvasLocation" x="907" y="-2085"/>
         </scene>
         <!--Help Game View Controller-->
         <scene sceneID="Fcn-hf-aOU">
