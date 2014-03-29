@@ -126,7 +126,6 @@
 -(void)loginViewFetchedUserInfo:(FBLoginView *)loginView user:(id<FBGraphUser>)user{
     
     
-    
     pictureView.profileID = user.id;
     
     NSString *username = user.name;
