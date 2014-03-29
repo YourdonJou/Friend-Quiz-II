@@ -608,15 +608,11 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky.png" id="wD8-Ar-zaV">
-                                        <rect key="frame" x="-4" y="33" width="335" height="875"/>
+                                        <rect key="frame" x="-1" y="-21" width="321" height="1092"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-2.png" id="SoA-ud-qvY">
                                         <rect key="frame" x="24" y="132" width="124" height="85"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black.png" id="JqP-fc-6vj">
-                                        <rect key="frame" x="63" y="181" width="47" height="79"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-1.png" id="Kc5-hy-Jy9">
@@ -648,6 +644,10 @@
                                         <rect key="frame" x="63" y="273" width="167" height="85"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-1.png" id="fJS-zX-zxY">
+                                        <rect key="frame" x="146" y="87" width="160" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-4.png" id="8HS-ef-qUO">
                                         <rect key="frame" x="101" y="11" width="116" height="68"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -669,6 +669,12 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get 150 points in one game" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Jo-T9-lKz">
+                                        <rect key="frame" x="173" y="100" width="127" height="52"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite 3 Friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dIg-ix-Ouw">
                                         <rect key="frame" x="146" y="483" width="138" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -685,6 +691,17 @@
                                             <action selector="balloon2Selected:" destination="FQW-Y9-C7b" eventType="touchUpInside" id="yfK-mX-QRw"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1BZ-8B-ZUf">
+                                        <rect key="frame" x="62" y="166" width="49" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="black-large.png">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="balloon2Selected:" destination="FQW-Y9-C7b" eventType="touchUpInside" id="K2Y-kz-JBy"/>
+                                            <action selector="balloon3Selected:" destination="FQW-Y9-C7b" eventType="touchUpInside" id="aLc-W8-4Nv"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="pOe-qG-TlD">
@@ -698,9 +715,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="achievement1Label" destination="dIg-ix-Ouw" id="ssy-Te-cHj"/>
                         <outlet property="achievement2Balloon" destination="ieh-BL-JWC" id="ttl-V9-btb"/>
                         <outlet property="achievement2Label" destination="Omw-eP-k5P" id="aJN-h7-9Dp"/>
                         <outlet property="achievement2Message" destination="mTb-Fg-ZpH" id="rfK-IP-1os"/>
+                        <outlet property="achievement3Balloon" destination="1BZ-8B-ZUf" id="IhM-xF-8n5"/>
+                        <outlet property="achievement3Label" destination="1Jo-T9-lKz" id="DaW-Sm-WSP"/>
+                        <outlet property="achievement3Message" destination="fJS-zX-zxY" id="cJf-yR-hC0"/>
                         <outlet property="achivement1Balloon" destination="EnV-CO-EDn" id="7dl-kB-0Yo"/>
                         <outlet property="achivement1Message" destination="Mpo-5a-5bQ" id="LhP-Io-73H"/>
                         <outlet property="achivement1MessageView" destination="H5K-vF-6Oe" id="ZgP-yx-ScW"/>

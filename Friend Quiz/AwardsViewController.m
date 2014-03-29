@@ -36,6 +36,7 @@
     
     animated = NO;
     animated2 = NO;
+    animated3 = NO;
     
     [sideMenuButton addTarget:self.revealViewController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
 	// Do any additional setup after loading the view.
@@ -53,9 +54,13 @@
     
     [self.achivement1Message setHidden:YES];
     [self.achivement1MessageView setHidden:YES];
+    [self.achievement1Label setHidden:YES];
   
     [self.achievement2Message setHidden: YES];
     [self.achievement2Label setHidden:YES];
+    
+    [self.achievement3Message setHidden: YES];
+    [self.achievement3Label setHidden:YES];
 
     
     
@@ -83,12 +88,16 @@
     if(!animated)
     {
     [self.achivement1MessageView setHidden:NO];
+        [self.achievement1Label setHidden:NO];
     
     // instantaneously make the image view small (scaled to 1% of its actual size)
     self.achivement1MessageView.transform = CGAffineTransformMakeScale(0.01, 0.01);
+    self.achievement1Label.transform = CGAffineTransformMakeScale(0.01, 0.01);
+        
     [UIView animateWithDuration:0.2 delay:0 options:UIViewAnimationOptionCurveEaseOut animations:^{
         // animate it to the identity transform (100% scale)
         self.achivement1MessageView.transform = CGAffineTransformIdentity;
+          self.achievement1Label.transform = CGAffineTransformIdentity;
     } completion:^(BOOL finished){
         // if you want to do something once the animation finishes, put it here
     }];
@@ -100,6 +109,7 @@
         
         
         [self.achivement1MessageView setHidden:YES];
+        [self.achievement1Label setHidden:YES];
         animated = NO;
     }
 }
@@ -156,5 +166,57 @@
     }
     
     
+}
+
+- (IBAction)balloon3Selected:(id)sender {
+    
+    if(!animated3)
+    {
+    [self.achievement3Message setHidden: NO];
+    [self.achievement3Label setHidden: NO];
+    
+    
+    self.achievement3Message.transform = CGAffineTransformMakeScale(0.01, 0.01);
+    self.achievement3Label.transform = CGAffineTransformMakeScale(0.01, 0.01);
+    
+    [UIView animateWithDuration:0.2
+                          delay:0
+                        options:UIViewAnimationOptionCurveEaseIn animations:^{
+                            
+                            _achievement3Message.transform = CGAffineTransformIdentity;
+                            _achievement3Label.transform = CGAffineTransformIdentity;
+                            
+                            /*  [UIView beginAnimations:nil context:nil];
+                             [UIView setAnimationDelegate:self];
+                             [UIView setAnimationDuration:0.2];
+                             
+                             
+                             //[[self backgroundImage]setBackgroundColor:color;
+                             [UIView commitAnimations];
+                             
+                             */
+                            
+                        }completion:^(BOOL finished) {
+                            
+                            //
+                            
+                        }];
+    
+    animated3 = YES;
+
+
+    
+    
+    
+}
+
+else{
+    
+    [_achievement3Message setHidden:YES];
+    [_achievement3Label setHidden:YES];
+    
+    animated3 = NO;
+    
+}
 }
 @end
