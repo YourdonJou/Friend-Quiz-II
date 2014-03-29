@@ -122,23 +122,24 @@
                                 _achievement2Message.transform = CGAffineTransformIdentity;
                                 _achievement2Label.transform = CGAffineTransformIdentity;
                                 
-                                [UIView beginAnimations:nil context:nil];
+                              /*  [UIView beginAnimations:nil context:nil];
                                 [UIView setAnimationDelegate:self];
                                 [UIView setAnimationDuration:0.2];
-                                 UIColor *color=  [self getRGBAsFromImage:_backgroundImage atX:100 andY:100 count:1];
                                 
-                                [[self backgroundImage]setBackgroundColor:[UIColor colorWithWhite:0.3 alpha:0.4]];
+                                
+                                //[[self backgroundImage]setBackgroundColor:color;
                                 [UIView commitAnimations];
+                               
+                               */
                             
                             }completion:^(BOOL finished) {
                                 
-                                 animated = YES;
                 //
-            
             
         }];
         
-        
+        animated2 = YES;
+
    
 
         
