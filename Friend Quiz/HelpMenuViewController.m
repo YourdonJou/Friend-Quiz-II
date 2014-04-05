@@ -50,7 +50,7 @@
     
 
     
-    [menuItems addObject:@"question"];
+ //   [menuItems addObject:@"question"];
     
     for(int i = 0; i < [menuItems count]; i++)
     {
