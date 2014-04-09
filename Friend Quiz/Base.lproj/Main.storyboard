@@ -360,7 +360,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Color Scheme" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="zUg-6k-ak9">
-                                <rect key="frame" x="40" y="198" width="110" height="21"/>
+                                <rect key="frame" x="40" y="222" width="110" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -385,30 +385,71 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" id="cDF-oW-rS1">
-                                <rect key="frame" x="216" y="151" width="51" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </switch>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Advertisements" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Vc0-bx-4RU">
-                                <rect key="frame" x="40" y="247" width="120" height="21"/>
+                                <rect key="frame" x="40" y="288" width="120" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" id="cGY-3r-Cge">
-                                <rect key="frame" x="200" y="244" width="81" height="29"/>
+                                <rect key="frame" x="219" y="281" width="81" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
                                     <segment title="YES"/>
                                     <segment title="NO"/>
                                 </segments>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4bM-3L-3sd">
+                                <rect key="frame" x="233" y="135" width="67" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="sound-off.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="soundOptionSelected:" destination="eAz-Pt-tfl" eventType="touchUpInside" id="GUF-9y-SWE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="LVI-Fu-BxE">
+                                <rect key="frame" x="158" y="207" width="55" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="bluecircle.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="blueSelected:" destination="eAz-Pt-tfl" eventType="touchUpInside" id="dV4-2i-uiy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ZaA-0w-CvJ">
+                                <rect key="frame" x="212" y="207" width="55" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="green.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="greenSelected:" destination="eAz-Pt-tfl" eventType="touchUpInside" id="g6c-C3-guu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="s3m-O6-ZOv">
+                                <rect key="frame" x="265" y="206" width="55" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="greencircle.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="acquaSelected:" destination="eAz-Pt-tfl" eventType="touchUpInside" id="w9Y-Mi-Wz9"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="D0M-oo-jxx"/>
                     <connections>
+                        <outlet property="acquaScheme" destination="s3m-O6-ZOv" id="og0-4W-goA"/>
+                        <outlet property="backgroundImage" destination="JGp-ze-Mlo" id="OAV-0d-3ie"/>
                         <outlet property="barbutton" destination="mem-zc-fOG" id="Kwv-YE-Jpr"/>
+                        <outlet property="blueScheme" destination="LVI-Fu-BxE" id="5zD-wW-FdZ"/>
+                        <outlet property="greenScheme" destination="ZaA-0w-CvJ" id="PSc-qi-yse"/>
+                        <outlet property="soundButton" destination="4bM-3L-3sd" id="YIS-pj-nYy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="44l-i1-0pZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -476,8 +517,12 @@
                                         <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pink.png" id="cOn-32-bln">
-                                        <rect key="frame" x="271" y="86" width="25" height="38"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fireball.png" id="cOn-32-bln">
+                                        <rect key="frame" x="265" y="86" width="31" height="39"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fireball.png" id="eTg-hY-bdU">
+                                        <rect key="frame" x="229" y="86" width="31" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Profile" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wdx-U6-S9X">
@@ -2249,10 +2294,14 @@
         <image name="bg.png" width="640" height="4544"/>
         <image name="black-large.png" width="120" height="300"/>
         <image name="black.png" width="60" height="130"/>
+        <image name="bluecircle.png" width="70" height="70"/>
         <image name="cloud-1.png" width="200" height="150"/>
         <image name="cloud-2.png" width="100" height="75"/>
         <image name="cloud-3.png" width="50" height="30"/>
         <image name="cloud-4.png" width="135" height="70"/>
+        <image name="fireball.png" width="50" height="70"/>
+        <image name="green.png" width="70" height="70"/>
+        <image name="greencircle.png" width="70" height="70"/>
         <image name="help-icon1.png" width="44" height="44"/>
         <image name="home-icon.png" width="44" height="44"/>
         <image name="menu.png" width="28" height="20"/>
@@ -2262,6 +2311,7 @@
         <image name="profile-icon.png" width="44" height="44"/>
         <image name="setting-icon.png" width="44" height="44"/>
         <image name="sky.png" width="800" height="2000"/>
+        <image name="sound-off.png" width="128" height="128"/>
         <image name="with-rainbow.png" width="120" height="300"/>
     </resources>
     <color key="tintColor" red="0.071725457493733449" green="0.19669828818274959" blue="0.45108695652173914" alpha="1" colorSpace="calibratedRGB"/>

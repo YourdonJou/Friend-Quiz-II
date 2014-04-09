@@ -112,6 +112,9 @@
 		EBB7B09918F50EF1002AE5BA /* sound-off.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B08F18F50EF1002AE5BA /* sound-off.png */; };
 		EBB7B09A18F50EF1002AE5BA /* soundon.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B09018F50EF1002AE5BA /* soundon.png */; };
 		EBB7B09B18F50EF1002AE5BA /* webbanner.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B09118F50EF1002AE5BA /* webbanner.png */; };
+		EBB7B09E18F512C0002AE5BA /* greenBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B09D18F512C0002AE5BA /* greenBackground.png */; };
+		EBB7B0A018F512CD002AE5BA /* pink-blueBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B09F18F512CD002AE5BA /* pink-blueBackground.png */; };
+		EBB7B0A218F512E5002AE5BA /* pinkBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B0A118F512E5002AE5BA /* pinkBackground.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -264,6 +267,9 @@
 		EBB7B08F18F50EF1002AE5BA /* sound-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound-off.png"; sourceTree = "<group>"; };
 		EBB7B09018F50EF1002AE5BA /* soundon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soundon.png; sourceTree = "<group>"; };
 		EBB7B09118F50EF1002AE5BA /* webbanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = webbanner.png; sourceTree = "<group>"; };
+		EBB7B09D18F512C0002AE5BA /* greenBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greenBackground.png; sourceTree = "<group>"; };
+		EBB7B09F18F512CD002AE5BA /* pink-blueBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "pink-blueBackground.png"; sourceTree = "<group>"; };
+		EBB7B0A118F512E5002AE5BA /* pinkBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pinkBackground.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -532,6 +538,7 @@
 		EBA5EF3718B5CE6000493FBF /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				EBB7B09C18F512A5002AE5BA /* BackgroundImages */,
 				AA68478818E3CACF00278A5E /* app icon */,
 				EB5D906E18DAA22A00E8BE1B /* graphic stuff 2 */,
 				7AFEE0A3189C4D0600D84FA3 /* background_image_2.png */,
@@ -539,6 +546,16 @@
 				EBA5EF3818B5CE7900493FBF /* menu.png */,
 			);
 			name = Images;
+			sourceTree = "<group>";
+		};
+		EBB7B09C18F512A5002AE5BA /* BackgroundImages */ = {
+			isa = PBXGroup;
+			children = (
+				EBB7B0A118F512E5002AE5BA /* pinkBackground.png */,
+				EBB7B09F18F512CD002AE5BA /* pink-blueBackground.png */,
+				EBB7B09D18F512C0002AE5BA /* greenBackground.png */,
+			);
+			name = BackgroundImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -626,6 +643,7 @@
 				EBB7B09318F50EF1002AE5BA /* coverimage-facebokk.png in Resources */,
 				7AFEE0A4189C4D0600D84FA3 /* background_image_2.png in Resources */,
 				EBB7B09418F50EF1002AE5BA /* coverimage.png in Resources */,
+				EBB7B0A018F512CD002AE5BA /* pink-blueBackground.png in Resources */,
 				EB96186618C8180C0047862A /* setting-icon.png in Resources */,
 				EB50AE9818E63E2F0000C8A0 /* tree1.png in Resources */,
 				EB96186418C8180C0047862A /* home-icon.png in Resources */,
@@ -655,9 +673,11 @@
 				EB5D907818DAA22A00E8BE1B /* cloud-1.png in Resources */,
 				EB50AE9A18E63E2F0000C8A0 /* with-rainbow.png in Resources */,
 				EB50AE8918E63E2F0000C8A0 /* balloon-with-stars.png in Resources */,
+				EBB7B0A218F512E5002AE5BA /* pinkBackground.png in Resources */,
 				EB50AE8818E63E2F0000C8A0 /* backgroungimage-l.png in Resources */,
 				EBB7B09A18F50EF1002AE5BA /* soundon.png in Resources */,
 				EB50AE8B18E63E2F0000C8A0 /* black-large.png in Resources */,
+				EBB7B09E18F512C0002AE5BA /* greenBackground.png in Resources */,
 				EB96186318C8180C0047862A /* help-icon1.png in Resources */,
 				EB50AE9018E63E2F0000C8A0 /* moon.PNG in Resources */,
 				EB50AE8A18E63E2F0000C8A0 /* bg.png in Resources */,
