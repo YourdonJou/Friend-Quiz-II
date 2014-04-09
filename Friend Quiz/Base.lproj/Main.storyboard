@@ -882,9 +882,10 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="uR1-lm-JdP">
-                                <rect key="frame" x="20" y="146" width="280" height="74"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="uR1-lm-JdP">
+                                <rect key="frame" x="7" y="148" width="280" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="What happens when I send a request to my friends?"/>
                                 <connections>
                                     <action selector="q2ButtonSelected:" destination="WyS-oj-VNy" eventType="touchUpInside" id="UxZ-LO-pvc"/>
@@ -2243,8 +2244,8 @@
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
         <segue reference="9TU-ri-o1A"/>
-        <segue reference="339-oy-3yD"/>
         <segue reference="fIF-Ki-DVP"/>
+        <segue reference="339-oy-3yD"/>
         <segue reference="UpM-u5-2Ng"/>
     </inferredMetricsTieBreakers>
 </document>
