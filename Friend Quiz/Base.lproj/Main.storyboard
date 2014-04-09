@@ -1319,6 +1319,7 @@
                         <barButtonItem key="leftBarButtonItem" image="menu.png" id="xFv-IJ-g49"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="backgroundImageView" destination="EXq-ap-JF4" id="8YU-1E-b2H"/>
                         <outlet property="barButton" destination="Qow-Ac-yvM" id="n5b-aM-zjY"/>
                         <outlet property="loginView2" destination="iCF-gN-2zm" id="wVd-KM-W0L"/>
                         <outlet property="nameLabel" destination="Npq-X6-ESr" id="z7n-2W-0CV"/>

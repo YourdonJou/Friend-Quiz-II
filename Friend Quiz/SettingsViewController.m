@@ -8,6 +8,7 @@
 
 #import "SettingsViewController.h"
 #import "SWRevealViewController.h"
+#import "INFO_4290_Final_ProjectAppDelegate.h"
 
 @interface SettingsViewController ()
 
@@ -19,6 +20,8 @@
     BOOL soundOn;
    // UIImage *backImage;
     UIImage *soundImage;
+    
+      INFO_4290_Final_ProjectAppDelegate *appDelegate;
 }
 
 @synthesize barbutton;
@@ -36,6 +39,12 @@
     [super viewDidLoad];
     
     soundOn = NO;
+    
+    appDelegate = (INFO_4290_Final_ProjectAppDelegate *)[[UIApplication sharedApplication]delegate];
+    
+    self.backgroundImage.image = appDelegate.backgroundImage;
+    
+    
 	// Do any additional setup after loading the view.
     
     self.listButton.target = self.revealViewController;
@@ -99,6 +108,9 @@
     
     self.backgroundImage.image = backImage;
     
+    appDelegate.backgroundImage = backImage;
+
+    
     }
 
 - (IBAction)greenSelected:(id)sender {
@@ -107,6 +119,10 @@
     //  UIImageView *backgroundImage = [[UIImage alloc]initwithImage:backImage];
     
     self.backgroundImage.image = backImage;
+    
+    appDelegate.backgroundImage = backImage;
+    
+    
 
 
 
@@ -117,5 +133,8 @@
     //  UIImageView *backgroundImage = [[UIImage alloc]initwithImage:backImage];
     
     self.backgroundImage.image = backImage;
+    
+    appDelegate.backgroundImage = backImage;
+
 }
 @end

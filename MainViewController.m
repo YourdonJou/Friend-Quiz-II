@@ -16,7 +16,11 @@
 
 @end
 
-@implementation MainViewController
+@implementation MainViewController{
+    
+    
+    INFO_4290_Final_ProjectAppDelegate *appDelegate; 
+}
 
 
 @synthesize sidebarButton, nameLabel, pictureView,loginView2, arrayReceivedRequest, barButton, userID,userName;
@@ -36,6 +40,7 @@
 -(void)viewWillAppear:(BOOL)animated{
     
     
+    appDelegate = (INFO_4290_Final_ProjectAppDelegate *)[[UIApplication sharedApplication]delegate];
     
     [FBLoginView class];
     [FBProfilePictureView class];
@@ -45,6 +50,8 @@
         
         [self performSegueWithIdentifier:@"gameSegue" sender:self];
         
+    
+        self.backgroundImageView.image = appDelegate.backgroundImage;
         
     }
 }
@@ -56,6 +63,11 @@
     [FBLoginView class];
     [FBProfilePictureView class];
     
+    
+    appDelegate = (INFO_4290_Final_ProjectAppDelegate *)[[UIApplication sharedApplication]delegate];
+    
+            self.backgroundImageView.image = appDelegate.backgroundImage;
+
     loginView2.delegate = self;
 
     

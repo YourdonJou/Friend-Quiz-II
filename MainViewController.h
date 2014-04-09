@@ -23,5 +23,6 @@
 @property (strong, nonatomic) IBOutlet UIButton *barButton;
 @property (strong,nonatomic) NSString *userID;
 @property (strong,nonatomic) NSString *userName;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
 @end

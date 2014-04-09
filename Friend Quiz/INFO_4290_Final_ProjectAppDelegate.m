@@ -20,9 +20,11 @@
     [FBLoginView class];
     [FBProfilePictureView class];
     
+    self.backgroundImage = [UIImage imageNamed:@"defaultBackground.png"];
     
-    INFO_4290_Final_ProjectViewController *viewContoller= [[INFO_4290_Final_ProjectViewController alloc]init];
-    MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc]init];
+    
+    //INFO_4290_Final_ProjectViewController *viewContoller= [[INFO_4290_Final_ProjectViewController alloc]init];
+    //MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc]init];
     
 
     

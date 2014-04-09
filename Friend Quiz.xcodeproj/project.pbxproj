@@ -11,7 +11,7 @@
 		7A6B724F18C991B5000D5ADB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6B724E18C991B5000D5ADB /* FacebookSDK.framework */; };
 		7AF8C866189B77C30098E573 /* ChooseQuestionPacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8C865189B77C30098E573 /* ChooseQuestionPacks.m */; };
 		7AF8C86C189B7AC30098E573 /* AnswerQuestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8C86B189B7AC30098E573 /* AnswerQuestions.m */; };
-		7AFEE0A4189C4D0600D84FA3 /* background_image_2.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFEE0A3189C4D0600D84FA3 /* background_image_2.png */; };
+		7AFEE0A4189C4D0600D84FA3 /* defaultBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFEE0A3189C4D0600D84FA3 /* defaultBackground.png */; };
 		7AFEE0A7189C4F8E00D84FA3 /* Helppage.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0A6189C4F8E00D84FA3 /* Helppage.m */; };
 		7AFEE0AA189C58DA00D84FA3 /* Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0A9189C58DA00D84FA3 /* Category.m */; };
 		7AFEE0AD189C591900D84FA3 /* question.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AFEE0AC189C591900D84FA3 /* question.m */; };
@@ -135,7 +135,7 @@
 		7AF8C865189B77C30098E573 /* ChooseQuestionPacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseQuestionPacks.m; sourceTree = "<group>"; };
 		7AF8C86A189B7AC30098E573 /* AnswerQuestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerQuestions.h; sourceTree = "<group>"; };
 		7AF8C86B189B7AC30098E573 /* AnswerQuestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnswerQuestions.m; sourceTree = "<group>"; };
-		7AFEE0A3189C4D0600D84FA3 /* background_image_2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_image_2.png; sourceTree = "<group>"; };
+		7AFEE0A3189C4D0600D84FA3 /* defaultBackground.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = defaultBackground.png; sourceTree = "<group>"; };
 		7AFEE0A5189C4F8E00D84FA3 /* Helppage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helppage.h; sourceTree = "<group>"; };
 		7AFEE0A6189C4F8E00D84FA3 /* Helppage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Helppage.m; sourceTree = "<group>"; };
 		7AFEE0A8189C58DA00D84FA3 /* Category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Category.h; sourceTree = "<group>"; };
@@ -541,7 +541,7 @@
 				EBB7B09C18F512A5002AE5BA /* BackgroundImages */,
 				AA68478818E3CACF00278A5E /* app icon */,
 				EB5D906E18DAA22A00E8BE1B /* graphic stuff 2 */,
-				7AFEE0A3189C4D0600D84FA3 /* background_image_2.png */,
+				7AFEE0A3189C4D0600D84FA3 /* defaultBackground.png */,
 				EB96185D18C8180B0047862A /* icons */,
 				EBA5EF3818B5CE7900493FBF /* menu.png */,
 			);
@@ -641,7 +641,7 @@
 				EB96186918C81AF10047862A /* award-icon.png in Resources */,
 				EBB7B09718F50EF1002AE5BA /* greencircle.png in Resources */,
 				EBB7B09318F50EF1002AE5BA /* coverimage-facebokk.png in Resources */,
-				7AFEE0A4189C4D0600D84FA3 /* background_image_2.png in Resources */,
+				7AFEE0A4189C4D0600D84FA3 /* defaultBackground.png in Resources */,
 				EBB7B09418F50EF1002AE5BA /* coverimage.png in Resources */,
 				EBB7B0A018F512CD002AE5BA /* pink-blueBackground.png in Resources */,
 				EB96186618C8180C0047862A /* setting-icon.png in Resources */,
