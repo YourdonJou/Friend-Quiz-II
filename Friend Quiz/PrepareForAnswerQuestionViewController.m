@@ -32,15 +32,18 @@
     // Do any additional setup after loading the view.
     
     //Set GameID
-    gameIDtoGetGameFromDB = 1; //Need to be changed later
+    gameIDtoGetGameFromDB = @"161666f421b38f2"; //Need to be changed later
     
     // Get Question pack as a unique game from external DB
-    NSString *urlToPass = [NSString stringWithFormat:@"http://racketrepublic.com/loadGamePack.php?gameID=%d",gameIDtoGetGameFromDB];
+    NSString *urlToPass = [NSString stringWithFormat:@"http://racketrepublic.com/loadGamePack.php?gameID=%@",gameIDtoGetGameFromDB];
     
     NSURL *url = [NSURL URLWithString:urlToPass];
 	NSString *jsonreturn = [[NSString alloc] initWithContentsOfURL:url];
 	
 	NSLog(jsonreturn); // Look at the console and you can see what the restults are
+    
+    jsonreturn = [jsonreturn stringByReplacingOccurrencesOfString:@"_" withString: @" "];
+
 	
 	NSData *jsonData = [jsonreturn dataUsingEncoding:NSUTF32BigEndianStringEncoding];
 	NSError *error = nil;

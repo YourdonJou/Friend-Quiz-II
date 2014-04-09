@@ -77,21 +77,15 @@
     
     // Update DB
     
-    NSString *post =[[NSString alloc] initWithFormat:@"Q1=%@&Q1A1=%@&Q1A2=%@&Q1A3=%@&Q1A4=%@&Q1AI=%@&Q2=%@&Q2A1=%@&Q2A2=%@&Q2A3=%@&Q2A4=%@&Q2AI=%@&Q3=%@&Q3A1=%@&Q3A2=%@&Q3A3=%@&Q3A4=%@&Q3AI=%@&Q4=%@&Q4A1=%@&Q4A2=%@&Q4A3=%@&Q4A4=%@&Q4AI=%@&Q5=%@&Q5A1=%@&Q5A2=%@&Q5A3=%@&Q5A4=%@&Q5AI=%@&Note=%@",
-                     questionTitle[0],questionAnswer1[0],questionAnswer1[1],questionAnswer1[2],questionAnswer1[3],questionAnswerIndex[0],
-                     
-                     questionTitle[1],questionAnswer2[0],questionAnswer2[1],questionAnswer2[2],questionAnswer2[3],questionAnswerIndex[1],
-                     
-                     questionTitle[2],questionAnswer3[0],questionAnswer3[1],questionAnswer3[2],questionAnswer3[3],questionAnswerIndex[2],
-                     
-                     questionTitle[3],questionAnswer4[0],questionAnswer4[1],questionAnswer4[2],questionAnswer4[3],questionAnswerIndex[3],
-                     
-                     questionTitle[4],questionAnswer5[0],questionAnswer5[1],questionAnswer5[2],questionAnswer5[3],questionAnswerIndex[4]
-                     ,@"None"
-                     ];
+    NSString *post =[[NSString alloc] initWithFormat:@"Q1=%@",
+                     questionTitle[0]];
     NSLog(@"PostData: %@",post);
     
-    NSURL *url=[NSURL URLWithString:@"http://racketrepublic.com/saveGamePack.php"];
+    
+    
+    NSString *urlToPassModified = [urlToPass stringByReplacingOccurrencesOfString:@" " withString: @"_"];
+    
+    NSURL *url=[NSURL URLWithString:urlToPassModified];
     
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     
