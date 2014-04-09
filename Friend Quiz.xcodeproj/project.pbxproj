@@ -102,6 +102,16 @@
 		EBA5EF3318B5CD6100493FBF /* MyProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF3218B5CD6100493FBF /* MyProfileViewController.m */; };
 		EBA5EF3618B5CD6E00493FBF /* HelpMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EBA5EF3518B5CD6E00493FBF /* HelpMenuViewController.m */; };
 		EBA5EF3918B5CE7900493FBF /* menu.png in Resources */ = {isa = PBXBuildFile; fileRef = EBA5EF3818B5CE7900493FBF /* menu.png */; };
+		EBB7B09218F50EF1002AE5BA /* bluecircle.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B08818F50EF1002AE5BA /* bluecircle.png */; };
+		EBB7B09318F50EF1002AE5BA /* coverimage-facebokk.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B08918F50EF1002AE5BA /* coverimage-facebokk.png */; };
+		EBB7B09418F50EF1002AE5BA /* coverimage.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B08A18F50EF1002AE5BA /* coverimage.png */; };
+		EBB7B09518F50EF1002AE5BA /* fireball.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B08B18F50EF1002AE5BA /* fireball.png */; };
+		EBB7B09618F50EF1002AE5BA /* green.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B08C18F50EF1002AE5BA /* green.png */; };
+		EBB7B09718F50EF1002AE5BA /* greencircle.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B08D18F50EF1002AE5BA /* greencircle.png */; };
+		EBB7B09818F50EF1002AE5BA /* Icicles_.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B08E18F50EF1002AE5BA /* Icicles_.png */; };
+		EBB7B09918F50EF1002AE5BA /* sound-off.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B08F18F50EF1002AE5BA /* sound-off.png */; };
+		EBB7B09A18F50EF1002AE5BA /* soundon.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B09018F50EF1002AE5BA /* soundon.png */; };
+		EBB7B09B18F50EF1002AE5BA /* webbanner.png in Resources */ = {isa = PBXBuildFile; fileRef = EBB7B09118F50EF1002AE5BA /* webbanner.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -244,6 +254,16 @@
 		EBA5EF3418B5CD6E00493FBF /* HelpMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpMenuViewController.h; sourceTree = "<group>"; };
 		EBA5EF3518B5CD6E00493FBF /* HelpMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpMenuViewController.m; sourceTree = "<group>"; };
 		EBA5EF3818B5CE7900493FBF /* menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = menu.png; sourceTree = "<group>"; };
+		EBB7B08818F50EF1002AE5BA /* bluecircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluecircle.png; sourceTree = "<group>"; };
+		EBB7B08918F50EF1002AE5BA /* coverimage-facebokk.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "coverimage-facebokk.png"; sourceTree = "<group>"; };
+		EBB7B08A18F50EF1002AE5BA /* coverimage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = coverimage.png; sourceTree = "<group>"; };
+		EBB7B08B18F50EF1002AE5BA /* fireball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fireball.png; sourceTree = "<group>"; };
+		EBB7B08C18F50EF1002AE5BA /* green.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = green.png; sourceTree = "<group>"; };
+		EBB7B08D18F50EF1002AE5BA /* greencircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = greencircle.png; sourceTree = "<group>"; };
+		EBB7B08E18F50EF1002AE5BA /* Icicles_.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icicles_.png; sourceTree = "<group>"; };
+		EBB7B08F18F50EF1002AE5BA /* sound-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sound-off.png"; sourceTree = "<group>"; };
+		EBB7B09018F50EF1002AE5BA /* soundon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = soundon.png; sourceTree = "<group>"; };
+		EBB7B09118F50EF1002AE5BA /* webbanner.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = webbanner.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -300,6 +320,16 @@
 		EB5D906E18DAA22A00E8BE1B /* graphic stuff 2 */ = {
 			isa = PBXGroup;
 			children = (
+				EBB7B08818F50EF1002AE5BA /* bluecircle.png */,
+				EBB7B08918F50EF1002AE5BA /* coverimage-facebokk.png */,
+				EBB7B08A18F50EF1002AE5BA /* coverimage.png */,
+				EBB7B08B18F50EF1002AE5BA /* fireball.png */,
+				EBB7B08C18F50EF1002AE5BA /* green.png */,
+				EBB7B08D18F50EF1002AE5BA /* greencircle.png */,
+				EBB7B08E18F50EF1002AE5BA /* Icicles_.png */,
+				EBB7B08F18F50EF1002AE5BA /* sound-off.png */,
+				EBB7B09018F50EF1002AE5BA /* soundon.png */,
+				EBB7B09118F50EF1002AE5BA /* webbanner.png */,
 				EB50AE7518E63E2F0000C8A0 /* backgroungimage-l.png */,
 				EB50AE7618E63E2F0000C8A0 /* balloon-with-stars.png */,
 				EB50AE7718E63E2F0000C8A0 /* bg.png */,
@@ -592,7 +622,10 @@
 				EB5D907C18DAA22A00E8BE1B /* orange.png in Resources */,
 				AA68478E18E3CACF00278A5E /* 58.png in Resources */,
 				EB96186918C81AF10047862A /* award-icon.png in Resources */,
+				EBB7B09718F50EF1002AE5BA /* greencircle.png in Resources */,
+				EBB7B09318F50EF1002AE5BA /* coverimage-facebokk.png in Resources */,
 				7AFEE0A4189C4D0600D84FA3 /* background_image_2.png in Resources */,
+				EBB7B09418F50EF1002AE5BA /* coverimage.png in Resources */,
 				EB96186618C8180C0047862A /* setting-icon.png in Resources */,
 				EB50AE9818E63E2F0000C8A0 /* tree1.png in Resources */,
 				EB96186418C8180C0047862A /* home-icon.png in Resources */,
@@ -600,6 +633,7 @@
 				EB96186518C8180C0047862A /* profile-icon.png in Resources */,
 				EB50AE8F18E63E2F0000C8A0 /* landscape.jpg in Resources */,
 				AA68478F18E3CACF00278A5E /* 80.png in Resources */,
+				EBB7B09818F50EF1002AE5BA /* Icicles_.png in Resources */,
 				EB50AE9418E63E2F0000C8A0 /* plane2.png in Resources */,
 				EB50AE9718E63E2F0000C8A0 /* tree.png in Resources */,
 				EB50AE9218E63E2F0000C8A0 /* pink-large.png in Resources */,
@@ -608,6 +642,9 @@
 				EB5D907B18DAA22A00E8BE1B /* cloud-4.png in Resources */,
 				EB50AE7418E633AE0000C8A0 /* fire in Resources */,
 				EBA5EF3918B5CE7900493FBF /* menu.png in Resources */,
+				EBB7B09218F50EF1002AE5BA /* bluecircle.png in Resources */,
+				EBB7B09518F50EF1002AE5BA /* fireball.png in Resources */,
+				EBB7B09B18F50EF1002AE5BA /* webbanner.png in Resources */,
 				EB50AE8C18E63E2F0000C8A0 /* clouds-2.png in Resources */,
 				EB50AE8D18E63E2F0000C8A0 /* clouds.png in Resources */,
 				EB9B1890189A1F52001E9D60 /* Images.xcassets in Resources */,
@@ -619,6 +656,7 @@
 				EB50AE9A18E63E2F0000C8A0 /* with-rainbow.png in Resources */,
 				EB50AE8918E63E2F0000C8A0 /* balloon-with-stars.png in Resources */,
 				EB50AE8818E63E2F0000C8A0 /* backgroungimage-l.png in Resources */,
+				EBB7B09A18F50EF1002AE5BA /* soundon.png in Resources */,
 				EB50AE8B18E63E2F0000C8A0 /* black-large.png in Resources */,
 				EB96186318C8180C0047862A /* help-icon1.png in Resources */,
 				EB50AE9018E63E2F0000C8A0 /* moon.PNG in Resources */,
@@ -630,6 +668,8 @@
 				EB50AE9318E63E2F0000C8A0 /* plane.png in Resources */,
 				EB50AE9118E63E2F0000C8A0 /* orange-large.png in Resources */,
 				EB5D907A18DAA22A00E8BE1B /* cloud-3.png in Resources */,
+				EBB7B09618F50EF1002AE5BA /* green.png in Resources */,
+				EBB7B09918F50EF1002AE5BA /* sound-off.png in Resources */,
 				EB50AE9518E63E2F0000C8A0 /* plane3.png in Resources */,
 				AA68479018E3CACF00278A5E /* original.png in Resources */,
 			);

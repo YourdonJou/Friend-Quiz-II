@@ -622,8 +622,8 @@
                                 <rect key="frame" x="0.0" y="-58" width="326" height="739"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sky.png" id="wD8-Ar-zaV">
-                                        <rect key="frame" x="-1" y="-21" width="321" height="1092"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" id="wD8-Ar-zaV">
+                                        <rect key="frame" x="1" y="-877" width="321" height="1748"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud-2.png" id="SoA-ud-qvY">
@@ -2246,6 +2246,7 @@
         <image name="award-icon.png" width="44" height="44"/>
         <image name="background_image_2.png" width="640" height="1136"/>
         <image name="balloon-with-stars.png" width="150" height="300"/>
+        <image name="bg.png" width="640" height="4544"/>
         <image name="black-large.png" width="120" height="300"/>
         <image name="black.png" width="60" height="130"/>
         <image name="cloud-1.png" width="200" height="150"/>
