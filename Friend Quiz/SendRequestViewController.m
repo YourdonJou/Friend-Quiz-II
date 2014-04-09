@@ -65,6 +65,7 @@
                            ,@"None"
                             ];
     
+    
     NSLog(urlToPass);
     
     //NSURL *url = [NSURL URLWithString:urlToPass];
@@ -88,11 +89,9 @@
                      questionTitle[4],questionAnswer5[0],questionAnswer5[1],questionAnswer5[2],questionAnswer5[3],questionAnswerIndex[4]
                      ,@"None"
                      ];
+    NSLog(@"PostData: %@",post);
     
-    
-    NSString *urlAddOn = urlToPass;
-    
-    NSURL *url=[NSURL URLWithString:urlAddOn];
+    NSURL *url=[NSURL URLWithString:@"http://racketrepublic.com/saveGamePack.php"];
     
     NSData *postData = [post dataUsingEncoding:NSASCIIStringEncoding allowLossyConversion:YES];
     
@@ -117,18 +116,6 @@
     {
         NSString *responseData = [[NSString alloc]initWithData:urlData encoding:NSUTF8StringEncoding];
         NSLog(@"Response ==> %@", responseData);
-        
-        SBJsonParser *jsonParser = [SBJsonParser new];
-        NSDictionary *jsonData = (NSDictionary *) [jsonParser objectWithString:responseData error:nil];
-        NSLog(@"%@",jsonData);
-        //imageID = [(NSNumber *) [jsonData objectForKey:@"ImageID"] integerValue];
-        //NSLog(@"%d",imageID);
-        
-        
-        NSString *GameID = responseData ;
-        
-        NSLog(GameID);
-        
     }
     
     
