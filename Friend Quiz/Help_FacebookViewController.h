@@ -10,4 +10,15 @@
 
 @interface Help_FacebookViewController : UIViewController <UINavigationBarDelegate>
 
+@property (strong, nonatomic) IBOutlet UIButton *q1Button;
+@property (strong, nonatomic) IBOutlet UILabel *q1Answer;
+- (IBAction)q1ButtonSelected:(id)sender;
+
+
+
+@property (strong, nonatomic) IBOutlet UIButton *q2Button;
+@property (strong, nonatomic) IBOutlet UILabel *q2Answer;
+- (IBAction)q2ButtonSelected:(id)sender;
+
+
 @end

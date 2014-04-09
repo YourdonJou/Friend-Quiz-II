@@ -16,11 +16,17 @@
 @property (strong, nonatomic) IBOutlet UILabel *q1Answer;
 @property (strong, nonatomic) IBOutlet UIButton *q2Button;
 @property (strong, nonatomic) IBOutlet UILabel *q2Answer;
-@property (strong, nonatomic) IBOutlet UIButton *testBack;
+@property (strong, nonatomic)IBOutlet UIButton *testBack;
+
+@property (strong, nonatomic) IBOutlet UIButton *q3Button;
+
+@property (strong, nonatomic) IBOutlet UILabel *q3Answer;
 
 - (IBAction)q1ButtonSelected:(id)sender;
 
 - (IBAction)q2ButtonSelected:(id)sender;
+
+- (IBAction)q3ButtonSelected:(id)sender;
 
 -(void)startTextAnimations;
 -(void)revertTextAnimations;

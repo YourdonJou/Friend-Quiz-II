@@ -682,18 +682,21 @@
                                         <rect key="frame" x="92" y="304" width="138" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.55406601659999999" blue="0.85941485969999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Get 150 points in one game" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="1Jo-T9-lKz">
                                         <rect key="frame" x="173" y="100" width="127" height="52"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.55406601659999999" blue="0.85941485969999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite 3 Friends" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="dIg-ix-Ouw">
                                         <rect key="frame" x="146" y="483" width="138" height="24"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <color key="textColor" red="0.0" green="0.55406601659999999" blue="0.85941485969999998" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="ieh-BL-JWC">
@@ -706,15 +709,14 @@
                                             <action selector="balloon2Selected:" destination="FQW-Y9-C7b" eventType="touchUpInside" id="yfK-mX-QRw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="1BZ-8B-ZUf">
-                                        <rect key="frame" x="62" y="166" width="49" height="80"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Q60-GX-QfG">
+                                        <rect key="frame" x="63" y="165" width="60" height="100"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" image="black-large.png">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <action selector="balloon2Selected:" destination="FQW-Y9-C7b" eventType="touchUpInside" id="K2Y-kz-JBy"/>
-                                            <action selector="balloon3Selected:" destination="FQW-Y9-C7b" eventType="touchUpInside" id="aLc-W8-4Nv"/>
+                                            <action selector="balloon3Selected:" destination="FQW-Y9-C7b" eventType="touchUpInside" id="rAz-Gt-Qfv"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -734,7 +736,7 @@
                         <outlet property="achievement2Balloon" destination="ieh-BL-JWC" id="ttl-V9-btb"/>
                         <outlet property="achievement2Label" destination="Omw-eP-k5P" id="aJN-h7-9Dp"/>
                         <outlet property="achievement2Message" destination="mTb-Fg-ZpH" id="rfK-IP-1os"/>
-                        <outlet property="achievement3Balloon" destination="1BZ-8B-ZUf" id="IhM-xF-8n5"/>
+                        <outlet property="achievement3Balloon" destination="Q60-GX-QfG" id="eqj-B3-0Sw"/>
                         <outlet property="achievement3Label" destination="1Jo-T9-lKz" id="DaW-Sm-WSP"/>
                         <outlet property="achievement3Message" destination="fJS-zX-zxY" id="cJf-yR-hC0"/>
                         <outlet property="achivement1Balloon" destination="EnV-CO-EDn" id="7dl-kB-0Yo"/>
@@ -762,7 +764,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="wordWrap" numberOfLines="5" adjustsFontSizeToFit="NO" id="fRO-Td-LHk">
-                                <rect key="frame" x="34" y="343" width="253" height="109"/>
+                                <rect key="frame" x="34" y="343" width="267" height="109"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">The more friends you invite, the more opportunities you have to unlock more achievements and get more balloons to unlock more packs!</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -780,16 +782,6 @@
                                 <state key="normal" title="What happens if I invite my friends?"/>
                                 <connections>
                                     <action selector="q2ButtonSelected:" destination="WyS-oj-VNy" eventType="touchUpInside" id="wev-zm-2G5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="SzM-2f-bbT">
-                                <rect key="frame" x="12" y="451" width="282" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="How do I achieve a higher score?">
-                                    <color key="titleShadowColor" white="0.38212819339999998" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="q1ButtonSelected:" destination="WyS-oj-VNy" eventType="touchUpInside" id="nb0-QY-2E2"/>
                                 </connections>
                             </button>
                             <navigationBar contentMode="scaleToFill" id="Qsj-Iw-okK">
@@ -813,7 +805,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="kYx-kS-OFx">
-                                <rect key="frame" x="0.0" y="222" width="282" height="32"/>
+                                <rect key="frame" x="-7" y="221" width="282" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="How do I invite my Friends?"/>
                                 <connections>
@@ -834,6 +826,17 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Qiv-Ch-PoE">
+                                <rect key="frame" x="20" y="448" width="273" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="How do I achieve a higher score?">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="q3ButtonSelected:" destination="WyS-oj-VNy" eventType="touchUpInside" id="K96-W7-hMJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -844,7 +847,8 @@
                         <outlet property="q1Button" destination="kYx-kS-OFx" id="ItA-9D-AG6"/>
                         <outlet property="q2Answer" destination="fRO-Td-LHk" id="1SY-jO-UJQ"/>
                         <outlet property="q2Button" destination="O7B-mv-wN4" id="hlv-Iw-rtt"/>
-                        <outlet property="testBack" destination="NS5-pm-3ai" id="Xjk-Uw-yuZ"/>
+                        <outlet property="q3Answer" destination="dd4-G9-nXY" id="fTd-ZP-tcy"/>
+                        <outlet property="q3Button" destination="Qiv-Ch-PoE" id="rra-di-5yZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Pl-ww-cPM" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -883,12 +887,23 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="uR1-lm-JdP">
-                                <rect key="frame" x="7" y="148" width="280" height="74"/>
+                                <rect key="frame" x="-7" y="148" width="280" height="74"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="What happens when I send a request to my friends?"/>
                                 <connections>
+                                    <action selector="q1ButtonSelected:" destination="gtS-Qw-gDP" eventType="touchUpInside" id="r7J-c9-KTc"/>
                                     <action selector="q2ButtonSelected:" destination="WyS-oj-VNy" eventType="touchUpInside" id="UxZ-LO-pvc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="wordWrap" id="5I4-cj-TUw">
+                                <rect key="frame" x="21" y="303" width="202" height="74"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="What permissions am I giving to Friend Quiz if I give publich permissions?"/>
+                                <connections>
+                                    <action selector="q2ButtonSelected:" destination="WyS-oj-VNy" eventType="touchUpInside" id="AhF-0L-2AZ"/>
+                                    <action selector="q2ButtonSelected:" destination="gtS-Qw-gDP" eventType="touchUpInside" id="Wfm-XI-1WL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your game will receive a request notification and will be able to install the game on their phone or go to our Facebook Page" lineBreakMode="wordWrap" numberOfLines="5" adjustsFontSizeToFit="NO" id="KxO-jJ-57m">
@@ -897,10 +912,22 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Friend Quiz will publish an Open Graph story to brag about your achievements." lineBreakMode="wordWrap" numberOfLines="5" adjustsFontSizeToFit="NO" id="SVz-Tc-5lh">
+                                <rect key="frame" x="20" y="380" width="252" height="61"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="3lA-Da-kxn"/>
+                    <connections>
+                        <outlet property="q1Answer" destination="KxO-jJ-57m" id="xb8-lQ-xPq"/>
+                        <outlet property="q1Button" destination="uR1-lm-JdP" id="CTn-ba-l77"/>
+                        <outlet property="q2Answer" destination="SVz-Tc-5lh" id="PGc-hN-y4Q"/>
+                        <outlet property="q2Button" destination="5I4-cj-TUw" id="kvd-GW-eM3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UWH-sO-XYD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -926,7 +953,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="AwJ-0q-xdX">
-                                <rect key="frame" x="-5" y="174" width="282" height="34"/>
+                                <rect key="frame" x="7" y="170" width="282" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="How do I unlock Achievements?"/>
                                 <connections>
