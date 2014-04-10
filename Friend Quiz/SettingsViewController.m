@@ -38,9 +38,25 @@
 {
     [super viewDidLoad];
     
-    soundOn = NO;
-    
+    appDelegate.soundON =  soundOn;
     appDelegate = (INFO_4290_Final_ProjectAppDelegate *)[[UIApplication sharedApplication]delegate];
+    
+    
+    //Check if user has selected sound has been turned on
+    if(soundOn == NO){
+        
+        
+                UIImage *soundOffImage  = [UIImage imageNamed:@"sound-off.png"];
+        [self.soundButton setImage:soundOffImage forState:UIControlStateNormal];
+        
+        soundOn = YES;
+    }
+    else{
+        
+        UIImage *soundOnImage  = [UIImage imageNamed:@"soundon.png"];
+        [self.soundButton setImage:soundOnImage forState:UIControlStateNormal];
+            soundOn= YES;
+    }
     
     self.backgroundImage.image = appDelegate.backgroundImage;
     
@@ -78,6 +94,8 @@
         [self.soundButton setImage:soundOnImage forState:UIControlStateNormal];
         soundOn = YES;
         
+        appDelegate.soundON = YES;
+        
         NSLog(@"Sound is not ON");
 
 
@@ -90,7 +108,10 @@
         
         [self.soundButton setImage:soundOffImage forState:UIControlStateNormal];
         
+        
         soundOn = NO;
+        
+        appDelegate.soundON = NO;
         
         NSLog(@"Sound is  ON");
 

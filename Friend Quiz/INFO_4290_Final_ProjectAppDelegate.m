@@ -22,6 +22,7 @@
     
     self.backgroundImage = [UIImage imageNamed:@"defaultBackground.png"];
     
+    self.soundON = NO;
     
     //INFO_4290_Final_ProjectViewController *viewContoller= [[INFO_4290_Final_ProjectViewController alloc]init];
     //MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc]init];

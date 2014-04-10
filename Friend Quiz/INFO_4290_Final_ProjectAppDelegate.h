@@ -21,6 +21,8 @@
 @property (nonatomic, retain, readonly) NSManagedObjectModel *managedObjectModel;
 @property (nonatomic, retain, readonly) NSPersistentStoreCoordinator *persistentStoreCoordinator;
 
+@property BOOL soundON;
+
 @property (strong,nonatomic) UIImage *backgroundImage;
 - (NSURL *)applicationDocumentsDirectory;
 

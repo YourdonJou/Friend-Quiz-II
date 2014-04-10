@@ -70,6 +70,7 @@
     [FBProfilePictureView class];
     
     
+
     appDelegate = (INFO_4290_Final_ProjectAppDelegate *)[[UIApplication sharedApplication]delegate];
     
             self.backgroundImageView.image = appDelegate.backgroundImage;
@@ -236,7 +237,22 @@
 {
     
     
-    AudioServicesPlaySystemSound(SoundID);
+    if(appDelegate.soundON == YES){
+        
+        //sound is turned on
+        AudioServicesPlaySystemSound(SoundID);
+        
+        
+
+        
+    }
+    
+    else{
+        
+        //sound is not turned on
+        
+    }
+    
 }
 
 

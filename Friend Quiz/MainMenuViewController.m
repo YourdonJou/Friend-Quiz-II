@@ -21,6 +21,8 @@
     
     
     INFO_4290_Final_ProjectAppDelegate *appDelegate;
+    
+    BOOL soundONHere;
 }
 
 @synthesize nameLabel, pictureView, loginView, sideBarButton;
@@ -45,7 +47,10 @@
     
     
     
+    
     appDelegate = (INFO_4290_Final_ProjectAppDelegate *)[[UIApplication sharedApplication]delegate];
+    
+
     
     SideMenuViewController *sideMenuController = [[SideMenuViewController alloc]init];
     
