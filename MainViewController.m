@@ -134,7 +134,7 @@
     // Facebook.sess
     
     //Test Code
-    NSArray *data = [[NSArray alloc]initWithObjects: @"Default Pack", @"Mix Pack", @"Easy Pack", @"Hard Pack", @"Best Friend Pack", @"Fruit Pack", @"Color Pack", @"Location Pack", nil];
+    NSArray *data = [[NSArray alloc]initWithObjects: @"Nhiem - Defualt Pack", @"Christian - Easy Pack", @"Yourdon - Hard Pack", @"Tina - Best Friend Pack", @"Janna - Fruit Pack", nil];
     
     
     arrayReceivedRequest = data;

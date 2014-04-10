@@ -1237,7 +1237,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="You received X game invitations." borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" id="EY5-9f-PEO">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="You received 5 game invitations." borderStyle="roundedRect" adjustsFontSizeToFit="NO" minimumFontSize="17" id="EY5-9f-PEO">
                                 <rect key="frame" x="12" y="96" width="298" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
