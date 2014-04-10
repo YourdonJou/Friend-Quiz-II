@@ -8,8 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import <FacebookSDK/FacebookSDK.h>
+#import <AudioToolbox/AudioToolbox.h>
 
 @interface MainViewController : UIViewController <FBLoginViewDelegate>
+
+{
+    SystemSoundID SoundID;
+    
+    
+}
+-(IBAction)PlayAudioButton:(id)sender;
 
 @property NSMutableArray *arrayReceivedRequest;
 

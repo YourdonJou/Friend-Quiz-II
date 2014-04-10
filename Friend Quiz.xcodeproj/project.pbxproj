@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A058D4F18F6240600BDBB53 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A058D4E18F6240600BDBB53 /* AVFoundation.framework */; };
 		7A14A31A189B7029008FAEC7 /* GameStart.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A14A319189B7029008FAEC7 /* GameStart.m */; };
 		7A6B724F18C991B5000D5ADB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A6B724E18C991B5000D5ADB /* FacebookSDK.framework */; };
+		7A9886BF18F62210002308D7 /* button-11.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7A9886BE18F62210002308D7 /* button-11.mp3 */; };
 		7AF8C866189B77C30098E573 /* ChooseQuestionPacks.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8C865189B77C30098E573 /* ChooseQuestionPacks.m */; };
 		7AF8C86C189B7AC30098E573 /* AnswerQuestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AF8C86B189B7AC30098E573 /* AnswerQuestions.m */; };
 		7AFEE0A4189C4D0600D84FA3 /* defaultBackground.png in Resources */ = {isa = PBXBuildFile; fileRef = 7AFEE0A3189C4D0600D84FA3 /* defaultBackground.png */; };
@@ -140,9 +142,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7A058D4E18F6240600BDBB53 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7A14A318189B7029008FAEC7 /* GameStart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameStart.h; sourceTree = "<group>"; };
 		7A14A319189B7029008FAEC7 /* GameStart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameStart.m; sourceTree = "<group>"; };
 		7A6B724E18C991B5000D5ADB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../Documents/FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		7A9886BE18F62210002308D7 /* button-11.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "button-11.mp3"; sourceTree = "<group>"; };
 		7AF8C864189B77C30098E573 /* ChooseQuestionPacks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChooseQuestionPacks.h; sourceTree = "<group>"; };
 		7AF8C865189B77C30098E573 /* ChooseQuestionPacks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseQuestionPacks.m; sourceTree = "<group>"; };
 		7AF8C86A189B7AC30098E573 /* AnswerQuestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnswerQuestions.h; sourceTree = "<group>"; };
@@ -314,6 +318,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A058D4F18F6240600BDBB53 /* AVFoundation.framework in Frameworks */,
 				EB5D904618D7E64200E8BE1B /* CoreData.framework in Frameworks */,
 				EB9B187A189A1F51001E9D60 /* CoreGraphics.framework in Frameworks */,
 				7A6B724F18C991B5000D5ADB /* FacebookSDK.framework in Frameworks */,
@@ -467,6 +472,7 @@
 				AAAFBFCB18DA5D7E00D1029D /* PrepareForAnswerQuestionViewController.h */,
 				AAAFBFCC18DA5D7E00D1029D /* PrepareForAnswerQuestionViewController.m */,
 				AAC95D4F18BEC159003D72F9 /* AnswerQuestionViewController.h */,
+				7A9886BE18F62210002308D7 /* button-11.mp3 */,
 				AAC95D5018BEC159003D72F9 /* AnswerQuestionViewController.m */,
 				AAC95D4C18BEBF17003D72F9 /* GameResultViewController.h */,
 				AAC95D4D18BEBF17003D72F9 /* GameResultViewController.m */,
@@ -521,6 +527,7 @@
 		EB9B1876189A1F51001E9D60 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7A058D4E18F6240600BDBB53 /* AVFoundation.framework */,
 				EB5D904518D7E64200E8BE1B /* CoreData.framework */,
 				7A6B724E18C991B5000D5ADB /* FacebookSDK.framework */,
 				EB9B1877189A1F51001E9D60 /* Foundation.framework */,
@@ -749,6 +756,7 @@
 				EB50AE8B18E63E2F0000C8A0 /* black-large.png in Resources */,
 				EBB7B09E18F512C0002AE5BA /* greenBackground.png in Resources */,
 				EB96186318C8180C0047862A /* help-icon1.png in Resources */,
+				7A9886BF18F62210002308D7 /* button-11.mp3 in Resources */,
 				EB50AE9018E63E2F0000C8A0 /* moon.PNG in Resources */,
 				EB50AE8A18E63E2F0000C8A0 /* bg.png in Resources */,
 				EB5D907918DAA22A00E8BE1B /* cloud-2.png in Resources */,
