@@ -43,19 +43,19 @@
     
     
     //Check if user has selected sound has been turned on
-    if(soundOn == NO){
+    if(appDelegate.soundON == NO){
         
         
                 UIImage *soundOffImage  = [UIImage imageNamed:@"sound-off.png"];
         [self.soundButton setImage:soundOffImage forState:UIControlStateNormal];
         
-        soundOn = YES;
+        appDelegate.soundON = YES;
     }
     else{
         
         UIImage *soundOnImage  = [UIImage imageNamed:@"soundon.png"];
         [self.soundButton setImage:soundOnImage forState:UIControlStateNormal];
-            soundOn= YES;
+        appDelegate.soundON = NO;
     }
     
     self.backgroundImage.image = appDelegate.backgroundImage;
@@ -86,17 +86,17 @@
 - (IBAction)soundOptionSelected:(id)sender {
     
     
-    if(!soundOn){
+    if(appDelegate.soundON == NO){
         
         
-        UIImage *soundOnImage = [UIImage imageNamed:@"sound-off.png"];
+        UIImage *soundOnImage = [UIImage imageNamed:@"soundon.png"];
         
         [self.soundButton setImage:soundOnImage forState:UIControlStateNormal];
-        soundOn = YES;
+       // soundOn = YES;
         
         appDelegate.soundON = YES;
         
-        NSLog(@"Sound is not ON");
+        NSLog(@"Sound ON");
 
 
         
@@ -104,16 +104,16 @@
     
     else{
         
-         UIImage *soundOffImage  = [UIImage imageNamed:@"soundon.png"];
+         UIImage *soundOffImage  = [UIImage imageNamed:@"sound-off.png"];
         
         [self.soundButton setImage:soundOffImage forState:UIControlStateNormal];
         
         
-        soundOn = NO;
+        //soundOn = NO;
         
         appDelegate.soundON = NO;
         
-        NSLog(@"Sound is  ON");
+        NSLog(@"Sound is Off");
 
         
     }
