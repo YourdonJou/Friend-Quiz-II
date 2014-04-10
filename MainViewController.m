@@ -18,13 +18,7 @@
 
 @implementation MainViewController{
     
-    
-    -(IBAction)PlayAudioButton:(id)sender
-    {
-        
-        
-        AudioServicesPlaySystemSound(SoundID);
-    }
+
     
     
     INFO_4290_Final_ProjectAppDelegate *appDelegate; 
@@ -237,6 +231,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(IBAction)PlayAudioButton:(id)sender
+{
+    
+    
+    AudioServicesPlaySystemSound(SoundID);
+}
 
 
 //Table View Start ---------
