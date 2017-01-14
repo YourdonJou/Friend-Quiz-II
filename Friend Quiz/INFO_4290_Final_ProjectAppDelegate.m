@@ -7,27 +7,7 @@
 //
 
 #import "INFO_4290_Final_ProjectAppDelegate.h"
-#import "INFO_4290_Final_ProjectViewController.h"
-#import "MainMenuViewController.h"
-#import <FacebookSDK/FacebookSDK.h>
-
-@implementation INFO_4290_Final_ProjectAppDelegate 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-    // Override point for customization after application launch.
-    
-    [FBLoginView class];
-    [FBProfilePictureView class];
-    
-    self.backgroundImage = [UIImage imageNamed:@"defaultBackground.png"];
-    
-    self.soundON = NO;
-    
-    //INFO_4290_Final_ProjectViewController *viewContoller= [[INFO_4290_Final_ProjectViewController alloc]init];
-    //MainMenuViewController *mainMenuViewController = [[MainMenuViewController alloc]init];
-    
-
+#im
     
   // [self.window setRootViewController:viewContoller];
     
